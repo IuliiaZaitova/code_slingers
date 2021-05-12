@@ -26,5 +26,13 @@ Create the virtual environment
 ```
 virtualenv <name of env> --python /usr/bin/python3 or <path to your python if its not the mentioned one>
 
-
 ```
+
+# Datasets #
+
+- Image Captioning Dataset
+
+
+- Joke Dataset
+
+ [Link](https://www.kaggle.com/abhinavmoudgil95/short-jokes)
