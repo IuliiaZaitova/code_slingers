@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # coding=utf-8
-# Authors: Sharmila Upadhyaya, Isidora, Kirstin, Lulia
+# Authors: Sharmila Upadhyaya, Isidora, Kirstin,  Iuliia
 # Emails:  {saup00001}@stud.uni-saarland.de
 # Organization: Universität des Saarlandes
 # Copyright 2020 Sharmila Upadhyaya
