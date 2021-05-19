@@ -136,6 +136,7 @@ class CaptionAnalysis:
         
 
 ca = CaptionAnalysis("coco")
+# reads caption into self.all_captions
 ca.read_captions()
 ca.get_entity_action_pairs()
 
