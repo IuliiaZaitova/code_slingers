@@ -89,7 +89,6 @@ class ImageDataset:
 
 
 
-
 class CaptionAnalysis:
 
     def __init__(self, dataset_name):
@@ -134,15 +133,10 @@ class CaptionAnalysis:
             result = findSVOs(nlp(caption))
             self.caption_entities_pair[i] = result
 
-            import pdb
-            pdb.set_trace()
-
         
 
 ca = CaptionAnalysis("coco")
 ca.read_captions()
-import pdb
-pdb.set_trace()
 ca.get_entity_action_pairs()
 
 
