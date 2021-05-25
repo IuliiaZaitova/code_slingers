@@ -1,0 +1,3 @@
+[submodule "ImageCaptioning.pytorch"]
+	path = ImageCaptioning.pytorch
+	url = https://github.com/ruotianluo/ImageCaptioning.pytorch.git
