@@ -1,13 +1,13 @@
 # This file tells steps to set up the evaluation for image captioning.
 Here, the git [link](https://github.com/ruotianluo/ImageCaptioning.pytorch) is used for the image captioning.
-FOllow the following steps for evaluation on raw image.
+Follow the following steps for evaluation on raw image. 
 
 1. Add this git submodule in your repo.
 
 ```
 git submodule add https://github.com/ruotianluo/ImageCaptioning.pytorch
 ```
-
+Change the directory and go inside ImageCaptioning.pytorch
 2. There is another submodule inside the ImageCaptioning.pytorch i.e. [coco-caption](https://github.com/ruotianluo/coco-caption/tree/ea20010419a955fed9882f9dcc53f2dc1ac65092)
         - First clone the content using 
 
@@ -21,7 +21,7 @@ git submodule add https://github.com/ruotianluo/ImageCaptioning.pytorch
         -You will also need to download the Google News negative 300 word2vec model for use by WMD. To do this, run: bash get_google_word2vec_model.sh
 
 
-3. Download the pretrained model from this [link](https://github.com/ruotianluo/ImageCaptioning.pytorch/blob/master/MODEL_ZOO.md). Download one of the model Trained with Resnet101 feature. Put the model into output/image-captioning/model_path/
+3. Download the pretrained model from this [link](https://github.com/ruotianluo/ImageCaptioning.pytorch/blob/master/MODEL_ZOO.md). Download one of the model Trained with Resnet101 feature. Put the model into output/image-captioning/model_path/ in the root git project
 
 4. Download the resnet 101 pretrained model from [link](https://drive.google.com/drive/folders/0B7fNdx_jAqhtbVYzOURMdDNHSGM). Put it inside ImageCaptioning.pytorch/data/imagenet_weights
 
