@@ -42,7 +42,7 @@ virtualenv <name of env> --python /usr/bin/python3 or <path to your python if it
 ```
 
 
--Paper about the dataset
+- Paper about the dataset
 [Link] (https://arxiv.org/abs/1405.0312)
 
 - Evaluation of dataset
