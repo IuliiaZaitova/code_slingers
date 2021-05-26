@@ -53,3 +53,14 @@ THis section gets all the captions and extract the entity and action from the ca
  [Link](https://www.kaggle.com/abhinavmoudgil95/short-jokes)
 
 
+# Execution #
+
+- individual image captioning inference running
+
+Note: first go through set up [here](https://github.com/IuliiaZaitova/code_slingers/blob/master/Eval_Image_Caption.md)
+
+```
+
+python3 src/image_captioning_test.py
+
+```
