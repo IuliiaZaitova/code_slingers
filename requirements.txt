@@ -1,3 +1,4 @@
+better-profanity==0.7.0
 blis==0.7.4
 -e git+https://github.com/sarmilaupadhyaya/ImageCaptioning.pytorch.git@c0cc16c1f88fcea5082effd1e7a43266d5841cf9#egg=captioning&subdirectory=../../imagecaptioning
 catalogue==2.0.4
