@@ -2,12 +2,10 @@ import stanza
 import pickle
 import numpy as np
 import random
-import fasttext
 class Word_parser:
     """Grammar parsing class"""
     def __init__(self):
         self.nlp = stanza.Pipeline(lang='en', processors='tokenize, lemma, pos') # For lemmatization and pos-tagging
-        #self.ft = fasttext.load_model('cc.eng.300.bin') # Has to be downloaded
         self.verb_trans = pickle.load(open('data/verb_trans.p', 'rb'))
         self.dobjs = pickle.load(open('data/verb_dict_dobj.p', 'rb'))
         self.pobjs = pickle.load(open('data/verb_dict_pobj.p', 'rb'))
