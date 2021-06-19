@@ -36,38 +36,54 @@ class Templates:
 		template_df = pd.read_table(template_dir, sep="\t", names=header)
 		return template_df
 
-	def save_templates(self, template_dict, output_file):
+	def save_as_dict(self, dictionary, output_file):
 		with open(output_file, "wb") as out:
-			pickle.dump(template_dict, out)
+			pickle.dump(dictionary, out)
 
-	def convert_templates_to_dict(self, temp_df):
+	def convert_templates_to_dict(self, temp_df, dep=True):
 		template_dict = defaultdict(lambda: defaultdict(set))
+
 		temp_df['np_tags'] = temp_df['subj_tags']+','+temp_df['obj_tags']
+
 		for v_tags,np_tags,temp in zip(temp_df['verb_tags'], temp_df['np_tags'], temp_df['template']):
 			verb_key = tuple(tag for tag in v_tags.split(',') if tag)
-			# delete entity label
-			np_key = tuple(sorted([re.sub(r'.*?/',"",tag) for tag in np_tags.split(',') if tag]))
+
+			np_key = [tag for tag in np_tags.split(',') if tag]
+
+			# dont put dependencies for one slot NP templates
+			if not dep:
+				np_key = [tag.split('_')[0] for tag in np_key]
+
+			np_key = tuple(sorted(np_key))
 			template_dict[verb_key][np_key].add(temp)
 		return dict(template_dict)
 
 	def replace_verbs(self, doc, template, general_template, verbs):
 		verb_tags, aux_tags = [], []
 		for token in verbs:
-			#if token.dep_ != 'aux':
 			template[token.i] = f'<{token.tag_}>_{token.dep_}'
 			general_template[token.i] = \
 				'VERB' if token.dep_ not in {'aux','prt'} else str(token.dep_).upper()
 			if token.dep_ == 'aux':
-				self.aux[str(token.tag_)].add(str(token))
+				self.aux[str(token.tag_)].add(str(token).lower())
 				aux_tags.append(str(token.tag_))
 			else:
 				verb_tags.append(str(token.tag_))
 		return template, general_template, verb_tags, aux_tags
 
+	def get_manual_created_aux_dict(self):
+		aux_dict = {'MD': {'would', 'will', 'might', 'ca', 'should', 'must', 'can', 'could', 'wo'}, 
+					'VBP': {'be', 'am', 'keep', 'do', 'are', 'come', 'have'}, 
+					'VBD': {'had', 'were', 'was', 'did'}, 
+					'VBZ': {'does', 'has', 'is'}, 
+					'VB': {'get', 'be', 'keep', 'do', 'have'}}
+		return aux_dict
+
+
 	def replace_prep(self, doc, template, general_template, prep_token):
 		template[prep_token.i] = f'<{prep_token.tag_}>_{prep_token.dep_}'
 		general_template[prep_token.i] = 'PREP'
-		self.prep[str(prep_token.tag_)].add(str(prep_token))
+		self.prep[str(prep_token.tag_)].add(str(prep_token).lower())
 		return template, general_template
 
 	def replace_nps(self, doc, template, general_template, nps):
@@ -78,7 +94,8 @@ class Templates:
 			try:
 				if list(doc[np_start : np_end]) == template[np_start : np_end]:
 					entity, tag = head.ent_type_, head.tag_
-					label = entity+'/'+tag if entity else tag
+					#label = entity+'/'+tag if entity else tag
+					label = tag
 					padding = (np_end-np_start) - 1
 					np_string = f'<{label}>_NP_{head.dep_}'
 					template[np_start : np_end] = [np_string] + padding*['']
@@ -89,9 +106,10 @@ class Templates:
 							self.replace_prep(doc, template, general_template, head.head)
 
 					if head.dep_ in SUBJECT_DEPS:
-						subj_tags.append(label)
+						subj_tags.append(f'{label}_{head.dep_}')
 					else:
-						obj_tags.append(label)
+						obj_tags.append(f'{label}_{head.dep_}')
+
 			except:
 				# parts of NP have already been replaced --> most likely parsing error
 				return [], [], [], []
@@ -121,20 +139,29 @@ class Templates:
 					f'{",".join(verb_tags)}\t{",".join(aux_tags)}\t{np_slots}\n')
 
 
-'''
-WHYJ = 'why_clean.txt'
-temps = Templates()
+# create templates:
+
+#WHYJ = 'why_clean.txt'
+#temps = Templates()
 #temps.create_templates(WHYJ, 'test_templates.txt')
-df = temps.load_templates_to_df('test_templates.txt')
-one_slot_df = temps.get_template_per_slot(df, 1)
-one_slot = temps.convert_templates_to_dict(one_slot_df)
-two_slots_df = temps.get_template_per_slot(df, 2)
-two_slots = temps.convert_templates_to_dict(two_slots_df)
-three_slots_df = temps.get_template_per_slot(df, 3)
-three_slots = temps.convert_templates_to_dict(three_slots_df)
-temps.save_templates(two_slots, 'two_slots.pkl')
-temps.save_templates(three_slots, 'three_slots.pkl')#'''
-#temps.show_plot(one_slot_df, 'generaltemplate', 'Frequency', 'Templates', 'Frequency of Templates', 10)
+
+#df = temps.load_templates_to_df('test_templates.txt')
+#one_slot_df = temps.get_template_per_slot(df, 1)
+#one_slot = temps.convert_templates_to_dict(one_slot_df, False)
+#two_slots_df = temps.get_template_per_slot(df, 2)
+#two_slots = temps.convert_templates_to_dict(two_slots_df)
+#three_slots_df = temps.get_template_per_slot(df, 3)
+#three_slots = temps.convert_templates_to_dict(three_slots_df)
+
+#temps.save_as_dict(one_slot, 'one_slot.pkl')
+#temps.save_as_dict(two_slots, 'two_slots.pkl')
+#temps.save_as_dict(three_slots, 'three_slots.pkl')
+#temps.save_as_dict(temps.get_manual_created_aux_dict(), 'aux_verbs.pkl')
+#temps.save_as_dict(temps.prep, 'prep.pkl')
+
+# create plot:
+#temps.show_plot(one_slot_df, 'generaltemplate', 'freq', 'temps', 'test title', 10)
+
 
 
 
