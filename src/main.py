@@ -6,7 +6,7 @@
 ## passing the question to the joke generation module and getting the joke, which will be returned
 ## This file will be calling all of our model one by one
 
-
+from question_generation import *
 
 def captioning_inference(image_path):
     pass
@@ -23,6 +23,28 @@ def main(image_path: str):
     image_caption = captioning_inference(image_path)
 
     # question template
+    
+    question_generator = QuestionGenerator(generate_objects=False)
+    doc = question_generator.parser.nlp(image_caption)
+
+    verbs, nps = question_generator.parse_caption(image_caption)
+
+    if question_generator.gen_obj:
+        # get subject np
+        subj = question_generator.parser.get_subj_np(nps)
+
+        # generate objects
+        word_parser = Word_parser()
+        obj = word_parser.get_objects(verbs[0])
+
+        if obj:
+            nps = [subj]+obj
+
+    # get template for question
+    template, nps = question_generator.choose_template(verbs, nps)
+
+    # fill template
+    question = question_generator.fill_template(template, verbs, nps)
 
 
     # passing question to gpt-2 and getting answer
