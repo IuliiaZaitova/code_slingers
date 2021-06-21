@@ -9,9 +9,8 @@ from spacy.matcher import Matcher
 OBJECT_DEPS_SPACY = {'dobj','dative','attr','oprd','pobj'}
 OBJECT_DEPS_STANZA = {'obj','obl'}
 OBJECT_DEPS = OBJECT_DEPS_SPACY | OBJECT_DEPS_STANZA
-SUBJECT_DEPS = {'nsubj', 'nsubjpass'}
+SUBJECT_DEPS = {'nsubj', 'nsubjpass', 'ROOT'}
 VERB_DEPS = ['ROOT','root','conj','ccomp','xcomp','advcl','aux']
-
 SINGULAR = {'NN', 'NNP'}
 PLURAL = {'NNS', 'NNPS'}
 
@@ -79,18 +78,19 @@ class Parsing:
 		for np in nps:
 			if np.root.dep_ in SUBJECT_DEPS:
 				return np
-		return ''
+		if nps:
+			return nps[0]
+		return '' #TODO: return default subj np?
 
 	def get_default_verb(self):
-		#TODO: get noun tag to see if we need a singular or plural verb
-		return [MockToken('is', 'VBZ', 'ROOT')]
-
+		#return [MockToken('is', 'VBZ', 'ROOT', 'is')]
+		#return [MockToken('ignore', 'VB', 'ROOT', 'ignore')]
+		return [MockToken('watching', 'VBG', 'ROOT', 'watching')]
 
 	def get_complex_nps(self, doc):
 		complex_nps = []
 		for np in doc.noun_chunks:
 			complex_nps.append(doc[np.root.left_edge.i : np.root.right_edge.i+1])
-
 		# filter out dublicate nps -> only keep longest, dont keep substrings
 		return filter_spans(complex_nps)
 
