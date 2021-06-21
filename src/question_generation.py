@@ -7,11 +7,11 @@ from grammar_parsing import *
 class QuestionGenerator:
 	def __init__(self, generate_objects=True):
 		self.parser = Parsing()
-		self.one_slot = pickle.load(open('one_slot.pkl', 'rb'))
-		self.two_slots = pickle.load(open('two_slots.pkl', 'rb'))
-		self.three_slots = pickle.load(open('three_slots.pkl', 'rb'))
-		self.aux = pickle.load(open('aux_verbs.pkl', 'rb'))
-		self.prep = pickle.load(open('prep.pkl', 'rb'))
+		self.one_slot = pickle.load(open('data/one_slot.pkl', 'rb'))
+		self.two_slots = pickle.load(open('data/two_slots.pkl', 'rb'))
+		self.three_slots = pickle.load(open('data/three_slots.pkl', 'rb'))
+		self.aux = pickle.load(open('data/aux_verbs.pkl', 'rb'))
+		self.prep = pickle.load(open('data/prep.pkl', 'rb'))
 		self.gen_obj = True if generate_objects else False
 
 
@@ -23,7 +23,7 @@ class QuestionGenerator:
 		if not verbs:
 			verbs = self.parser.find_verb_in_np(nps)
 			if not verbs:
-				verbs = self.parser.get_default_verb()
+				verbs = self.parser.get_default_verb() #nps[1].root.tag_?
 			else:
 				# get NPs before and after verb
 				nps = self.parser.find_nps_in_np(nps[0], verbs[0])
@@ -32,7 +32,6 @@ class QuestionGenerator:
 
 	def get_aux(self, tag, verb_tag=False, np_num=False):
 		# check compatibility with verb
-
 		if verb_tag in {'VBG', 'VBN'}:
 			if tag == 'VBZ':
 				return 'is'
@@ -42,7 +41,7 @@ class QuestionGenerator:
 				return 'was'
 			else:
 				return 'were'
-		#TODO:
+
 		# if verb.tag_ == 'VB':
 		# np_num == 'sg':
 		#return 'does' or 'did'
@@ -61,7 +60,6 @@ class QuestionGenerator:
 	def get_prep(self, tag, suggestion=False):
 		if suggestion:
 			if suggestion.dep_ == 'prep':
-				#TODO:
 				# if head of prep RB advmod get it too?
 				# if head of prep not the verb get it too?
 				return suggestion
@@ -148,8 +146,9 @@ class QuestionGenerator:
 							np_num = 'sg' if tag in SINGULAR else 'pl'
 						if np.root.dep_ == 'pobj' and '_prep' in filled_template[-1]:
 								prep_tag = filled_template[-1].split('_')[0][1:-1]
-								prep_suggestion = np.root.head
-								prep = self.get_prep(prep_tag, prep_suggestion)
+								#prep_suggestion = np.root.head
+								#prep = self.get_prep(prep_tag, prep_suggestion)
+								prep = np.root.head
 								filled_template = filled_template[:-1] + [str(prep)]
 						filled_template.append(str(np))
 						nps.remove(np)
@@ -164,31 +163,3 @@ class QuestionGenerator:
 			filled_template[aux_ind] = aux
 		return " ".join(filled_template)
 
-
-#new_question = QuestionGenerator(generate_objects=True)
-
-'''
-with open('example_captions.csv', encoding='utf-8') as f:
-	for line in f:
-		
-		caption = line.strip().split(',')[2]
-		doc = new_question.parser.nlp(caption)
-
-		verbs, nps = new_question.parse_caption(caption)
-
-		# get subject np
-		subj = new_question.parser.get_subj_np(nps)
-
-		if new_question.gen_obj:
-			word_parser = Word_parser()
-			obj = word_parser.get_objects(verbs[0])
-			print('objects', obj, type(obj))
-			for obje in obj:
-				print('obj', obje, type(obje))
-			if obj:
-				nps = [subj]+obj
-
-		template, nps = new_question.choose_template(verbs, nps)
-
-		question = new_question.fill_template(template, verbs, nps)
-		print('caption: ', caption, 'question: ', question)#'''
