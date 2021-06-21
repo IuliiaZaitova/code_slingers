@@ -7,9 +7,10 @@ class Word_parser:
     def __init__(self):
         self.nlp = stanza.Pipeline(lang='en', processors='tokenize, lemma, pos') # For lemmatization and pos-tagging
         self.verb_trans = pickle.load(open('data/verb_trans.p', 'rb'))
-        self.dobjs = pickle.load(open('data/verb_dict_dobj.p', 'rb'))
-        self.pobjs = pickle.load(open('data/verb_dict_pobj.p', 'rb'))
-
+        #self.dobjs = pickle.load(open('data/verb_dict_dobj.p', 'rb'))
+        #self.pobjs = pickle.load(open('data/verb_dict_pobj.p', 'rb'))
+        self.dobjs = pickle.load(open('data/dobj_dict_classes.p', 'rb'))
+        self.pobjs = pickle.load(open('data/pobj_dict_classes.p', 'rb'))
 
     def get_lemma(self, word):
         # Returns the lemma of English words
