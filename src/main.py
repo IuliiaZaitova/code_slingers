@@ -22,9 +22,10 @@ def main(image_path: str):
     
     image_caption = captioning_inference(image_path)
 
+
     # question template
     
-    question_generator = QuestionGenerator(generate_objects=False)
+    question_generator = QuestionGenerator(generate_objects=True)
     doc = question_generator.parser.nlp(image_caption)
 
     verbs, nps = question_generator.parse_caption(image_caption)
@@ -35,7 +36,7 @@ def main(image_path: str):
 
         # generate objects
         word_parser = Word_parser()
-        obj = word_parser.get_objects(verbs[0])
+        obj = word_parser.get_objects(str(verbs[0]))
 
         if obj:
             nps = [subj]+obj
@@ -46,7 +47,4 @@ def main(image_path: str):
     # fill template
     question = question_generator.fill_template(template, verbs, nps)
 
-
     # passing question to gpt-2 and getting answer
-
-
