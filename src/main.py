@@ -10,10 +10,11 @@ from question_generation import *
 import sys
 sys.path.append("/home/sharmila/projects/code_slingers")
 from imagecaptioning.tools import eval
+from src import joke_generator as jg
 
 def captioning_inference(image_path= "data/test_image/"):
 
-    result = eval.evaluation(model='output/image-captioning/model_path/model-best.pth', image_folder="data/test_image/", cnn_model='resnet101', infos_path='output/image-captioning/model_path/infos_fc_nsc-best.pkl', only_lang_eval=0, force=1,device="cpu")
+    result = eval.evaluation(model='output/image-captioning/model_path/model-best.pth', image_folder="data/singleimage/", cnn_model='resnet101', infos_path='output/image-captioning/model_path/infos_fc_nsc-best.pkl', only_lang_eval=0, force=1,device="cpu")
 
     return result
 
@@ -30,43 +31,43 @@ def main(image_path="data/test_image/"):
 
 
     # question template
-    import pdb
-    pdb.set_trace()
 
     questions = []
-
     for each in image_caption:
-    
         question_generator = QuestionGenerator(generate_objects=True)
         doc = question_generator.parser.nlp(each["caption"])
-
         verbs, nps = question_generator.parse_caption(each["caption"])
 
         if question_generator.gen_obj:
             # get subject np
             subj = question_generator.parser.get_subj_np(nps)
-
             # generate objects
             word_parser = Word_parser()
             obj = word_parser.get_objects(str(verbs[0]))
 
             if obj:
                 nps = [subj]+obj
-
         # get template for question
         template, nps = question_generator.choose_template(verbs, nps)
-
         # fill template
         question = question_generator.fill_template(template, verbs, nps)
-
-        print(question)
         questions.append(question)
 
     df = pd.DataFrame(image_caption)
     df["questions"] = pd.Series(questions)
-    df.to_csv("output/image-captioning/captions.csv")
+
+    jokes = []    
     # passing question to gpt-2 and getting answer
+    for question in questions:
+        jokes.append(jg.evaluation(question))
+
+    df["jokes"] = pd.Series(jokes)
+
+    if len(df) == 1:
+        return df.to_dict()
+
+    #df.to_csv("output/image-captioning/captions.csv")
 
 
 
-main()
+print(main())
