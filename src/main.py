@@ -7,13 +7,19 @@
 ## This file will be calling all of our model one by one
 
 from question_generation import *
+import sys
+sys.path.append("/home/sharmila/projects/code_slingers")
+from imagecaptioning.tools import eval
 
-def captioning_inference(image_path):
-    pass
+def captioning_inference(image_path= "data/test_image/"):
+
+    result = eval.evaluation(model='output/image-captioning/model_path/model-best.pth', image_folder="data/test_image/", cnn_model='resnet101', infos_path='output/image-captioning/model_path/infos_fc_nsc-best.pkl', only_lang_eval=0, force=1,device="cpu")
+
+    return result[0]["caption"]
 
 
 
-def main(image_path: str):
+def main(image_path="data/test_image/"):
     """
     main pipeline
     params:
@@ -24,6 +30,8 @@ def main(image_path: str):
 
 
     # question template
+    import pdb
+    pdb.set_trace()
     
     question_generator = QuestionGenerator(generate_objects=True)
     doc = question_generator.parser.nlp(image_caption)
@@ -47,4 +55,10 @@ def main(image_path: str):
     # fill template
     question = question_generator.fill_template(template, verbs, nps)
 
+    print(question)
+
     # passing question to gpt-2 and getting answer
+
+
+
+main()
