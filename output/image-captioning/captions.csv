@@ -1,102 +1,102 @@
-,image_id,caption,perplexity,entropy
-0,1,a man is standing next to a train,0.04261106997728348,0.10933520644903183
-1,2,a bathroom with a sink and a mirror,0.0024017104879021645,0.015681244432926178
-2,3,a group of people playing soccer on a field,0.0018755566561594605,0.010051002725958824
-3,4,a bunch of fruits and vegetables on a table,0.0005456793587654829,0.0046798111870884895
-4,5,a man riding a snowboard down a snow covered slope,0.006569527089595795,0.034903086721897125
-5,6,a traffic light sitting on the city street,0.17444266378879547,0.28814253211021423
-6,7,a group of men standing next to a tennis rackets,0.10348310321569443,0.22611211240291595
-7,8,a group of men playing soccer on a field,0.017125893384218216,0.04648105055093765
-8,9,a double decker bus driving down a street,0.07120636850595474,0.14682282507419586
-9,10,a dining room with a table with chairs,0.11306270211935043,0.21718254685401917
-10,11,a kitchen with a stove and a sink,0.029360704123973846,0.06507042050361633
-11,12,a yellow fire hydrant sitting on the side of a street,0.08203437179327011,0.1434539407491684
-12,13,a man is standing next to a motorcycle,0.0437864325940609,0.10363690555095673
-13,14,a flock of birds standing in the water,0.10480047762393951,0.283608078956604
-14,15,a sandwich on a plate of food on a table,0.00014704510977026075,0.0013870761031284928
-15,16,a sandwich on a plate of french fries on a table,0.0031779392156749964,0.017507174983620644
-16,17,a elephant is standing in the grass in a field,0.1882333606481552,0.2727251350879669
-17,18,a street sign on the side of a pole,0.06445880234241486,0.12519650161266327
-18,19,a clock on the side of a building with a wall,0.16829149425029755,0.2939055263996124
-19,20,a kitchen with a refrigerator and a table,0.003602732438594103,0.019592776894569397
-20,21,a group of clocks on a table with a table,0.08239007741212845,0.16476327180862427
-21,22,a group of people playing frisbee on the beach,0.014302991330623627,0.059425532817840576
-22,23,a man and a woman standing next to a street with a bicycle,0.21820543706417084,0.4160507619380951
-23,24,a bird is standing in the water with a body of water,0.19032661616802216,0.44063156843185425
-24,25,a traffic light sitting on the side of a street,0.014015566557645798,0.04069436341524124
-25,26,a woman wearing a suit and tie,0.0121895931661129,0.059151001274585724
-26,27,a bathroom with a sink and a mirror,0.00013074999151285738,0.0013108344282954931
-27,28,a woman holding a tennis ball on a court,0.03225042670965195,0.06563358008861542
-28,29,a man riding skis down a snow covered slope,0.02257744036614895,0.06060092896223068
-29,30,a couple of cats sitting on top of a window,0.02416164241731167,0.08235878497362137
-30,31,a kitchen with a stove and a sink,0.005265089217573404,0.025092966854572296
-31,32,a vase with flowers sitting on top of a table,0.00031100132036954165,0.002431933768093586
-32,33,a man riding a snowboard down a snow covered slope,0.08263420313596725,0.13214890658855438
-33,34,two zebras are standing in the grass in a field,0.03804397955536842,0.1083897277712822
-34,35,a bathroom with a toilet with a table,0.08155245333909988,0.12038926035165787
-35,36,a black train is sitting on the tracks,0.08560054749250412,0.18905650079250336
-36,37,a bird is standing on the beach,0.04552048444747925,0.13248372077941895
-37,38,a man doing a trick on a skateboard,0.011335321702063084,0.05058937892317772
-38,39,a plate of food with vegetables on a table,0.10013053566217422,0.17324277758598328
-39,40,a group of people standing on a beach with a kite,0.03296985104680061,0.08930052071809769
-40,41,a dog is sitting on top of a car,0.09542614221572876,0.15735402703285217
-41,42,a building with a clock tower on top of it,9.857270197244361e-05,0.0010288989869877696
-42,43,a woman riding a skateboard down a street,0.07600712776184082,0.10738606005907059
-43,44,a pizza sitting on top of a table,0.00046342736459337175,0.004118030425161123
-44,45,a building with a clock tower on top of it,0.000396765855839476,0.0029020505025982857
-45,46,a group of people standing around a market with fruit,0.038603976368904114,0.14855843782424927
-46,47,a man riding a boat in the water,0.04360596835613251,0.0806289091706276
-47,48,a bottle of wine sitting on top of a refrigerator,0.10448184609413147,0.2355623096227646
-48,49,a street signs on a pole with a street sign,0.006463195197284222,0.030173415318131447
-49,50,a train is sitting on the tracks at a station,0.05456247553229332,0.07910844683647156
-50,51,a plate of food with vegetables on a table,0.11130611598491669,0.14946672320365906
-51,52,a bathroom with a toilet and a table,0.04351098835468292,0.0746799185872078
-52,53,a baseball player holding a bat on a table,0.031132230535149574,0.07816122472286224
-53,54,a man riding a wave on a surfboard in the water,0.0007958519272506237,0.005421932321041822
-54,55,a man sitting on a bench in a park,0.007186924107372761,0.035378582775592804
-55,56,a group of stuffed teddy bears sitting on a bed,0.006003720685839653,0.03178210183978081
-56,57,a motorcycle parked on the side of a building,0.026864483952522278,0.09248781949281693
-57,58,a pizza sitting on top of a table,0.0004031216085422784,0.0034434569533914328
-58,59,a man sitting at a table with a laptop computer,0.06082594022154808,0.12141191959381104
-59,60,two zebras are standing next to each other,0.057425182312726974,0.11786799877882004
-60,61,a bowl of soup on a plate with a table,0.05374756082892418,0.08904226869344711
-61,62,a group of people standing next to a horse in a field,0.09991887956857681,0.2510293424129486
-62,63,a man holding a cell phone in a street,0.07101111859083176,0.1149447113275528
-63,64,a man holding a tennis racket on a court,0.0019465002696961164,0.011812823824584484
-64,65,a herd of sheep are standing in the water,0.042759425938129425,0.12929145991802216
-65,66,a baseball player swinging a bat at a ball,0.00010547069541644305,0.0011053544003516436
-66,67,a group of luggage sitting on top of a table,0.015157564543187618,0.050747618079185486
-67,68,a wedding cake sitting on top of a table,0.014626199379563332,0.06404968351125717
-68,69,a desk with a computer sitting on top of it,0.020883871242403984,0.06667295098304749
-69,70,a sandwich on a plate of food on a table,0.009151492267847061,0.0330505333840847
-70,71,a stop sign on the side of a street,0.01288489531725645,0.04284653440117836
-71,72,a group of clocks on a wall in a room,0.01822511851787567,0.08909845352172852
-72,73,a teddy bear sitting on top of a table,0.004856771789491177,0.026894250884652138
-73,74,a group of people sitting on a couch playing a video game,0.03921499475836754,0.06196257844567299
-74,75,a group of people standing on skis in the snow,6.537668377859518e-05,0.0006372318021021783
-75,76,a group of people riding a skateboard on a street,0.1895057111978531,0.3087436854839325
-76,77,a plane is sitting on top of an airport runway,0.057519856840372086,0.12598873674869537
-77,78,a banana sitting on top of a plate,0.008887769654393196,0.04540223255753517
-78,79,a boat is sitting in the water,0.015339751727879047,0.06241929531097412
-79,80,a group of people standing on skis in the snow,8.862328104441985e-05,0.000843455025460571
-80,81,a man is holding a video game with a wii remote,0.05238422751426697,0.15072272717952728
-81,82,a group of people standing in front of a building with a traffic light,0.09429436177015305,0.23458226025104523
-82,83,a kitchen with a sink and a table,0.0024319058284163475,0.012122107669711113
-83,84,an airplane is sitting on top of an airport runway,0.04053935781121254,0.08094778656959534
-84,85,a man riding a wave on a surfboard in the ocean,5.69078947592061e-05,0.0006052472162991762
-85,86,a man is sitting at a table with a hot dog,0.1040770635008812,0.2558233439922333
-86,87,a train is sitting on the tracks,0.00013559492072090507,0.0012909126235172153
-87,88,a group of people riding horses on a trail,0.12894777953624725,0.22226949036121368
-88,89,a street sign on the side of a building,0.0013841913314536214,0.009575637057423592
-89,90,a woman laying on a bed with a table,0.004351626615971327,0.021024543792009354
-90,91,a group of people riding on top of an elephant,0.01756061427295208,0.04380464181303978
-91,92,a man is standing in a field with a dog,0.0301265437155962,0.11720376461744308
-92,93,a red fire hydrant sitting on the side of a street,0.0816333144903183,0.14041347801685333
-93,94,a kitchen with a sink and a stove,0.12880466878414154,0.18748439848423004
-94,95,a bunch of broccoli and vegetables on a table,0.07438342273235321,0.12846526503562927
-95,96,a plate of food on a table with a cup of coffee,0.058701928704977036,0.08203660696744919
-96,97,a stop sign on the side of a street,0.00040316296508535743,0.002872670767828822
-97,98,a baseball player swinging a bat at a ball,0.0004148353764321655,0.0030452990904450417
-98,99,a woman is sitting on a toilet in a bathroom,0.03218860551714897,0.09810183197259903
-99,100,a plane is sitting on top of an airport runway,0.015357590280473232,0.04891388490796089
-100,101,a man sitting on a boat in the water,0.0488746352493763,0.14208492636680603
+,image_id,caption,perplexity,entropy,questions
+0,1,a man is standing next to a train,0.04261106997728348,0.10933520644903183,Why was a man standing to a train
+1,2,a bathroom with a sink and a mirror,0.0024017104879021645,0.015681244432926178,Why was a bathroom with a sink and watching neighbor
+2,3,a group of people playing soccer on a field,0.0018755566561594605,0.010051002725958824,Why was a group of people playing soccer on a field
+3,4,a bunch of fruits and vegetables on a table,0.0005456793587654829,0.0046798111870884895,Why was a bunch of fruits and vegetables on a table watching
+4,5,a man riding a snowboard down a snow covered slope,0.006569527089595795,0.034903086721897125,Why was a man riding a snowboard down a snow covered head
+5,6,a traffic light sitting on the city street,0.17444266378879547,0.28814253211021423,Why was a traffic light sitting on the city street
+6,7,a group of men standing next to a tennis rackets,0.10348310321569443,0.22611211240291595,Why was a group of men standing
+7,8,a group of men playing soccer on a field,0.017125893384218216,0.04648105055093765,Why was a group of men playing soccer on a field
+8,9,a double decker bus driving down a street,0.07120636850595474,0.14682282507419586,Why was a double decker bus driving a street
+9,10,a dining room with a table with chairs,0.11306270211935043,0.21718254685401917,Why was a dining room with a table with chairs watching
+10,11,a kitchen with a stove and a sink,0.029360704123973846,0.06507042050361633,Why was a kitchen with a stove and watching
+11,12,a yellow fire hydrant sitting on the side of a street,0.08203437179327011,0.1434539407491684,Why was a yellow fire hydrant sitting on the side of a street
+12,13,a man is standing next to a motorcycle,0.0437864325940609,0.10363690555095673,Why was a man standing to a motorcycle
+13,14,a flock of birds standing in the water,0.10480047762393951,0.283608078956604,Why was a flock of birds standing in the water
+14,15,a sandwich on a plate of food on a table,0.00014704510977026075,0.0013870761031284928,Why was a sandwich on a plate of food on a table watching tv
+15,16,a sandwich on a plate of french fries on a table,0.0031779392156749964,0.017507174983620644,Why is a sandwich on a plate of french fries on a table watching
+16,17,a elephant is standing in the grass in a field,0.1882333606481552,0.2727251350879669,Why was a elephant standing in the grass in a field
+17,18,a street sign on the side of a pole,0.06445880234241486,0.12519650161266327,Why was a street sign on the side of a pole watching
+18,19,a clock on the side of a building with a wall,0.16829149425029755,0.2939055263996124,Why is a clock on the side of a building with a wall watching
+19,20,a kitchen with a refrigerator and a table,0.003602732438594103,0.019592776894569397,Why was a kitchen with a refrigerator and watching
+20,21,a group of clocks on a table with a table,0.08239007741212845,0.16476327180862427,Why was a group of clocks on a table with a table watching sunglasses
+21,22,a group of people playing frisbee on the beach,0.014302991330623627,0.059425532817840576,Why was a group of people playing frisbee on the beach
+22,23,a man and a woman standing next to a street with a bicycle,0.21820543706417084,0.4160507619380951,Why is a man and a woman standing
+23,24,a bird is standing in the water with a body of water,0.19032661616802216,0.44063156843185425,Why was a bird standing in the water with a body of water
+24,25,a traffic light sitting on the side of a street,0.014015566557645798,0.04069436341524124,Why was a traffic light sitting on the side of a street
+25,26,a woman wearing a suit and tie,0.0121895931661129,0.059151001274585724,Why was a woman wearing a suit
+26,27,a bathroom with a sink and a mirror,0.00013074999151285738,0.0013108344282954931,Why was a bathroom with a sink and watching
+27,28,a woman holding a tennis ball on a court,0.03225042670965195,0.06563358008861542,Why was a woman holding
+28,29,a man riding skis down a snow covered slope,0.02257744036614895,0.06060092896223068,Why was a man riding skis down a snow covered
+29,30,a couple of cats sitting on top of a window,0.02416164241731167,0.08235878497362137,Why was a couple of cats sitting on top of a window
+30,31,a kitchen with a stove and a sink,0.005265089217573404,0.025092966854572296,Why is a kitchen with a stove and watching
+31,32,a vase with flowers sitting on top of a table,0.00031100132036954165,0.002431933768093586,Why was a vase with flowers sitting on top of a table
+32,33,a man riding a snowboard down a snow covered slope,0.08263420313596725,0.13214890658855438,Why was a man riding a snowboard down a snow covered
+33,34,two zebras are standing in the grass in a field,0.03804397955536842,0.1083897277712822,Why were two zebras standing in the grass
+34,35,a bathroom with a toilet with a table,0.08155245333909988,0.12038926035165787,Why was n't a bathroom with a toilet with a table watching sense
+35,36,a black train is sitting on the tracks,0.08560054749250412,0.18905650079250336,Why was a black train sitting holes
+36,37,a bird is standing on the beach,0.04552048444747925,0.13248372077941895,Why was a bird standing on the beach
+37,38,a man doing a trick on a skateboard,0.011335321702063084,0.05058937892317772,Why was n't a man doing a trick on a skateboard
+38,39,a plate of food with vegetables on a table,0.10013053566217422,0.17324277758598328,Why was a plate of food with vegetables on a table watching videos
+39,40,a group of people standing on a beach with a kite,0.03296985104680061,0.08930052071809769,Why was a group of people standing on a beach with a kite
+40,41,a dog is sitting on top of a car,0.09542614221572876,0.15735402703285217,Why was a dog sitting on top of a car
+41,42,a building with a clock tower on top of it,9.857270197244361e-05,0.0010288989869877696,Why is a building with a clock tower on top of it watching
+42,43,a woman riding a skateboard down a street,0.07600712776184082,0.10738606005907059,Why was a woman riding a skateboard down a street
+43,44,a pizza sitting on top of a table,0.00046342736459337175,0.004118030425161123,Why was a pizza sitting on top of a table
+44,45,a building with a clock tower on top of it,0.000396765855839476,0.0029020505025982857,Why was a building with a clock tower on top of it watching
+45,46,a group of people standing around a market with fruit,0.038603976368904114,0.14855843782424927,Why was a group of people standing around a market with fruit
+46,47,a man riding a boat in the water,0.04360596835613251,0.0806289091706276,Why was a man riding a boat in the water
+47,48,a bottle of wine sitting on top of a refrigerator,0.10448184609413147,0.2355623096227646,Why was a bottle of wine sitting on top of a refrigerator
+48,49,a street signs on a pole with a street sign,0.006463195197284222,0.030173415318131447,Why are a street signs on a pole with a street sign watching
+49,50,a train is sitting on the tracks at a station,0.05456247553229332,0.07910844683647156,Why is a train sitting
+50,51,a plate of food with vegetables on a table,0.11130611598491669,0.14946672320365906,Why is a plate of food with vegetables on a table watching
+51,52,a bathroom with a toilet and a table,0.04351098835468292,0.0746799185872078,Why was n't a bathroom with a toilet and watching job
+52,53,a baseball player holding a bat on a table,0.031132230535149574,0.07816122472286224,Why was a baseball player holding set
+53,54,a man riding a wave on a surfboard in the water,0.0007958519272506237,0.005421932321041822,Why was a man riding a wave on a surfboard in the water
+54,55,a man sitting on a bench in a park,0.007186924107372761,0.035378582775592804,Why was a man sitting on a bench in a park
+55,56,a group of stuffed teddy bears sitting on a bed,0.006003720685839653,0.03178210183978081,Why is a group of stuffed cheese
+56,57,a motorcycle parked on the side of a building,0.026864483952522278,0.09248781949281693,Why is a motorcycle parked on the side of a building
+57,58,a pizza sitting on top of a table,0.0004031216085422784,0.0034434569533914328,Why was a pizza sitting on top of a table
+58,59,a man sitting at a table with a laptop computer,0.06082594022154808,0.12141191959381104,Why was a man sitting at a table with a laptop computer
+59,60,two zebras are standing next to each other,0.057425182312726974,0.11786799877882004,Why are two zebras standing
+60,61,a bowl of soup on a plate with a table,0.05374756082892418,0.08904226869344711,Why was n't a bowl of soup on a plate with a table watching ball
+61,62,a group of people standing next to a horse in a field,0.09991887956857681,0.2510293424129486,Why was a group of people standing to a horse in a field
+62,63,a man holding a cell phone in a street,0.07101111859083176,0.1149447113275528,Why was a man holding baby
+63,64,a man holding a tennis racket on a court,0.0019465002696961164,0.011812823824584484,Why was n't a man holding beer
+64,65,a herd of sheep are standing in the water,0.042759425938129425,0.12929145991802216,Why was a herd of sheep standing in the water
+65,66,a baseball player swinging a bat at a ball,0.00010547069541644305,0.0011053544003516436,Why was a baseball player swinging a bat at a ball
+66,67,a group of luggage sitting on top of a table,0.015157564543187618,0.050747618079185486,Why was a group of luggage sitting on top of a table
+67,68,a wedding cake sitting on top of a table,0.014626199379563332,0.06404968351125717,Why was a wedding cake sitting on top of a table
+68,69,a desk with a computer sitting on top of it,0.020883871242403984,0.06667295098304749,Why was a desk with a computer sitting on top of it
+69,70,a sandwich on a plate of food on a table,0.009151492267847061,0.0330505333840847,Why was a sandwich on a plate of food on a table watching
+70,71,a stop sign on the side of a street,0.01288489531725645,0.04284653440117836,Why would n't the side of a street sign
+71,72,a group of clocks on a wall in a room,0.01822511851787567,0.08909845352172852,Why was n't a group of clocks on a wall in a room watching anime
+72,73,a teddy bear sitting on top of a table,0.004856771789491177,0.026894250884652138,Why was a teddy bear sitting on top of a table
+73,74,a group of people sitting on a couch playing a video game,0.03921499475836754,0.06196257844567299,Why was a group of people sitting a couch <IN>_prep a video game
+74,75,a group of people standing on skis in the snow,6.537668377859518e-05,0.0006372318021021783,Why is a group of people standing
+75,76,a group of people riding a skateboard on a street,0.1895057111978531,0.3087436854839325,Why was a group of people riding a skateboard on a street
+76,77,a plane is sitting on top of an airport runway,0.057519856840372086,0.12598873674869537,Why was a plane sitting on top of an airport runway
+77,78,a banana sitting on top of a plate,0.008887769654393196,0.04540223255753517,Why was a banana sitting on top of a plate
+78,79,a boat is sitting in the water,0.015339751727879047,0.06241929531097412,Why was a boat sitting in the water
+79,80,a group of people standing on skis in the snow,8.862328104441985e-05,0.000843455025460571,Why is a group of people standing
+80,81,a man is holding a video game with a wii remote,0.05238422751426697,0.15072272717952728,Why was a man holding status
+81,82,a group of people standing in front of a building with a traffic light,0.09429436177015305,0.23458226025104523,Why was a group of people standing in front of a building with a traffic light
+82,83,a kitchen with a sink and a table,0.0024319058284163475,0.012122107669711113,Why was a kitchen with a sink and watching hero
+83,84,an airplane is sitting on top of an airport runway,0.04053935781121254,0.08094778656959534,Why was an airplane sitting on top of an airport runway
+84,85,a man riding a wave on a surfboard in the ocean,5.69078947592061e-05,0.0006052472162991762,Why was a man riding a wave on a surfboard in the ocean
+85,86,a man is sitting at a table with a hot dog,0.1040770635008812,0.2558233439922333,Why was a man sitting at a table with a hot dog
+86,87,a train is sitting on the tracks,0.00013559492072090507,0.0012909126235172153,Why was a train sitting
+87,88,a group of people riding horses on a trail,0.12894777953624725,0.22226949036121368,Why is a group of people riding horses on a trail
+88,89,a street sign on the side of a building,0.0013841913314536214,0.009575637057423592,Why was n't a street sign on the side of a building watching daddy
+89,90,a woman laying on a bed with a table,0.004351626615971327,0.021024543792009354,Why was a woman laying on a bed with a table
+90,91,a group of people riding on top of an elephant,0.01756061427295208,0.04380464181303978,Why was a group of people riding on top of an elephant
+91,92,a man is standing in a field with a dog,0.0301265437155962,0.11720376461744308,Why was a man standing in a field with a dog
+92,93,a red fire hydrant sitting on the side of a street,0.0816333144903183,0.14041347801685333,Why was a red fire hydrant sitting on the side of a street
+93,94,a kitchen with a sink and a stove,0.12880466878414154,0.18748439848423004,Why was a kitchen with a sink and a stove watching friends
+94,95,a bunch of broccoli and vegetables on a table,0.07438342273235321,0.12846526503562927,Why was a bunch of broccoli and vegetables on a table watching
+95,96,a plate of food on a table with a cup of coffee,0.058701928704977036,0.08203660696744919,Why is a plate of food on a table with a cup of coffee watching
+96,97,a stop sign on the side of a street,0.00040316296508535743,0.002872670767828822,Why had the side of a street sign
+97,98,a baseball player swinging a bat at a ball,0.0004148353764321655,0.0030452990904450417,Why was a baseball player swinging a bat at a ball
+98,99,a woman is sitting on a toilet in a bathroom,0.03218860551714897,0.09810183197259903,Why was a woman sitting on a toilet in a bathroom
+99,100,a plane is sitting on top of an airport runway,0.015357590280473232,0.04891388490796089,Why was a plane sitting on top of an airport runway
+100,101,a man sitting on a boat in the water,0.0488746352493763,0.14208492636680603,Why was a man sitting on a boat in the water

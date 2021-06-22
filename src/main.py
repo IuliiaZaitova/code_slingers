@@ -15,7 +15,7 @@ def captioning_inference(image_path= "data/test_image/"):
 
     result = eval.evaluation(model='output/image-captioning/model_path/model-best.pth', image_folder="data/test_image/", cnn_model='resnet101', infos_path='output/image-captioning/model_path/infos_fc_nsc-best.pkl', only_lang_eval=0, force=1,device="cpu")
 
-    return result[0]["caption"]
+    return result
 
 
 
@@ -32,31 +32,39 @@ def main(image_path="data/test_image/"):
     # question template
     import pdb
     pdb.set_trace()
+
+    questions = []
+
+    for each in image_caption:
     
-    question_generator = QuestionGenerator(generate_objects=True)
-    doc = question_generator.parser.nlp(image_caption)
+        question_generator = QuestionGenerator(generate_objects=True)
+        doc = question_generator.parser.nlp(each["caption"])
 
-    verbs, nps = question_generator.parse_caption(image_caption)
+        verbs, nps = question_generator.parse_caption(each["caption"])
 
-    if question_generator.gen_obj:
-        # get subject np
-        subj = question_generator.parser.get_subj_np(nps)
+        if question_generator.gen_obj:
+            # get subject np
+            subj = question_generator.parser.get_subj_np(nps)
 
-        # generate objects
-        word_parser = Word_parser()
-        obj = word_parser.get_objects(str(verbs[0]))
+            # generate objects
+            word_parser = Word_parser()
+            obj = word_parser.get_objects(str(verbs[0]))
 
-        if obj:
-            nps = [subj]+obj
+            if obj:
+                nps = [subj]+obj
 
-    # get template for question
-    template, nps = question_generator.choose_template(verbs, nps)
+        # get template for question
+        template, nps = question_generator.choose_template(verbs, nps)
 
-    # fill template
-    question = question_generator.fill_template(template, verbs, nps)
+        # fill template
+        question = question_generator.fill_template(template, verbs, nps)
 
-    print(question)
+        print(question)
+        questions.append(question)
 
+    df = pd.DataFrame(image_caption)
+    df["questions"] = pd.Series(questions)
+    df.to_csv("output/image-captioning/captions.csv")
     # passing question to gpt-2 and getting answer
 
 
