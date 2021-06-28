@@ -14,7 +14,7 @@ from src import joke_generator as jg
 
 def captioning_inference(image_path= "data/test_image/"):
 
-    result = eval.evaluation(model='output/image-captioning/model_path/model-best.pth', image_folder="data/singleimage/", cnn_model='resnet101', infos_path='output/image-captioning/model_path/infos_fc_nsc-best.pkl', only_lang_eval=0, force=1,device="cpu")
+    result = eval.evaluation(model='output/image-captioning/model_path/model-best.pth', image_folder=image_path, cnn_model='resnet101', infos_path='output/image-captioning/model_path/infos_fc_nsc-best.pkl', only_lang_eval=0, force=1,device="cpu")
 
     return result
 
@@ -26,7 +26,6 @@ def main(image_path="data/test_image/"):
     params:
     image_path: path to the image uploaded by the user
     """
-    
     image_caption = captioning_inference(image_path)
 
 
@@ -66,8 +65,10 @@ def main(image_path="data/test_image/"):
     if len(df) == 1:
         return df.to_dict()
 
+
+
     #df.to_csv("output/image-captioning/captions.csv")
 
 
 
-print(main())
+#print(main())
