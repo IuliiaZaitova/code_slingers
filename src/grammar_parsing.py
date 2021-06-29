@@ -1,11 +1,11 @@
-import stanza
+import spacy
 import pickle
 import numpy as np
 import random
 class Word_parser:
     """Grammar parsing class"""
     def __init__(self):
-        self.nlp = stanza.Pipeline(lang='en', processors='tokenize, lemma, pos') # For lemmatization and pos-tagging
+        self.nlp = spacy.load("en_core_web_sm", disable = ['parser','ner']) # For lemmatization and pos-tagging
         self.verb_trans = pickle.load(open('data/verb_trans.p', 'rb'))
         self.dobjs = pickle.load(open('data/verb_dict_dobj.p', 'rb'))
         self.pobjs = pickle.load(open('data/verb_dict_pobj.p', 'rb'))
@@ -14,9 +14,8 @@ class Word_parser:
     def get_lemma(self, word):
         # Returns the lemma of English words
         doc = self.nlp(word)
-        for sentence in doc.sentences:
-            for word in sentence.words:
-                lemma = word.lemma
+        for word in doc:
+            lemma = word.lemma_
         return lemma
 
     def get_transitivity(self, verb):
