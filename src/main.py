@@ -41,7 +41,7 @@ def main(image_path="data/test_image/"):
             # get subject np
             subj = question_generator.parser.get_subj_np(nps)
             # generate objects
-            word_parser = Word_parser()
+            word_parser = Word_parser(question_generator.parser)
             obj = word_parser.get_objects(str(verbs[0]))
 
             if obj:
