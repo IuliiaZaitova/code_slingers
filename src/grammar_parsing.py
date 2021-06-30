@@ -1,11 +1,10 @@
-import spacy
 import pickle
 import numpy as np
 import random
 class Word_parser:
     """Grammar parsing class"""
-    def __init__(self):
-        self.nlp = spacy.load("en_core_web_sm", disable = ['parser','ner']) # For lemmatization and pos-tagging
+    def __init__(self, nlp):
+        self.nlp = nlp # For lemmatization and pos-tagging
         self.verb_trans = pickle.load(open('data/verb_trans.p', 'rb'))
         self.dobjs = pickle.load(open('data/verb_dict_dobj.p', 'rb'))
         self.pobjs = pickle.load(open('data/verb_dict_pobj.p', 'rb'))
