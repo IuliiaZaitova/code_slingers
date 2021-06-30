@@ -97,7 +97,8 @@ class Parsing:
 			MockToken('befriended','VBD','ROOT','befriended'),
 			MockToken('angered','VBD','ROOT','angered'),
 			MockToken('admired','VBD','ROOT','admired'),
-			MockToken('bought','VBD','ROOT','bought')
+			MockToken('bought','VBD','ROOT','bought'),
+			MockToken('put','VBD','ROOT','put')
 			]
 		return sample(default_verbs,1)
 
