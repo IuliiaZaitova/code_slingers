@@ -42,9 +42,21 @@ class QuestionGenerator:
 			else:
 				return 'were'
 
-		# if verb.tag_ == 'VB':
-		# np_num == 'sg':
-		#return 'does' or 'did'
+		if verb_tag == 'VB':
+			if tag == 'VBZ':
+				return 'does'
+			elif tag == 'VBP':
+				return 'do'
+			elif tag == 'VBD':
+				return 'did'
+
+		if verb_tag == 'VBD':
+			if tag in {'VB', 'VBP'}:
+				return 'have'
+			elif tag == 'VBZ':
+				return 'has'
+			elif tag == 'VBD':
+				return 'had'
 
 		auxs = self.aux[tag]
 		try:

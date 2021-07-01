@@ -3,6 +3,7 @@ import stanza
 import spacy_stanza
 from spacy.util import filter_spans
 from spacy.matcher import Matcher
+from random import sample
 
 # dependency labels
 # see https://github.com/clir/clearnlp-guidelines/blob/master/md/specifications/dependency_labels.md
@@ -83,9 +84,23 @@ class Parsing:
 		return '' #TODO: return default subj np?
 
 	def get_default_verb(self):
-		#return [MockToken('is', 'VBZ', 'ROOT', 'is')]
-		#return [MockToken('ignore', 'VB', 'ROOT', 'ignore')]
-		return [MockToken('watching', 'VBG', 'ROOT', 'watching')]
+		#[MockToken('is', 'VBZ', 'ROOT', 'is')]
+		default_verbs = [
+			MockToken('ignore','VB','ROOT','ignore'),
+			MockToken('destroy','VB','ROOT','destroy'),
+			MockToken('become','VB','ROOT','become'),
+			MockToken('sell','VB','ROOT','sell'),
+			MockToken('watching','VBG','ROOT','watching'),
+			MockToken('hating','VBG','ROOT','hating'),
+			MockToken('inviting','VBG','ROOT','inviting'),
+			MockToken('giving','VBG','ROOT','giving'),
+			MockToken('befriended','VBD','ROOT','befriended'),
+			MockToken('angered','VBD','ROOT','angered'),
+			MockToken('admired','VBD','ROOT','admired'),
+			MockToken('bought','VBD','ROOT','bought'),
+			MockToken('put','VBD','ROOT','put')
+			]
+		return sample(default_verbs,1)
 
 	def get_complex_nps(self, doc):
 		complex_nps = []
