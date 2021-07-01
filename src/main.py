@@ -27,8 +27,6 @@ def main(image_path="data/test_image/"):
     image_path: path to the image uploaded by the user
     """
     image_caption = captioning_inference(image_path)
-
-
     # question template
 
     questions = []
@@ -71,4 +69,3 @@ def main(image_path="data/test_image/"):
 
 
 
-#print(main())
