@@ -11,12 +11,20 @@ import sys
 sys.path.append("/home/sharmila/projects/code_slingers")
 from imagecaptioning.tools import eval
 from src import joke_generator as jg
+from bs4 import BeautifulSoup
+
 
 def captioning_inference(image_path= "data/test_image/"):
 
     result = eval.evaluation(model='output/image-captioning/model_path/model-best.pth', image_folder=image_path, cnn_model='resnet101', infos_path='output/image-captioning/model_path/infos_fc_nsc-best.pkl', only_lang_eval=0, force=1,device="cpu")
 
     return result
+
+
+def cleanMe(html):
+    from bs4 import BeautifulSoup
+    soup = BeautifulSoup(html, "html.parser")
+    return [s for s in soup.strings if s not in ['','\n']]
 
 
 
@@ -31,10 +39,10 @@ def main(image_path="data/test_image/"):
 
     questions = []
     for each in image_caption:
+
         question_generator = QuestionGenerator(generate_objects=True)
         doc = question_generator.parser.nlp(each["caption"])
         verbs, nps = question_generator.parse_caption(each["caption"])
-
         if question_generator.gen_obj:
             # get subject np
             subj = question_generator.parser.get_subj_np(nps)
@@ -49,17 +57,19 @@ def main(image_path="data/test_image/"):
         # fill template
         question = question_generator.fill_template(template, verbs, nps)
         questions.append(question)
+        
 
     df = pd.DataFrame(image_caption)
     df["questions"] = pd.Series(questions)
 
     jokes = []    
     # passing question to gpt-2 and getting answer
+
     for question in questions:
         jokes.append(jg.evaluation(question))
 
     df["jokes"] = pd.Series(jokes)
-
+    df["jokes"] =  df.jokes.apply(lambda x: cleanMe(x))
     if len(df) == 1:
         return df.to_dict()
 
