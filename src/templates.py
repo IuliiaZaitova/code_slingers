@@ -13,6 +13,8 @@ class Templates:
 
 	def get_template_per_slot(self, templates, slot, n_most_freq=10):
 		temp = templates[templates['np_slots'] == slot]
+		# disregard all templates marked as incorrect (i.e. with '*')
+		temp = temp[~temp['generaltemplate'].str.contains(r'\*', na=False)]
 		top_n_temp = pd.value_counts(temp['generaltemplate'])[:n_most_freq].index.values
 		temp = temp.query('generaltemplate in @top_n_temp')
 		return temp.fillna('')
@@ -63,8 +65,8 @@ class Templates:
 		for token in verbs:
 			template[token.i] = f'<{token.tag_}>_{token.dep_}'
 			general_template[token.i] = \
-				'VERB' if token.dep_ not in {'aux','prt'} else str(token.dep_).upper()
-			if token.dep_ == 'aux':
+				'VERB' if token.dep_ not in {'aux','auxpass','prt'} else str(token.dep_).upper()
+			if token.dep_ in {'aux','auxpass'}:
 				self.aux[str(token.tag_)].add(str(token).lower())
 				aux_tags.append(str(token.tag_))
 			else:
@@ -73,10 +75,12 @@ class Templates:
 
 	def get_manual_created_aux_dict(self):
 		aux_dict = {'MD': {'would', 'will', 'might', 'ca', 'should', 'must', 'can', 'could', 'wo'}, 
-					'VBP': {'be', 'am', 'keep', 'do', 'are', 'come', 'have'}, 
-					'VBD': {'had', 'were', 'was', 'did'}, 
-					'VBZ': {'does', 'has', 'is'}, 
-					'VB': {'get', 'be', 'keep', 'do', 'have'}}
+					'VBP': {'be', 'am', 'keep', 'do', 'are', 'come', 'have', 'get'}, 
+					'VBD': {'had', 'were', 'was', 'did', 'got'}, 
+					'VBZ': {'does', 'has', 'is', 'gets'}, 
+					'VB': {'get', 'be', 'keep', 'do', 'have', 'get', 'look'},
+					'VBN': {'been'},
+					'VBG': {'being', 'getting'}}
 		return aux_dict
 
 
