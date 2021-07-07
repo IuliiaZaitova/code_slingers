@@ -45,7 +45,7 @@ def main(image_path="data/test_image/"):
     # question template
 
     questions = []
-    for each,filename in zip(image_caption):
+    for each,filename in zip(image_caption, all_files):
         question_generator = QuestionGenerator(generate_objects=True)
         doc = question_generator.parser.nlp(each["caption"])
         verbs, nps = question_generator.parse_caption(each["caption"])
@@ -85,4 +85,4 @@ def main(image_path="data/test_image/"):
     df.to_csv("output/image-captioning/captions_new.csv")
 
 
-main("/home/sharmila/projects/code_slingers/coco/data/images/test2017/")
+main("/home/sharmila/projects/code_slingers/coco/data/images/test2017")
