@@ -34,12 +34,18 @@ def main(image_path="data/test_image/"):
     params:
     image_path: path to the image uploaded by the user
     """
+
+    all_files = []
+    import os
+    for file in os.listdir(image_path):
+        if file.endswith(".jpg"):
+            all_files.append(file)
+
     image_caption = captioning_inference(image_path)
     # question template
 
     questions = []
-    for each in image_caption:
-
+    for each,filename in zip(image_caption):
         question_generator = QuestionGenerator(generate_objects=True)
         doc = question_generator.parser.nlp(each["caption"])
         verbs, nps = question_generator.parse_caption(each["caption"])
@@ -60,6 +66,7 @@ def main(image_path="data/test_image/"):
         
 
     df = pd.DataFrame(image_caption)
+    df["filename"] = pd.Series(all_files)
     df["questions"] = pd.Series(questions)
 
     jokes = []    
@@ -75,7 +82,7 @@ def main(image_path="data/test_image/"):
 
 
 
-    #df.to_csv("output/image-captioning/captions.csv")
+    df.to_csv("output/image-captioning/captions_new.csv")
 
 
-
+main("/home/sharmila/projects/code_slingers/coco/data/images/test2017/")

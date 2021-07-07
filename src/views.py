@@ -5,6 +5,7 @@ from flask import Flask, flash, request, redirect, url_for, render_template
 from werkzeug.utils import secure_filename
 import sys
 import main
+from flask import Markup
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 from flask import Flask
 
@@ -23,21 +24,15 @@ except:
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-import re
-
-def cleanhtml(raw_html):
-  cleanr = re.compile('<.*?>')
-  cleantext = re.sub(cleanr, '', raw_html)
-  return cleantext
 
 def result_parsing(result):
-
+    print(result)
     result_final = []
-    result_final.append("Caption: " + list(result["caption"].values())[0])
+    #result_final.append("Caption: " + list(result["caption"].values())[0])
 
-    result_final.append("Question: " + list(result["questions"].values())[0])
-    joke = cleanhtml(".".join(list(result["jokes"].values())[0].split("<eoq>")[:2]))
-    result_final.append("Joke: " + " ".join(list(result["jokes"].values())[0].split("<eoq>")[:2]))
+    #result_final.append("Question: " + list(result["questions"].values())[0])
+    result["jokes"] = {i: [each.lower().replace("because"," ") if ii!= 0 else each for ii, each in enumerate(joke)] for i, joke in result["jokes"].items()}
+    result_final.append(Markup("<b>Joke:</b> " + "? Because ".join(list(result["jokes"].values())[0][:2])))
     return result_final 
 
 @app.route('/')
@@ -46,6 +41,7 @@ def upload_form():
 
 @app.route('/', methods=['POST'])
 def upload_image():
+
     if 'file' not in request.files:
         flash('No file part')
         return redirect(request.url)
