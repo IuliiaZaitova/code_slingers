@@ -105,7 +105,11 @@ class Parsing:
 	def get_complex_nps(self, doc):
 		complex_nps = []
 		for np in doc.noun_chunks:
-			complex_nps.append(doc[np.root.left_edge.i : np.root.right_edge.i+1])
+			complex_np = doc[np.root.left_edge.i : np.root.right_edge.i+1]
+			# get rid of 'trailing and'; a common problem
+			if str(complex_np)[-4:] == ' and':
+				complex_np = complex_np[:-1]
+			complex_nps.append(complex_np)
 		# filter out dublicate nps -> only keep longest, dont keep substrings
 		return filter_spans(complex_nps)
 
