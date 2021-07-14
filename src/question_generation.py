@@ -30,7 +30,7 @@ class QuestionGenerator:
 		return verbs, nps
 
 
-	def get_aux(self, tag, verb_tag=False, np_num=False):
+	def get_aux(self, tag, verb_tag=False, np_num=False, neg=False):
 		# check compatibility with verb
 		if verb_tag in {'VBG', 'VBN'}:
 			if tag == 'VBZ':
@@ -59,6 +59,9 @@ class QuestionGenerator:
 				return 'had'
 
 		auxs = self.aux[tag]
+
+		# make auxiliaries compatible with negation
+		auxs = auxs & self.aux['NEG'] if neg else auxs - {'wo','ca'}
 		try:
 			if np_num == 'sg':
 				auxs.remove('were')
@@ -67,7 +70,7 @@ class QuestionGenerator:
 			return sample(auxs, 1)[0]
 
 		except:
-			return sample(self.aux[tag], 1)[0]
+			return sample(auxs, 1)[0]
 
 	def get_prep(self, tag, suggestion=False):
 		if suggestion:
@@ -114,7 +117,7 @@ class QuestionGenerator:
 				return '', nps
 		else:
 			# TODO: generate different verb?
-			# try filter out 'RP'?
+			# try filter out 'RP'
 			if 'RP' in verb_key:
 				verbs = [verb for verb in verbs if verb.tag_ != 'RP']
 				return self.choose_template(verbs, nps)
@@ -122,6 +125,7 @@ class QuestionGenerator:
 
 	def fill_template(self, template, verbs, nps):
 		filled_template = []
+		neg = " n't " in template
 		aux_ind = -1
 
 		# default number of np and tag of verb
@@ -171,7 +175,7 @@ class QuestionGenerator:
 		# get auxiliary verb
 		if aux_ind >= 0:
 			aux_tag = filled_template[aux_ind].split('_')[0][1:-1]
-			aux = self.get_aux(aux_tag, verb_tag, np_num)
+			aux = self.get_aux(aux_tag, verb_tag, np_num, neg)
 			filled_template[aux_ind] = aux
 		return " ".join(filled_template)
 
