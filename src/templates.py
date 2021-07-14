@@ -73,16 +73,18 @@ class Templates:
 				verb_tags.append(str(token.tag_))
 		return template, general_template, verb_tags, aux_tags
 
-	def get_manual_created_aux_dict(self):
+	def get_manually_created_aux_dict(self):
+		# NEG: auxiliary verbs compatible with negation
 		aux_dict = {'MD': {'would', 'will', 'might', 'ca', 'should', 'must', 'can', 'could', 'wo'}, 
 					'VBP': {'be', 'am', 'keep', 'do', 'are', 'come', 'have', 'get'}, 
 					'VBD': {'had', 'were', 'was', 'did', 'got'}, 
 					'VBZ': {'does', 'has', 'is', 'gets'}, 
 					'VB': {'get', 'be', 'keep', 'do', 'have', 'get', 'look'},
 					'VBN': {'been'},
-					'VBG': {'being', 'getting'}}
+					'VBG': {'being', 'getting'},
+					'NEG': {'ca', 'wo', 'would', 'should', 'must', 'could',\
+							 'do', 'are', 'have', 'had', 'were', 'was', 'did', 'does', 'has', 'is'}}
 		return aux_dict
-
 
 	def replace_prep(self, doc, template, general_template, prep_token):
 		template[prep_token.i] = f'<{prep_token.tag_}>_{prep_token.dep_}'
@@ -160,7 +162,7 @@ class Templates:
 #temps.save_as_dict(one_slot, 'one_slot.pkl')
 #temps.save_as_dict(two_slots, 'two_slots.pkl')
 #temps.save_as_dict(three_slots, 'three_slots.pkl')
-#temps.save_as_dict(temps.get_manual_created_aux_dict(), 'aux_verbs.pkl')
+#temps.save_as_dict(temps.get_manually_created_aux_dict(), 'aux_verbs.pkl')
 #temps.save_as_dict(temps.prep, 'prep.pkl')
 
 # create plot:
