@@ -2661,7 +2661,7 @@ Why did the students need a ladder to get into school	Why AUX NP VERB NP to VERB
 Why did the chicken cross the ocean	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
 Why don't off duty police men fire grenades into children's cribs	Why AUX n't off NP PREP NP	Why <VBP>_aux n't off <NNS>_NP_dobj <IN>_prep <NNS>_NP_pobj		NNS_dobj,NNS_pobj		VBP	2
 Why did Anthony Kiedis cross the road	Why AUX NP VERB NP	Why <VBD>_aux <NNP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NNP_nsubj	NN_dobj	VB	VBD	2
-Why couldn't the butter quit his gambling addiction	Why AUX n't NP VERB NP	Why <MD>_aux n't <NN>_NP_nsubj <VBD>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBD	MD	2
+Why couldn't the butter quit his gambling addiction	*Why AUX n't NP VERB NP	Why <MD>_aux n't <NN>_NP_nsubj <VBD>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBD	MD	2
 Why can't a lesbian diet and wear make up at the same time	NP VERB PRT PREP NP	<NN>_NP_nsubj <VB>_ROOT <RP>_prt <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_pobj	VB,RP		2
 Why did Arthur have a round table	Why AUX NP VERB NP	Why <VBD>_aux <NNP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NNP_nsubj	NN_dobj	VB	VBD	2
 Why did Nixon never drive on the highway	Why AUX NP never VERB PREP NP	Why <VBD>_aux <NNP>_NP_nsubj never <VB>_ROOT <IN>_prep <NN>_NP_pobj	NNP_nsubj	NN_pobj	VB	VBD	2
@@ -7823,7 +7823,7 @@ Why was Adele underneath a cow	Why VERB NP PREP NP	Why <VBD>_ROOT <NNP>_NP_nsubj
 Why did the judge throw out Bram Stoker's lawsuit	Why AUX NP VERB PRT NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <RP>_prt <NN>_NP_dobj	NN_nsubj	NN_dobj	VB,RP	VBD	2
 Why did the baby squirrel wear a diaper	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
 Why was the Headless Horseman depressed	Why VERB NP depressed	Why <VBD>_ROOT <NNP>_NP_nsubj depressed	NNP_nsubj		VBD		1
-Why'd the air resistance committed suicide	Why AUX NP VERB NP	Why <MD>_aux <NN>_NP_nsubj <VBD>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBD	MD	2
+Why'd the air resistance committed suicide	*Why AUX NP VERB NP	Why <MD>_aux <NN>_NP_nsubj <VBD>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBD	MD	2
 Why was the horizontal plane judged in Germany	*Why VERB NP	Why <VBD>_ROOT <NN>_NP_nsubj	NN_nsubj		VBD		1
 Why couldn't the expert fisherman get any dates	Why AUX n't NP VERB NP	Why <MD>_aux n't <NN>_NP_nsubj <VBP>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VBP	MD	2
 Why are cats against abortion	*Why VERB NP	Why <VBP>_ROOT <NNS>_NP_nsubj	NNS_nsubj		VBP		1
@@ -8608,7 +8608,7 @@ Why do deaf women wear tight jeans	Why AUX NP VERB NP	Why <VBP>_aux <NNS>_NP_nsu
 Why can't my girlfriend perform at open mic night	Why AUX n't NP VERB at open mic night	Why <MD>_aux n't <NN>_NP_nsubj <VB>_ROOT at open mic night	NN_nsubj		VB	MD	1
 Why did Simba have trouble returning to Pride Rock	Why AUX NP VERB NP	Why <VBD>_aux <NNP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NNP_nsubj	NN_dobj	VB	VBD	2
 Why didn't the Mexican go bow hunting	Why AUX n't NP VERB VERB VERB	Why <VBD>_aux n't <NNP>_NP_nsubj <VB>_ROOT <VB>_xcomp <VBG>_advcl	NNP_nsubj		VB,VB,VBG	VBD	1
-Why couldn't the dimwit read more than one sentence	Why AUX n't NP VERB NP	Why <MD>_aux n't <NN>_NP_nsubj <VBD>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBD	MD	2
+Why couldn't the dimwit read more than one sentence	*Why AUX n't NP VERB NP	Why <MD>_aux n't <NN>_NP_nsubj <VBD>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBD	MD	2
 Why did Rembrandt lose his house	Why AUX NP VERB NP	Why <VBD>_aux <NNP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NNP_nsubj	NN_dobj	VB	VBD	2
 Why did the police assault the crowd	Why AUX NP assault NP	Why <VBD>_aux <NN>_NP_nsubj assault <NN>_NP_dobj	NN_nsubj	NN_dobj		VBD	2
 Why did the bullet stay home	Why AUX NP VERB home	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT home	NN_nsubj		VB	VBD	1
