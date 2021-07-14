@@ -4,6 +4,8 @@ import spacy_stanza
 from spacy.util import filter_spans
 from spacy.matcher import Matcher
 from random import sample
+from collections import defaultdict
+import pickle
 
 # dependency labels
 # see https://github.com/clir/clearnlp-guidelines/blob/master/md/specifications/dependency_labels.md
@@ -17,6 +19,10 @@ PLURAL = {'NNS', 'NNPS'}
 
 
 class MockToken:
+	"""Token consisting of its string, pos-tag, dependency label
+	and head. If the token is a prepositional object, its head is a
+	preposition, otherwise the head is equal to the string (text)
+	"""
 	def __init__(self, text, tag, dep, head):
 		self.text = text
 		self.tag_ = tag
@@ -30,6 +36,7 @@ class MockToken:
 		return self.text
 
 class MockNounPhrase:
+	"""Contains NP as string and its root, i.e. head"""
 	def __init__(self, text, root):
 		self.text = text
 		self.root = root
@@ -40,6 +47,44 @@ class MockNounPhrase:
 	def __str__(self):
 		return self.text
 
+def check_np_str(noun_phrase_str):
+	"""
+	Checks if noun_phrase_str contains one
+	of the specified characters
+	"""
+	chars = {'*', '_', '(', ')', '"'}
+	for char in chars:
+		if char in noun_phrase_str:
+			return True
+	return False
+
+def convert_obj_dict(obj_dict, dep, output_file):
+	"""
+	Converts dictionary containing tuples of strings to one containing 
+	MockNounPhrase and MockToken objects
+	"""
+	converted_obj_dict = defaultdict(list)
+	for verb in obj_dict:
+		for obj in obj_dict[verb]:
+			if dep == 'pobj':
+				if obj and obj[-1][-1] in SINGULAR|PLURAL|{'PRP'}:
+					np_root = MockToken(obj[-1][0], obj[-1][-1], dep, obj[0][0])
+					# exclude the preposition when creating the NP string
+					noun_phrase = MockNounPhrase(" ".join([word[0] for word in obj[1:]]), np_root)
+					if not check_np_str(noun_phrase.text):
+						converted_obj_dict[verb].append(noun_phrase)
+			else:
+				# since the dobj_dict is too big, we exclude every NP whose head is
+				# not a noun (this includes pronouns)
+				# exclude NPs that contain special characters to further reduce the
+				# size of the resulting dictionary
+				if obj and obj[-1][-1] in SINGULAR|PLURAL:
+					np_root = MockToken(obj[-1][0], obj[-1][-1], dep, obj[-1][0])
+					noun_phrase = MockNounPhrase(" ".join([word[0] for word in obj]), np_root)
+					if not check_np_str(noun_phrase.text):
+						converted_obj_dict[verb].append(noun_phrase)
+	with open(output_file, "wb") as out:
+		pickle.dump(converted_obj_dict, out)
 
 class Parsing:
 	def __init__(self, parser='spacy'):
@@ -57,7 +102,8 @@ class Parsing:
 		return []
 
 	def find_verb_in_np(self, nps):
-		# return first verb found in nps
+		"""Returns the first verb found
+		in NPs"""
 		for np in nps:
 			for token in np:
 				if token.pos_ == 'VERB':
@@ -115,7 +161,6 @@ class Parsing:
 
 	def filter_verbs(self, verb_tokens):
 		return [token for token in verb_tokens if token.head.dep_ in VERB_DEPS]
-
 
 	def get_verbs(self, doc, aux=True):
 		matcher = Matcher(self.nlp.vocab)
