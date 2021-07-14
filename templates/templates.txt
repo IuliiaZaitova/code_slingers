@@ -2331,7 +2331,7 @@ Why did the cop cross the road	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <V
 Why couldn't the pig run	*NP VERB	<NN>_NP_nsubj <VB>_ROOT	NN_nsubj		VB		1
 Why couldn't the police arrest the drug dealer	Why AUX n't NP VERB NP	Why <MD>_aux n't <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	MD	2
 Why did the hipster burn his tongue on his pizza	Why AUX NP VERB NP PREP NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_dobj,NN_pobj	VB	VBD	3
-Why is history called His story	Why AUX NP VERB NP	Why <VBZ>_aux <NN>_NP_nsubj <VBN>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBN	VBZ	2
+Why is history called His story	*Why AUX NP VERB NP	Why <VBZ>_aux <NN>_NP_nsubj <VBN>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBN	VBZ	2
 Why did 6 and 8 dislike 7						VBD	0
 Why was the harvester pleaded guilty	Why AUX NP VERB guilty	Why <VBD>_aux <NN>_NP_nsubj <VBD>_ROOT guilty	NN_nsubj		VBD	VBD	1
 Why do men like love at first sight	Why AUX NP like NP PREP NP	Why <VBP>_aux <NNS>_NP_nsubj like <NN>_NP_pobj <IN>_prep <NN>_NP_pobj	NNS_nsubj	NN_pobj,NN_pobj		VBP	3
@@ -5702,7 +5702,7 @@ Why did the 2 contractors hire a pilot to help survey their land	Why AUX NP VERB
 Why did the Ewok ESL student do so well with conjunctions	Why AUX NP VERB so well PREP NP	Why <VBD>_aux <NN>_NP_nsubj <VBP>_ROOT so well <IN>_prep <NNS>_NP_pobj	NN_nsubj	NNS_pobj	VBP	VBD	2
 Why do Gorillas have big nostrils	Why AUX NP VERB NP	Why <VBP>_aux <NNS>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NNS_nsubj	NNS_dobj	VB	VBP	2
 Why do the Marines call it Parris island	Why AUX NP VERB NP NP	Why <VBP>_aux <NNPS>_NP_nsubj <VB>_ROOT <PRP>_NP_dobj <NN>_NP_oprd	NNPS_nsubj	PRP_dobj,NN_oprd	VB	VBP	3
-Why is money called dough	Why AUX NP VERB NP	Why <VBZ>_aux <NN>_NP_nsubj <VBN>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBN	VBZ	2
+Why is money called dough	*Why AUX NP VERB NP	Why <VBZ>_aux <NN>_NP_nsubj <VBN>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBN	VBZ	2
 Why was Roy Rogers upset when he fell off his horse	Why AUX NP VERB when NP VERB PRT NP	Why <VBD>_aux <NNP>_NP_nsubj <VBD>_ROOT when <PRP>_NP_nsubj <VBD>_advcl <IN>_prt <NN>_NP_dobj	NNP_nsubj,PRP_nsubj	NN_dobj	VBD,VBD,IN	VBD	3
 Why Is A Man's Mind Dirtier Than A Woman's	Why VERB NP Dirtier PREP NP	Why <VBZ>_ROOT <NNP>_NP_nsubj Dirtier <IN>_prep <NNP>_NP_pobj	NNP_nsubj	NNP_pobj	VBZ		2
 Why do the French like Easter	Why AUX NP like NP	Why <VBP>_aux <NNP>_NP_nsubj like <NNP>_NP_pobj	NNP_nsubj	NNP_pobj		VBP	2
@@ -7946,7 +7946,7 @@ Why did they give a megaphone to the dog who couldn't climb a tree	Why AUX NP VE
 Why did the spider buy a car	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
 Why did I rob the bank	Why AUX NP VERB NP	Why <VBD>_aux <PRP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	PRP_nsubj	NN_dobj	VB	VBD	2
 Why did the elephant paint his toenails red	Why AUX NP VERB NP red	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj red	NN_nsubj	NNS_dobj	VB	VBD	2
-Why is blackmail called blackmail	Why AUX NP VERB NP	Why <VBZ>_aux <NN>_NP_nsubj <VBN>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBN	VBZ	2
+Why is blackmail called blackmail	*Why AUX NP VERB NP	Why <VBZ>_aux <NN>_NP_nsubj <VBN>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBN	VBZ	2
 Why did the skull not want to go to prom, but still did	Why AUX NP not VERB to VERB PREP NP , but still VERB	Why <VBD>_aux <NN>_NP_nsubj not <VB>_ROOT to <VB>_xcomp <IN>_prep <NN>_NP_pobj , but still <VBD>_ROOT	NN_nsubj	NN_pobj	VB,VB,VBD	VBD	2
 Why did the crematorium operator get a $500 bonus	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
 Why should I submit a joke today	Why AUX NP VERB NP today	Why <MD>_aux <PRP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj today	PRP_nsubj	NN_dobj	VB	MD	2
@@ -7964,7 +7964,7 @@ Why is the Kremlin so much warmer this winter	Why VERB NP so much warmer this wi
 Why didn't the koala get a job	Why AUX n't NP VERB NP	Why <VBD>_aux n't <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
 Why has the ex-NSA contractor not left his house	Why AUX NP not VERB NP	Why <VBZ>_aux <NN>_NP_nsubj not <VBD>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBD	VBZ	2
 Why did the baby have such a poor time in the marathon	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
-Why is the media making such a big deal about the olympic swimmer's period	Why AUX NP VERB NP	Why <VBZ>_aux <NNS>_NP_nsubj <VBG>_ROOT <NN>_NP_dobj	NNS_nsubj	NN_dobj	VBG	VBZ	2
+Why is the media making such a big deal about the olympic swimmer's period	Why AUX NP VERB NP	Why <VBZ>_aux <NN>_NP_nsubj <VBG>_ROOT <NN>_NP_dobj	NNS_nsubj	NN_dobj	VBG	VBZ	2
 Why does the Little Mermaid wear sea shells	Why AUX NP VERB NP	Why <VBZ>_aux <NNP>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NNP_nsubj	NNS_dobj	VB	VBZ	2
 Why does the Little Mermaid wear seashells for a bra	Why AUX NP wear NP PREP NP	Why <VBZ>_aux <NNP>_NP_nsubj wear <NNS>_NP_dobj <IN>_prep <NN>_NP_pobj	NNP_nsubj	NNS_dobj,NN_pobj		VBZ	3
 Why did the agnostic receive a lighter sentence	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
