@@ -97,15 +97,11 @@ class Parsing:
 		else:
 			self.nlp = spacy.load("en_core_web_lg")
 
-	def generate_verb(self, tag):
-		#TODO
-		return []
-
 	def find_verb_in_np(self, nps):
-		"""Returns the first verb found
-		in NPs"""
+		"""Returns the last verb found
+		in NP"""
 		for np in nps:
-			for token in np:
+			for token in list(np)[::-1]:
 				if token.pos_ == 'VERB':
 					return [token]
 		return []
@@ -126,7 +122,9 @@ class Parsing:
 			if np.root.dep_ in SUBJECT_DEPS:
 				return np
 		if nps:
-			return nps[0]
+			subj = nps[0]
+			subj.root.dep_ = 'nsubj'
+			return subj
 		return '' #TODO: return default subj np?
 
 	def get_default_verb(self):
