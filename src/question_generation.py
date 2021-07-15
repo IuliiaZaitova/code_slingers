@@ -12,8 +12,7 @@ class QuestionGenerator:
 		self.three_slots = pickle.load(open('data/three_slots.pkl', 'rb'))
 		self.aux = pickle.load(open('data/aux_verbs.pkl', 'rb'))
 		self.prep = pickle.load(open('data/prep.pkl', 'rb'))
-		self.gen_obj = True if generate_objects else False
-
+		self.gen_obj = generate_objects
 
 	def parse_caption(self, caption):
 		doc = self.parser.nlp(caption)
@@ -27,6 +26,12 @@ class QuestionGenerator:
 			else:
 				# get NPs before and after verb
 				nps = self.parser.find_nps_in_np(nps[0], verbs[0])
+
+		# change dependency of root NP to nsubj
+		# to be able to match a dictionary key
+		for np in nps:
+			if np.root.dep_ == 'ROOT':
+				np.root.dep_ = 'nsubj'
 		return verbs, nps
 
 
@@ -99,9 +104,7 @@ class QuestionGenerator:
 		if len(nps) == 1:
 			np_key = [f'{np.root.tag_}' for np in nps]
 		else:
-			# change dependency of root NP to nsubj
-			# to be able to match a dictionary key
-			np_key = [f'{np.root.tag_}_{np.root.dep_}'.replace('ROOT','nsubj') for np in nps]
+			np_key = [f'{np.root.tag_}_{np.root.dep_}' for np in nps]
 		np_key = tuple(sorted(np_key))
 
 		# get template from template dictionary
@@ -132,7 +135,6 @@ class QuestionGenerator:
 		np_num = 'sg' if nps[0].root.tag_ in SINGULAR else 'pl'
 		verb_tag = verbs[0].tag_
 
-
 		for word in template.split():
 			if '<' not in word:
 				filled_template.append(word)
@@ -157,7 +159,11 @@ class QuestionGenerator:
 			elif len(slot_info) == 3:
 				# fill in NP
 				for np in nps:
-					if np.root.tag_ == tag:
+					if len(nps) == 1:
+						np_match = np.root.tag_ == tag
+					else:
+						np_match = np.root.tag_ == tag and np.root.dep_ == dep
+					if np_match:
 						if np.root.dep_ in SUBJECT_DEPS:
 							np_num = 'sg' if tag in SINGULAR else 'pl'
 						if np.root.dep_ == 'pobj' and '_prep' in filled_template[-1]:
@@ -167,10 +173,11 @@ class QuestionGenerator:
 								prep = np.root.head
 								filled_template = filled_template[:-1] + [str(prep)]
 						filled_template.append(str(np))
-						nps.remove(np)
+						# we cannot remove np directly (with e.g. nps.remove(np))
+						# because it might not be a spacy span object
+						# in this case python would throw an error
+						nps = [item for item in nps if item.text != np.text]
 						break
-					else:
-						return ''
 
 		# get auxiliary verb
 		if aux_ind >= 0:
