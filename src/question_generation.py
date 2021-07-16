@@ -27,11 +27,9 @@ class QuestionGenerator:
 				# get NPs before and after verb
 				nps = self.parser.find_nps_in_np(nps[0], verbs[0])
 
-		# change dependency of root NP to nsubj
-		# to be able to match a dictionary key
-		for np in nps:
-			if np.root.dep_ == 'ROOT':
-				np.root.dep_ = 'nsubj'
+		# apply further modifications to nps
+		nps = self.parser.modify_nps(nps)
+
 		return verbs, nps
 
 
@@ -119,7 +117,6 @@ class QuestionGenerator:
 					return self.choose_template(verbs, nps)
 				return '', nps
 		else:
-			# TODO: generate different verb?
 			# try filter out 'RP'
 			if 'RP' in verb_key:
 				verbs = [verb for verb in verbs if verb.tag_ != 'RP']
@@ -170,8 +167,9 @@ class QuestionGenerator:
 								prep_tag = filled_template[-1].split('_')[0][1:-1]
 								#prep_suggestion = np.root.head
 								#prep = self.get_prep(prep_tag, prep_suggestion)
-								prep = np.root.head
-								filled_template = filled_template[:-1] + [str(prep)]
+								#prep = np.root.head
+								prep = self.parser.check_prep(np.root.head)
+								filled_template = filled_template[:-1] + [prep]
 						filled_template.append(str(np))
 						# we cannot remove np directly (with e.g. nps.remove(np))
 						# because it might not be a spacy span object
