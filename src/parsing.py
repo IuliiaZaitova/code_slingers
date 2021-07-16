@@ -125,7 +125,7 @@ class Parsing:
 			subj = nps[0]
 			subj.root.dep_ = 'nsubj'
 			return subj
-		return '' #TODO: return default subj np?
+		return ''
 
 	def get_default_verb(self):
 		#[MockToken('is', 'VBZ', 'ROOT', 'is')]
@@ -150,12 +150,33 @@ class Parsing:
 		complex_nps = []
 		for np in doc.noun_chunks:
 			complex_np = doc[np.root.left_edge.i : np.root.right_edge.i+1]
-			# get rid of 'trailing and'; a common problem
-			if str(complex_np)[-4:] == ' and':
-				complex_np = complex_np[:-1]
 			complex_nps.append(complex_np)
 		# filter out dublicate nps -> only keep longest, dont keep substrings
 		return filter_spans(complex_nps)
+
+	def modify_nps(self, nps):
+		modified_nps = []
+		for np in nps:
+			# change dependency of root NP to nsubj
+			# to be able to match a dictionary key
+			if np.root.dep_ == 'ROOT':
+				np.root.dep_ = 'nsubj'
+
+			# filter out trailing 'and'
+			if str(np)[-4:] == ' and':
+				np = np[:-1]
+			modified_nps.append(np)
+
+		return modified_nps
+
+	def check_prep(self, prep):
+		"""Checks if prep is part of a complex preposition"""
+		try:
+			if prep.head.tag_ == 'RB' and prep.head.dep_ == 'advmod' and prep.head.pos_ == 'ADV':
+				prep = prep.head.text + ' ' + prep.text
+		except: 
+			pass
+		return str(prep)
 
 	def filter_verbs(self, verb_tokens):
 		return [token for token in verb_tokens if token.head.dep_ in VERB_DEPS]
