@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask app</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+     <style>
+        .vertical-center {
+	  margin: 0;
+	  position: absolute;
+	  top: 50%;
+	  margin-left: auto;
+          margin-right: auto;
+	  -ms-transform: translateY(-50%);
+	  transform: translateY(-50%);
+}
+	body{
+            position:absolute;
+            background: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fasta.uni-saarland.de%2Fder-asta%2F&psig=AOvVaw2HWpyi1FmbAnT81o0o2yE7&ust=1625450986095000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCJDVhPqqyPECFQAAAAAdAAAAABAN) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            width:100%;
+            height:100%;
+            margin:0
+           }
+	body:after{
+                position:fixed;
+                content:"";
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+		background-image: url("/static/img/saarland.png");
+                opacity:0.5;
+                width:300px;
+                height:300px;
+                z-index:-1;
+                }
+	.btnfile {
+                padding: 15px 25px;
+                font-size: 24px;
+                text-align: center;
+                cursor: pointer;
+                outline: none;
+                color: #0000FF;
+                background-color: #808080;
+                border: none;
+                border-radius: 15px;
+                box-shadow: 0 9px #999;
+                }
+
+         .btnfile:hover {background-color: #ADD8E6;}
+
+         .btnfile:active {
+                     background-color: #ff726f;
+                     box-shadow: 0 5px #666;
+                     transform: translateY(4px);
+                     }
+    </style>
+
+ </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">Code Slingers</h1>
+        <strong><nav>
+        </nav></strong>
+      </div>
+    </header>
+    <div class="container">
+	    <h1  style="colour: red; font-size:24px">Select an Image to generate the joke</h1>
+            <div class="vertical-center">
+		     <div class="row align-items-center justify-content-center">
+                    <div class="col-md-4">
+                       <div class="w3-container">
+                        {% if filename %}
+                         <div>
+                          <img src="{{ url_for('display_image', filename=filename) }}" class="w3-circle" alt="Norway" style="width:100%">
+                         </div>
+                        {% endif %}
+                       </div>
+
+
+                         <div>
+                         {% if captions %}
+                          <ul>
+                           {% for caption in captions %}
+                            <li>{{ caption }}</li>
+                             {% endfor %}
+                              </ul>
+
+                                {% endif %}
+                          </div>
+
+                    <div class="row">
+                      <form class="form-inline center-block" method="post" action="/" enctype="multipart/form-data">
+                       <p><input class="btnfile" type="file" name="file" for="my-file-selector"></p>
+                        <p><input class="btnfile" type="submit" value="Generate Joke"></p>
+                      </form>
+                   </div>
+               </div>
+		     </div>
+         </div>
+        </div>
+    </body>
+  </html>
