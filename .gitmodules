@@ -1,6 +1,3 @@
-[submodule "ImageCaptioning.pytorch"]
-	path = ImageCaptioning.pytorch
-	url = https://github.com/sarmilaupadhyaya/ImageCaptioning.pytorch.git
 [submodule "imagecaptioning"]
 	path = imagecaptioning
 	url = https://github.com/sarmilaupadhyaya/ImageCaptioning.pytorch.git
