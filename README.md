@@ -35,6 +35,14 @@ pip install -r requirements.txt
 ```
 
 ### Initial Downloads
+***Note: if you are on mac, then first install wget:***
+***Also, install unzip package***
+
+```
+brew install wget
+
+```
+
 
 ```
 chmod +x initialization_script.sh
