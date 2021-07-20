@@ -19,6 +19,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install vitual 
 ```bash
 pip install virtualenv
 ```
+Navigate to the folder with the git repository
 
 ### Create Virtual Environment
 
