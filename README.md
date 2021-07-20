@@ -27,7 +27,14 @@ virtualenv <name of env> --python /usr/bin/python3 or <path to your python if it
 
 ```
 
-### install requirements
+### Activate Virtual Environment?
+
+```
+...
+
+```
+
+### Install Requirements
 
 ```
 pip install -r requirements.txt
