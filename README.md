@@ -19,14 +19,14 @@ In order to get the model to run, follow these installation instructions.
 <!-- ### Requirements -->
 Pre-reqisite:
 
-    python <= 3.7.5
+    python==3.7.5
 
 ---
 _Optional_: to install a specific version of Python:
 
 #### Ubuntu:
 
-    sudo apt-install python3.6
+    sudo apt-install python3.7
 
 
 #### Mac:
