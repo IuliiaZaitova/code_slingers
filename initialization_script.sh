@@ -17,5 +17,14 @@ chmod +x get_google_word2vec_model.sh
 ./get_google_word2vec_model.sh
 cd ..
 python -m pip install -e .
+cd ..
+
+wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1-bnWPP6-c42wVQMztHpcVquUGd1XGc-z' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1-bnWPP6-c42wVQMztHpcVquUGd1XGc-z" && rm -rf /tmp/cookies.txt
+
+unzip models.zip
+
+mv models/* .
+
+rm -r models
 
 
