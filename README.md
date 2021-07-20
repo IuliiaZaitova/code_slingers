@@ -24,19 +24,24 @@ This project is an attempt to generate joke based on Image. Hence, it includes t
 
     -Install the virtual Environment
 
+
     ```
     pip install virtualenv
 
     ```
 
+
     -Create the virtual environment
+
 
     ```
     virtualenv <name of env> --python /usr/bin/python3 or <path to your python if its not the mentioned one>
 
     ```
 
+
     -run this script to set up the initial directory required, to download all the files and set up the git for image captioning.(Recommended)
+
 
     ```
     chmod +x initialization_script.sh
