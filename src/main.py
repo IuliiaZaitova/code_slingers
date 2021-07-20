@@ -82,7 +82,7 @@ def main(image_path="data/test_image/"):
 
 
 
-    df.to_csv("output/image-captioning/captions_new.csv")
+    #df.to_csv("output/image-captioning/captions_new.csv")
 
 
-main("/home/sharmila/projects/code_slingers/coco/data/images/test2017")
+#main("/home/sharmila/projects/code_slingers/coco/data/images/test2017")
