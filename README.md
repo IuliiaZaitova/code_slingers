@@ -22,21 +22,21 @@ This project is an attempt to generate joke based on Image. Hence, it includes t
 
 
 
-    - Install the virtual Environment
+    -Install the virtual Environment
 
     ```
     pip install virtualenv
 
     ```
 
-    - Create the virtual environment
+    -Create the virtual environment
 
     ```
     virtualenv <name of env> --python /usr/bin/python3 or <path to your python if its not the mentioned one>
 
     ```
 
-    - run this script to set up the initial directory required, to download all the files and set up the git for image captioning.(Recommended)
+    -run this script to set up the initial directory required, to download all the files and set up the git for image captioning.(Recommended)
 
     ```
     chmod +x initialization_script.sh
@@ -64,7 +64,9 @@ This project is an attempt to generate joke based on Image. Hence, it includes t
 [Link] (https://arxiv.org/abs/1405.0312)
 
 - Evaluation of dataset
-THis section gets all the captions and extract the entity and action from the captions and create a simple analysis
+This section gets all the captions and extract the entity and action from the captions and create a simple analysis
+
+
 
 - Joke Dataset
 
@@ -72,13 +74,9 @@ THis section gets all the captions and extract the entity and action from the ca
 
 
 # Execution #
-
-- individual image captioning inference running
-
-Note: first go through set up [here](https://github.com/IuliiaZaitova/code_slingers/blob/master/Eval_Image_Caption.md)
-
+To run the webapp, run the following code, being in the root directory.
 ```
 
-python3 src/image_captioning_test.py
+python3 src/views.py
 
 ```

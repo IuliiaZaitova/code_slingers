@@ -6,7 +6,8 @@ blis==0.7.4
 bs4==0.0.1
 cached-property==1.5.2
 cachetools==4.2.2
--e git+https://github.com/sarmilaupadhyaya/ImageCaptioning.pytorch.git@8405e966f0523123a60a4d0e21148320f6cf7247#egg=captioning&subdirectory=../../imagecaptioning
+## !! Could not determine repository location
+captioning==0.0.1
 catalogue==2.0.4
 certifi==2020.12.5
 chardet==4.0.0
@@ -63,6 +64,7 @@ pybind11==2.6.2
 pydantic==1.7.4
 pyparsing==2.4.7
 python-dateutil==2.8.1
+python-dotenv==0.18.0
 pytz==2021.1
 PyWavelets==1.1.1
 regex==2021.4.4
