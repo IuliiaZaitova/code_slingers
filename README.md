@@ -1,12 +1,13 @@
 # Foobar
 
-Software Project by team CODE SLINGERS for Language Generation Task.
+Software Project by team CODE SLINGERS for the Language Generation Task software project at Saarland University.
 
 ## Introduction
-This project is an attempt to generate joke based on Image. Hence, it includes three task:
 
-    1. Image captioning
-    2. Getting relevant entities for joke generation
+This project is an attempt to generate WHY-jokes following the formula ```Why did X Y? -Z!"``` (e.g. _Why did the chicken cross the road? To get to the other side!_) based on an image. Hence, it encompasses three main tasks:
+
+    1. Image captioning module
+    2. Getting relevant entities for joke generation / Question generation module
     3. Joke generation module
 
 
