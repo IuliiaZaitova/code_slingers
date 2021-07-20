@@ -11,54 +11,88 @@ This project is an attempt to generate joke based on Image. Hence, it includes t
 
 
 ## Installation
-### Requirements
+
+In order to get the model to run, follow these installation instructions.
+
+
+<!-- ### Requirements -->
+Pre-reqisite:
+
     python <= 3.7.5
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install vitual environment.
+---
+_Optional_: to install a specific version of Python:
 
-```bash
-pip install virtualenv
-```
-Navigate to the folder with the git repository
+#### Ubuntu:
 
-### Create Virtual Environment
-
-```
-virtualenv <name of env> --python /usr/bin/python3 or <path to your python if its not the mentioned one>
-
-```
-
-### Activate Virtual Environment?
-
-```
-...
-
-```
-
-### Install Requirements
-
-```
-pip install -r requirements.txt
-
-```
-
-### Initial Downloads
-***Note: if you are on mac, then first install wget:***
-***Also, install unzip package***
-
-```
-brew install wget
-
-```
+    sudo apt-install python3.6
 
 
-```
-chmod +x initialization_script.sh
-./initialization_script.sh
+#### Mac:
 
-```
+    [instructions]
 
-YEAH!! installation is done. Now you can jump to the execution part and run the web app.
+
+#### Windows:
+
+    [instructions]
+---
+#### Clone the repository
+
+    git clone [link]
+
+_Optional_: use the package manager [pip](https://pip.pypa.io/en/stable/) to install vitual environment.
+
+    bash
+    pip install virtualenv
+    
+    
+#### Navigate to the folder with the cloned git repository
+
+#### Create Virtual Environment
+
+    virtualenv <name of env> --python /usr/bin/python[version] or <path to your python if its not the mentioned one>
+
+#### Activate Virtual Environment
+
+    source name_of_env/bin/activate
+
+
+#### Install Requirements
+
+    pip install -r requirements.txt
+
+
+
+
+---
+
+_Optional_: If you're on Mac.  
+
+***Note: if you are on mac, then first install wget and unzip package***  
+
+    [instructions]
+
+---
+
+#### Initial Downloads
+
+    brew install wget
+    chmod +x initialization_script.sh
+    ./initialization_script.sh
+
+
+**_YEAH!!_** Installation is done! Now you can jump to the execution part and run the web app.
+
+
+## Execution
+To run the webapp, run the following code, being in the root directory.
+
+    python3 src/views.py
+
+
+
+---
 
 
 ## Datasets
