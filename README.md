@@ -42,6 +42,8 @@ chmod +x initialization_script.sh
 
 ```
 
+YEAH!! installation is done. Now you can jump to the execution part and run the web app.
+
 
 ## Datasets
 
