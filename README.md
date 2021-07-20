@@ -27,6 +27,13 @@ virtualenv <name of env> --python /usr/bin/python3 or <path to your python if it
 
 ```
 
+### install requirements
+
+```
+pip install -r requirements.txt
+
+```
+
 ### Initial Downloads
 
 ```
