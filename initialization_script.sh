@@ -4,7 +4,10 @@ git submodule add https://github.com/sarmilaupadhyaya/ImageCaptioning.pytorch.gi
 mv ImageCaptioning.pytorch imagecaptioning
 cd imagecaptioning
 mkdir data/imagenet_weights
-wget https://drive.google.com/file/d/0B7fNdx_jAqhtSmdCNDVOVVdINWs/view?usp=sharing&resourcekey=0-yY3hyjUhP3WTTj4n6s95zg -O imagecaptioning/data/imagenet_weights/resnet101.pth
+
+wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=0B7fNdx_jAqhtSmdCNDVOVVdINWs' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=0B7fNdx_jAqhtSmdCNDVOVVdINWs" -O data/imagenet_weights/resnet101.pth && rm -rf /tmp/cookies.txt
+
+
 git clone https://github.com/ruotianluo/coco-caption.git
 
 cd coco-caption
