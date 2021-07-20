@@ -5,18 +5,21 @@
 ## passing entities and getting question from rule based question generation module
 ## passing the question to the joke generation module and getting the joke, which will be returned
 ## This file will be calling all of our model one by one
-
+import os
 from question_generation import *
 import sys
 sys.path.append("/home/sharmila/projects/code_slingers")
 from imagecaptioning.tools import eval
 from src import joke_generator as jg
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv
+load_dotenv()
 
-
+model_path = os.getenv("MODEL_PATH")
+info_path = os.getenv("INFO_PATH")
 def captioning_inference(image_path= "data/test_image/"):
 
-    result = eval.evaluation(model='output/image-captioning/model_path/model-best.pth', image_folder=image_path, cnn_model='resnet101', infos_path='output/image-captioning/model_path/infos_fc_nsc-best.pkl', only_lang_eval=0, force=1,device="cpu")
+    result = eval.evaluation(model=model_path, image_folder=image_path, cnn_model='resnet101', infos_path=info_path, only_lang_eval=0, force=1,device="cpu")
 
     return result
 
