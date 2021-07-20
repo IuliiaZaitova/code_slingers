@@ -1,87 +1,76 @@
+# Foobar
+
 Software Project by team CODE SLINGERS for Language Generation Task.
-Jump to the set up
 
-
-# Introduction #
-
+## Introduction
 This project is an attempt to generate joke based on Image. Hence, it includes three task:
 
-1. Image captioning
-2. Getting relevant entities for joke generation
-3. Joke generation module
+    1. Image captioning
+    2. Getting relevant entities for joke generation
+    3. Joke generation module
 
 
+## Installation
+### Requirements
+    python <= 3.7.5
 
-# Set Up #
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install vitual environment.
 
-    python version used is 3.7.5
+```bash
+pip install virtualenv
+```
 
-    ## Note: ## it is required for python to be less than equal to 3.7.2 as we are using tensorflow 1.14 and it is not supported with latest python.
+### Create Virtual Environment
 
-    Go through this link if you have higher version of python and you want to set up pyenv to manage different version of python.
+```
+virtualenv <name of env> --python /usr/bin/python3 or <path to your python if its not the mentioned one>
 
+```
 
+### Initial Downloads
 
-    -Install the virtual Environment
+```
+chmod +x initialization_script.sh
+./initialization_script.sh
 
-
-    ```
-    pip install virtualenv
-
-    ```
-
-
-    -Create the virtual environment
-
-
-    ```
-    virtualenv <name of env> --python /usr/bin/python3 or <path to your python if its not the mentioned one>
-
-    ```
+```
 
 
-    -run this script to set up the initial directory required, to download all the files and set up the git for image captioning.(Recommended)
-
-
-    ```
-    chmod +x initialization_script.sh
-    ./initialization_script.sh
-
-    ```
-
-
-
-# Datasets #
+## Datasets
 
 - Image Captioning Dataset
 [Link](https://paperswithcode.com/datasets)
 
-## COCO DATASET ##
+### COCO DATASET
 - Download
 
 ```
 ./src/coco-download.sh
 
 ```
-
-
 - Paper about the dataset
 [Link] (https://arxiv.org/abs/1405.0312)
 
 - Evaluation of dataset
 This section gets all the captions and extract the entity and action from the captions and create a simple analysis
 
-
-
 - Joke Dataset
 
  [Link](https://www.kaggle.com/abhinavmoudgil95/short-jokes)
 
 
-# Execution #
+## Execution
 To run the webapp, run the following code, being in the root directory.
-```
 
+```
 python3 src/views.py
 
 ```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
