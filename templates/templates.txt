@@ -80,7 +80,7 @@ Why do Native Americans wear jock straps	Why AUX NP VERB NP	Why <VBP>_aux <NNPS>
 Why did the chicken cross the road	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
 Why are toblerones triangular prisms	Why VERB NP NP	Why are <NNS>_NP_nsubj <NNS>_NP_attr	NNS_nsubj	NNS_attr			2
 Why do legs have to be at least 25 inches long	Why AUX NP VERB to VERB NP long	Why <VBP>_aux <NNS>_NP_nsubj <VB>_ROOT to <VB>_xcomp <NNS>_NP_attr long	NNS_nsubj	NNS_attr	VB,VB	VBP	2
-Why do the french have so many civil wars	Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB	VBP	2
+Why do the french have so many civil wars	*Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB	VBP	2
 Why is milk so fast	Why VERB NP so fast	Why <VBZ>_ROOT <NN>_NP_nsubj so fast	NN_nsubj		VBZ		1
 Why do people always look so embarrassed walking down the street with a pizza box	Why AUX NP always VERB so embarrassed walking PREP NP PREP NP	Why <VBP>_aux <NNS>_NP_nsubj always <VB>_ROOT so embarrassed walking <IN>_prep <NN>_NP_pobj <IN>_prep <NN>_NP_pobj	NNS_nsubj	NN_pobj,NN_pobj	VB	VBP	3
 Why did the golfer wear two pairs of pants	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB	VBD	2
@@ -254,7 +254,7 @@ Why did Sally drop her ice cream	Why AUX NP VERB NP	Why <VBD>_aux <NNP>_NP_nsubj
 Why does a chicken coop have two doors	Why AUX NP VERB NP	Why <VBZ>_aux <NN>_NP_nsubj <VBP>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VBP	VBZ	2
 Why is it so hard for programmers to get a prescription for pain killers	Why VERB NP so hard for NP to VERB NP	Why <VBZ>_ROOT <PRP>_NP_nsubj so hard for <NNS>_NP_nsubj to <VB>_advcl <NN>_NP_dobj	PRP_nsubj,NNS_nsubj	NN_dobj	VBZ,VB		3
 Why did Dory warn Nemo about escaping through the toilet	Why AUX NP VERB NP about escaping PREP NP	Why <VBD>_aux <NNP>_NP_nsubj <VB>_ROOT <NNP>_NP_dobj about escaping <IN>_prep <NN>_NP_pobj	NNP_nsubj	NNP_dobj,NN_pobj	VB	VBD	3
-Why do only 20 percent of blonde chicks lay Easter eggs	Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VBD>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VBD	VBP	2
+Why do only 20 percent of blonde chicks lay Easter eggs	*Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VBD>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VBD	VBP	2
 Why did the midget get slapped	Why AUX NP AUXPASS VERB	Why <VBD>_aux <NN>_NP_nsubjpass <VB>_auxpass <VBN>_ROOT	NN_nsubjpass		VBN	VBD,VB	1
 Why aren't burgers the least bit scared of Halloween	Why VERB n't NP the least bit scared PREP NP	Why <VBP>_ROOT n't <NNS>_NP_attr the least bit scared <IN>_prep <NNP>_NP_pobj		NNS_attr,NNP_pobj	VBP		2
 Why did the narcissist with multiple personalities and a propensity for domestic violence only have one black eye	Why AUX NP only VERB NP	Why <VBD>_aux <NN>_NP_nsubj only <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
@@ -394,7 +394,7 @@ Why did Adele crossed the road	Why AUX NP VERB NP	Why <VBD>_aux <NNP>_NP_nsubj <
 Why did the case against the great dessert robber get thrown out	Why AUX NP AUXPASS VERB PRT	Why <VBD>_aux <NN>_NP_nsubjpass <VB>_auxpass <VBN>_ROOT <RP>_prt	NN_nsubjpass		VBN,RP	VBD,VB	1
 Why does Michael J Fox make the best milkshakes	Why AUX NP VERB NP	Why <VBZ>_aux <NNP>_NP_nsubj <VBP>_ROOT <NNS>_NP_dobj	NNP_nsubj	NNS_dobj	VBP	VBZ	2
 Why do black people have white on their palms	Why AUX NP VERB white PREP NP	Why <VBP>_aux <NNS>_NP_nsubj <VBP>_ROOT white <IN>_prep <NNS>_NP_pobj	NNS_nsubj	NNS_pobj	VBP	VBP	2
-Why are manhole covers circular	Why AUX NP VERB circular	Why <VBP>_aux <NN>_NP_nsubj <VBZ>_ROOT circular	NN_nsubj		VBZ	VBP	1
+Why are manhole covers circular	*Why AUX NP VERB circular	Why <VBP>_aux <NN>_NP_nsubj <VBZ>_ROOT circular	NN_nsubj		VBZ	VBP	1
 Why did the Eskimo wash his clothes in tide	Why AUX NP VERB NP PREP NP	Why <VBD>_aux <NNP>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj <IN>_prep <NN>_NP_pobj	NNP_nsubj	NNS_dobj,NN_pobj	VB	VBD	3
 Why did the vampire consider himself a good artist	Why AUX NP VERB NP a good artist	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <PRP>_NP_nsubj a good artist	NN_nsubj,PRP_nsubj		VB	VBD	2
 Why did the duck cross the basketball court	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
@@ -412,7 +412,7 @@ Why did the stair railing give money to Beethoven	Why did NP railing VERB NP to 
 Why didn't the dog want to play football	Why AUX n't NP VERB to VERB NP	Why <VBD>_aux n't <NN>_NP_nsubj <VB>_ROOT to <VB>_xcomp <NN>_NP_dobj	NN_nsubj	NN_dobj	VB,VB	VBD	2
 Why did the plane crash into the ocean						VBD	0
 Why do bears' mouths water whenever they look at Trump	Why AUX NP VERB whenever NP VERB PREP NP	Why <VBP>_aux <NNS>_NP_nsubj <VBP>_ROOT whenever <PRP>_NP_nsubj <VBP>_advcl <IN>_prep <NN>_NP_pobj	NNS_nsubj,PRP_nsubj	NN_pobj	VBP,VBP	VBP	3
-Why do black's have white skin on the bottom of their feet and the palm of their hands	Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBP	2
+Why do black's have white skin on the bottom of their feet and the palm of their hands	*Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBP	2
 Why did the crew abandon the chili pepper boat	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
 Why did the computer say Hello	Why AUX NP VERB Hello	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT Hello	NN_nsubj		VB	VBD	1
 Why did the egg get a ticket from a lady police officer	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
@@ -575,7 +575,7 @@ Why do slovaks don't like Czechs	Why AUX NP AUX n't VERB NP	Why <VBP>_aux <NNS>_
 Why did the comedian go to doctor	Why AUX NP VERB PREP NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_pobj	VB	VBD	2
 Why did the blonde tip toe near the medicine cabinet	*Why VERB NP	Why <VBD>_ROOT <NN>_NP_dobj		NN_dobj	VBD		1
 Why the USA get silver in synchronized diving	Why NP VERB NP PREP NP	Why <NNP>_NP_nsubj <VBP>_ROOT <NN>_NP_dobj <IN>_prep <NN>_NP_pobj	NNP_nsubj	NN_dobj,NN_pobj	VBP		3
-Why do beta fish fight each other	Why AUX NP VERB each other	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT each other	NN_nsubj		VB	VBP	1
+Why do beta fish fight each other	*Why AUX NP VERB each other	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT each other	NN_nsubj		VB	VBP	1
 Why couldn't the skeleton pay his bus fare	Why AUX n't NP VERB NP	Why <MD>_aux n't <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	MD	2
 Why do black men hate posting on reddit	Why AUX NP VERB VERB PREP NP	Why <VBP>_aux <NNS>_NP_nsubj <VBP>_ROOT <VBG>_xcomp <IN>_prep <NN>_NP_pobj	NNS_nsubj	NN_pobj	VBP,VBG	VBP	2
 Why was the blond late on her first day of work	Why VERB NP late PREP NP	Why <VBD>_ROOT <NN>_NP_nsubj late <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_pobj	VBD		2
@@ -962,7 +962,7 @@ Why is the book "Women Who Love	Why VERB NP NP VERB	Why <VBZ>_ROOT <NN>_NP_nsubj
 Why do people take such an instant dislike to Ted Cruz	Why AUX NP VERB NP PREP NP	Why <VBP>_aux <NNS>_NP_nsubj <VB>_ROOT <NN>_NP_dobj <IN>_prep <NNP>_NP_pobj	NNS_nsubj	NN_dobj,NNP_pobj	VB	VBP	3
 Why did Microsoft skip Windows 9 and go straight to 10	Why AUX NP VERB NP and VERB straight to 10	Why <VBD>_aux <NNP>_NP_nsubj <VB>_ROOT <NNP>_NP_dobj and <VB>_conj straight to 10	NNP_nsubj	NNP_dobj	VB,VB	VBD	2
 Why is Uhura black	Why VERB NP black	Why <VBZ>_ROOT <NNP>_NP_nsubj black	NNP_nsubj		VBZ		1
-Why do woman get periods	Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB	VBP	2
+Why do woman get periods	*Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB	VBP	2
 Why did the top bun and bottom bun of the Big Mac get in a fight	Why AUX NP VERB PREP NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_pobj	VB	VBD	2
 Why did the boy stop using his Sony, his Boombox, and his Bose Radio	Why AUX NP VERB VERB NP , and NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <VBG>_xcomp <NNP>_NP_dobj , and <NNP>_NP_conj	NN_nsubj	NNP_dobj,NNP_conj	VB,VBG	VBD	3
 Why is it awful to be an egg	Why VERB NP awful to VERB NP	Why <VBZ>_ROOT <PRP>_NP_nsubj awful to <VB>_xcomp <NN>_NP_attr	PRP_nsubj	NN_attr	VBZ,VB		2
@@ -1433,7 +1433,7 @@ Why are black people unfair	Why VERB NP unfair	Why <VBP>_ROOT <NNS>_NP_nsubj unf
 Why is Edward still in Russia	Why VERB NP still PREP NP	Why <VBZ>_ROOT <NNP>_NP_nsubj still <IN>_prep <NNP>_NP_pobj	NNP_nsubj	NNP_pobj	VBZ		2
 Why aren't there any Walmarts in Afghanistan	Why VERB n't there NP	Why are n't there <NNPS>_NP_attr		NNPS_attr			1
 Why do people from Finland who lack passports never win	Why AUX NP never VERB	Why <VBP>_aux <NNS>_NP_nsubj never <VBP>_ROOT	NNS_nsubj		VBP	VBP	1
-Why do pterodactyls use the bathroom so quietly	Why AUX NP VERB NP so quietly	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj so quietly	NN_nsubj	NN_dobj	VB	VBP	2
+Why do pterodactyls use the bathroom so quietly	*Why AUX NP VERB NP so quietly	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj so quietly	NN_nsubj	NN_dobj	VB	VBP	2
 Why did the thoroughbred break up with the wild horse	Why AUX NP VERB PRT PREP NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <RP>_prt <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_pobj	VB,RP	VBD	2
 Why did a seal go to the bar	Why AUX NP VERB PREP NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_pobj	VB	VBD	2
 Why did the plant cross the road	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
@@ -1458,7 +1458,7 @@ Why did Scottish baby sneeze	Why AUX Scottish baby VERB	Why <VBD>_aux Scottish b
 Why do we say dogs are man's best friend	Why AUX NP VERB NP VERB NP	Why <VBP>_aux <PRP>_NP_nsubj <VB>_ROOT <NNS>_NP_nsubj <VBP>_ccomp <NN>_NP_attr	PRP_nsubj,NNS_nsubj	NN_attr	VB,VBP	VBP	3
 Why did the old lady fall into the well	Why AUX NP VERB PREP NP	Why <VBD>_aux <NN>_NP_nsubj <VBP>_ROOT <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_pobj	VBP	VBD	2
 Why can't Donald Trump be a Lannister	Why AUX n't NP VERB NP	Why <MD>_aux n't <NNP>_NP_nsubj <VB>_ROOT <NNP>_NP_attr	NNP_nsubj	NNP_attr	VB	MD	2
-Why do scuba-divers fall backwards off the boat	Why AUX NP - NP VERB backwards PREP NP	Why <VBP>_aux <NN>_NP_nsubj - <NNS>_NP_nsubj <VBP>_ROOT backwards <IN>_prep <NN>_NP_pobj	NN_nsubj,NNS_nsubj	NN_pobj	VBP	VBP	3
+Why do scuba-divers fall backwards off the boat	*Why AUX NP - NP VERB backwards PREP NP	Why <VBP>_aux <NN>_NP_nsubj - <NNS>_NP_nsubj <VBP>_ROOT backwards <IN>_prep <NN>_NP_pobj	NN_nsubj,NNS_nsubj	NN_pobj	VBP	VBP	3
 Why couldn't the cat walk through the door	Why AUX n't NP VERB PREP NP	Why <MD>_aux n't <NN>_NP_nsubj <VB>_ROOT <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_pobj	VB	MD	2
 Why are the only kids in Warsaw magnet schools from Central Poland	*Why VERB NP	Why <VBP>_ROOT <NNS>_NP_nsubj	NNS_nsubj		VBP		1
 Why did Leonardo DiCaprio visit Sesame Street	Why AUX NP VERB NP	Why <VBD>_aux <NNP>_NP_nsubj <VBP>_ROOT <NNP>_NP_dobj	NNP_nsubj	NNP_dobj	VBP	VBD	2
@@ -1727,14 +1727,14 @@ Why do cows think cooks are mean	Why AUX NP VERB NP VERB mean	Why <VBP>_aux <NNS
 Why could Joseph never get anything done	Why AUX NP never VERB NP VERB	Why <MD>_aux <NNP>_NP_nsubj never <VB>_ROOT <NN>_NP_dobj <VBN>_ccomp	NNP_nsubj	NN_dobj	VB,VBN	MD	2
 Why was the UKIP voter angry	Why VERB NP angry	Why <VBD>_ROOT <NN>_NP_nsubj angry	NN_nsubj		VBD		1
 Why did the bowler bring two pairs of pants	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB	VBD	2
-Why do only 99.9% of dentists recommend Listerine	Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VBP>_ROOT <NNP>_NP_dobj	NN_nsubj	NNP_dobj	VBP	VBP	2
+Why do only 99.9% of dentists recommend Listerine	*Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VBP>_ROOT <NNP>_NP_dobj	NN_nsubj	NNP_dobj	VBP	VBP	2
 Why does it take 100 million sperms to fertilize one egg	Why AUX NP VERB NP to VERB NP	Why <VBZ>_aux <PRP>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj to <VB>_xcomp <NN>_NP_dobj	PRP_nsubj	NNS_dobj,NN_dobj	VB,VB	VBZ	3
 Why did.. Q : Why did Manchester United go to Stamford Bridge	Why did .. Q : Why AUX NP VERB PREP NP	Why did .. Q : Why <VBD>_aux <NNP>_NP_nsubj <VB>_ROOT <IN>_prep <NNP>_NP_pobj	NNP_nsubj	NNP_pobj	VB	VBD	2
 Why don't mathematicians have degrees	Why AUX n't NP VERB NP	Why <VBP>_aux n't <NNS>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NNS_nsubj	NNS_dobj	VB	VBP	2
 Why did the chicken get an ouija board	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
 Why am I fat	Why VERB NP fat	Why <VBP>_ROOT <PRP>_NP_nsubj fat	PRP_nsubj		VBP		1
 Why are the streets of Paris lined with trees	Why VERB NP VERB PREP NP	Why <VBP>_ROOT <NNS>_NP_nsubj <VBN>_ccomp <IN>_prep <NNS>_NP_pobj	NNS_nsubj	NNS_pobj	VBP,VBN		2
-Why do the police hate teenage fireflies	Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB	VBP	2
+Why do the police hate teenage fireflies	*Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB	VBP	2
 Why did the mule fail his math test	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
 Why was the couch afraid of the chair	Why VERB NP afraid PREP NP	Why <VBD>_ROOT <NN>_NP_nsubj afraid <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_pobj	VBD		2
 Why didn't the skeleton go for the halloween party	Why AUX n't NP VERB PREP NP	Why <VBD>_aux n't <NN>_NP_nsubj <VB>_ROOT <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_pobj	VB	VBD	2
@@ -2036,7 +2036,7 @@ Why is PMS called PMS	Why AUX NP VERB NP	Why <VBZ>_aux <NNP>_NP_nsubj <VBD>_ROOT
 Why is I such a controlling letter	Why VERB NP NP	Why is <PRP>_NP_nsubj <NN>_NP_attr	PRP_nsubj	NN_attr			2
 Why does Irish bean soup have exactly 239 beans in it	Why AUX NP VERB NP	Why <VBZ>_aux <NN>_NP_nsubj <VBP>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VBP	VBZ	2
 Why do ghosts like going out	Why AUX NP like going out	Why <VBP>_aux <NNS>_NP_nsubj like going out	NNS_nsubj			VBP	1
-Why do hitman always wear gloves	Why AUX NP always VERB NP	Why <VBP>_aux <NN>_NP_nsubj always <VB>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB	VBP	2
+Why do hitman always wear gloves	*Why AUX NP always VERB NP	Why <VBP>_aux <NN>_NP_nsubj always <VB>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB	VBP	2
 Why couldn't the alcoholic become a lawyer	Why AUX n't NP VERB NP	Why <MD>_aux n't <NN>_NP_nsubj <VB>_ROOT <NN>_NP_attr	NN_nsubj	NN_attr	VB	MD	2
 Why did the console gamer get a headache at the art museum	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
 Why do you call these girls broads	Why AUX NP VERB NP	Why <VBP>_aux <PRP>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	PRP_nsubj	NNS_dobj	VB	VBP	2
@@ -2331,7 +2331,7 @@ Why did the cop cross the road	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <V
 Why couldn't the pig run	*NP VERB	<NN>_NP_nsubj <VB>_ROOT	NN_nsubj		VB		1
 Why couldn't the police arrest the drug dealer	Why AUX n't NP VERB NP	Why <MD>_aux n't <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	MD	2
 Why did the hipster burn his tongue on his pizza	Why AUX NP VERB NP PREP NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_dobj,NN_pobj	VB	VBD	3
-Why is history called His story	Why AUX NP VERB NP	Why <VBZ>_aux <NN>_NP_nsubj <VBN>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBN	VBZ	2
+Why is history called His story	*Why AUX NP VERB NP	Why <VBZ>_aux <NN>_NP_nsubj <VBN>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBN	VBZ	2
 Why did 6 and 8 dislike 7						VBD	0
 Why was the harvester pleaded guilty	Why AUX NP VERB guilty	Why <VBD>_aux <NN>_NP_nsubj <VBD>_ROOT guilty	NN_nsubj		VBD	VBD	1
 Why do men like love at first sight	Why AUX NP like NP PREP NP	Why <VBP>_aux <NNS>_NP_nsubj like <NN>_NP_pobj <IN>_prep <NN>_NP_pobj	NNS_nsubj	NN_pobj,NN_pobj		VBP	3
@@ -2395,7 +2395,7 @@ Why did the guy kick the broom out of his house	Why AUX NP VERB NP out PREP NP	W
 Why did John F. Kennedy take a cab home	Why AUX NP VERB NP	Why <VBD>_aux <NNP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NNP_nsubj	NN_dobj	VB	VBD	2
 Why is Jesus' body bread	*Why VERB NP	Why <VBZ>_ROOT <NN>_NP_nsubj	NN_nsubj		VBZ		1
 Why do you hate a nosey pepper	Why AUX NP VERB NP	Why <VBP>_aux <PRP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	PRP_nsubj	NN_dobj	VB	VBP	2
-Why do emo's always act so sour	Why AUX NP AUXPASS always VERB so sour	Why <VBP>_aux <NN>_NP_nsubjpass <VBZ>_auxpass always <VB>_ROOT so sour	NN_nsubjpass		VB	VBP,VBZ	1
+Why do emo's always act so sour	*Why AUX NP AUXPASS always VERB so sour	Why <VBP>_aux <NN>_NP_nsubjpass <VBZ>_auxpass always <VB>_ROOT so sour	NN_nsubjpass		VB	VBP,VBZ	1
 Why does a space rock taste better than an earth rock						VBZ	0
 Why is Thors bother so secretive	Why AUX NP VERB so secretive	Why <VBZ>_aux <NNS>_NP_nsubj <VBP>_ROOT so secretive	NNS_nsubj		VBP	VBZ	1
 Why should you tell bad jokes to cocaine addicts	Why AUX NP VERB NP PREP NP	Why <MD>_aux <PRP>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj <IN>_prep <NNS>_NP_pobj	PRP_nsubj	NNS_dobj,NNS_pobj	VB	MD	3
@@ -2661,7 +2661,7 @@ Why did the students need a ladder to get into school	Why AUX NP VERB NP to VERB
 Why did the chicken cross the ocean	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
 Why don't off duty police men fire grenades into children's cribs	Why AUX n't off NP PREP NP	Why <VBP>_aux n't off <NNS>_NP_dobj <IN>_prep <NNS>_NP_pobj		NNS_dobj,NNS_pobj		VBP	2
 Why did Anthony Kiedis cross the road	Why AUX NP VERB NP	Why <VBD>_aux <NNP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NNP_nsubj	NN_dobj	VB	VBD	2
-Why couldn't the butter quit his gambling addiction	Why AUX n't NP VERB NP	Why <MD>_aux n't <NN>_NP_nsubj <VBD>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBD	MD	2
+Why couldn't the butter quit his gambling addiction	*Why AUX n't NP VERB NP	Why <MD>_aux n't <NN>_NP_nsubj <VBD>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBD	MD	2
 Why can't a lesbian diet and wear make up at the same time	NP VERB PRT PREP NP	<NN>_NP_nsubj <VB>_ROOT <RP>_prt <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_pobj	VB,RP		2
 Why did Arthur have a round table	Why AUX NP VERB NP	Why <VBD>_aux <NNP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NNP_nsubj	NN_dobj	VB	VBD	2
 Why did Nixon never drive on the highway	Why AUX NP never VERB PREP NP	Why <VBD>_aux <NNP>_NP_nsubj never <VB>_ROOT <IN>_prep <NN>_NP_pobj	NNP_nsubj	NN_pobj	VB	VBD	2
@@ -3324,7 +3324,7 @@ Why did the blonde scale the glass wall						VBD	0
 Why did Hitler turn to genocide after a failed career as an artist	Why AUX NP VERB to genocide PREP NP	Why <VBD>_aux <NNP>_NP_nsubj <VB>_ROOT to genocide <IN>_prep <NN>_NP_pobj	NNP_nsubj	NN_pobj	VB	VBD	2
 Why is Dublin the capital of Ireland	Why VERB NP NP	Why is <NNP>_NP_nsubj <NN>_NP_attr	NNP_nsubj	NN_attr			2
 Why did Gigi leave the party angrily	Why AUX NP VERB NP angrily	Why <VBD>_aux <NNP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj angrily	NNP_nsubj	NN_dobj	VB	VBD	2
-Why do cow wear bells	Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB	VBP	2
+Why do cow wear bells	*Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB	VBP	2
 Why do we call dogs, K-9	Why AUX NP VERB NP K-9	Why <VBP>_aux <PRP>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj K-9	PRP_nsubj	NNS_dobj	VB	VBP	2
 Why was the pig in the kitchen	*Why VERB NP	Why <VBD>_ROOT <NN>_NP_nsubj	NN_nsubj		VBD		1
 Why don't you feel the need to wear a seat belt when taking a cab	Why AUX n't NP VERB NP	Why <VBP>_aux n't <PRP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	PRP_nsubj	NN_dobj	VB	VBP	2
@@ -3569,7 +3569,7 @@ Why are statistics more believable with a larger sample size	*Why VERB NP	Why <V
 Why do people live soda	Why AUX NP VERB NP	Why <VBP>_aux <NNS>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NNS_nsubj	NN_dobj	VB	VBP	2
 Why does a milking stool have only three legs	Why AUX NP VERB NP	Why <VBZ>_aux <NN>_NP_nsubj <VBP>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VBP	VBZ	2
 Why does Walter get to keep more of the drug money than Jessie	Why AUX NP VERB to VERB more PREP NP PREP NP	Why <VBZ>_aux <NNP>_NP_nsubj <VB>_ROOT to <VB>_xcomp more <IN>_prep <NN>_NP_pobj <IN>_prep <NNP>_NP_pobj	NNP_nsubj	NN_pobj,NNP_pobj	VB,VB	VBZ	3
-Why do volleyball player want to join the armed forces	Why AUX NP VERB to VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT to <VB>_xcomp <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB,VB	VBP	2
+Why do volleyball player want to join the armed forces	*Why AUX NP VERB to VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT to <VB>_xcomp <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB,VB	VBP	2
 Why did the Eskimo break up with his girlfriend	Why AUX NP VERB PRT PREP NP	Why <VBD>_aux <NNP>_NP_nsubj <VB>_ROOT <RP>_prt <IN>_prep <NN>_NP_pobj	NNP_nsubj	NN_pobj	VB,RP	VBD	2
 Why did Microsoft skip a number when naming their new operating system	Why AUX NP VERB NP when VERB NP	Why <VBD>_aux <NNP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj when <VBG>_advcl <NN>_NP_dobj	NNP_nsubj	NN_dobj,NN_dobj	VB,VBG	VBD	3
 Why do wallets make so much noise	Why AUX NP VERB NP	Why <VBP>_aux <NNS>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NNS_nsubj	NN_dobj	VB	VBP	2
@@ -3745,7 +3745,7 @@ Why are there no black characters in clue	Why VERB there NP	Why are there <NNS>_
 Why do sumo wrestles shave their legs	Why NP VERB NP	Why <NNS>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NNS_nsubj	NNS_dobj	VB		2
 Why are carbon chains with two double bonds so sad	Why VERB NP so sad	Why <VBP>_ROOT <NNS>_NP_nsubj so sad	NNS_nsubj		VBP		1
 Why did the noodle take a bow after the recital	Why AUX NP VERB NP PREP NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_dobj,NN_pobj	VB	VBD	3
-Why don't woman have urinals in their bathroom	Why AUX n't NP VERB NP	Why <VBP>_aux n't <NN>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB	VBP	2
+Why don't woman have urinals in their bathroom	*Why AUX n't NP VERB NP	Why <VBP>_aux n't <NN>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB	VBP	2
 Why didn't they just call "Ant-Man" Uncle	Why AUX n't NP just VERB " NP NP	Why <VBD>_aux n't <PRP>_NP_nsubj just <VBP>_ROOT " <NNP>_NP_dobj <NNP>_NP_dobj	PRP_nsubj	NNP_dobj,NNP_dobj	VBP	VBD	3
 Why was the electrolytic solution taken to court	*Why VERB NP	Why <VBD>_ROOT <NN>_NP_nsubj	NN_nsubj		VBD		1
 Why did the ska guitarist take twice as long to fap	Why AUX NP VERB twice as long to VERB	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT twice as long to <VB>_xcomp	NN_nsubj		VB,VB	VBD	1
@@ -4543,7 +4543,7 @@ Why did the oven go back to University	Why AUX NP VERB back PREP NP	Why <VBD>_au
 Why do bananas wear suntan lotion	Why AUX NP VERB NP	Why <VBP>_aux <NNS>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NNS_nsubj	NN_dobj	VB	VBP	2
 Why was the baby put in jail	Why AUXPASS NP VERB PREP NP	Why <VBD>_auxpass <NN>_NP_nsubj <VBN>_ROOT <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_pobj	VBN	VBD	2
 Why was the tomato red	Why VERB NP red	Why <VBD>_ROOT <NN>_NP_nsubj red	NN_nsubj		VBD		1
-Why do some fish always look high	Why AUX NP always VERB high	Why <VBP>_aux <NN>_NP_nsubj always <VBP>_ROOT high	NN_nsubj		VBP	VBP	1
+Why do some fish always look high	*Why AUX NP always VERB high	Why <VBP>_aux <NN>_NP_nsubj always <VBP>_ROOT high	NN_nsubj		VBP	VBP	1
 Why is it hard to hold a speech at a nudist convention	Why VERB NP hard to VERB NP PREP NP	Why <VBZ>_ROOT <PRP>_NP_nsubj hard to <VB>_xcomp <NN>_NP_dobj <IN>_prep <NN>_NP_pobj	PRP_nsubj	NN_dobj,NN_pobj	VBZ,VB		3
 Why couldn't the scientist find salt for his breakfast	Why AUX n't NP VERB NP PREP NP	Why <MD>_aux n't <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_dobj,NN_pobj	VB	MD	3
 Why hurricanes are named after women	Why NP AUXPASS VERB PREP NP	Why <NNS>_NP_nsubjpass <VBP>_auxpass <VBN>_ROOT <IN>_prep <NNS>_NP_pobj	NNS_nsubjpass	NNS_pobj	VBN	VBP	2
@@ -4753,7 +4753,7 @@ Why did the tree keep getting grounded	Why AUX NP VERB AUXPASS VERB	Why <VBD>_au
 Why wasn't the vampire killed	Why VERB n't NP VERB	Why <VBD>_ROOT n't <NN>_NP_nsubj <VBD>_ROOT	NN_nsubj		VBD,VBD		1
 Why does a Mexican take Xanax	Why AUX NP VERB NP	Why <VBZ>_aux <NNP>_NP_nsubj <VB>_ROOT <NNP>_NP_dobj	NNP_nsubj	NNP_dobj	VB	VBZ	2
 Why do blondes have see-through lunch box tops	Why AUX NP AUX VERB - PRT NP tops	Why <VBP>_aux <NNS>_NP_nsubj <VB>_aux <VB>_ROOT - <RP>_prt <NN>_NP_pobj tops	NNS_nsubj	NN_pobj	VB,RP	VBP,VB	2
-Why do feminist hate the bible	Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBP	2
+Why do feminist hate the bible	*Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBP	2
 Why do gingers always complain about uncomfortable shoes	Why AUX NP always VERB PREP NP	Why <VBP>_aux <NNS>_NP_nsubj always <VBP>_ROOT <IN>_prep <NNS>_NP_pobj	NNS_nsubj	NNS_pobj	VBP	VBP	2
 Why does Santa Claus have such a big sack	Why AUX NP VERB NP	Why <VBZ>_aux <NNP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NNP_nsubj	NN_dobj	VB	VBZ	2
 Why did the peadophile sign up for Netflix	Why AUX the peadophile VERB PRT PREP NP	Why <VBD>_aux the peadophile <VB>_ROOT <RP>_prt <IN>_prep <NNP>_NP_pobj		NNP_pobj	VB,RP	VBD	1
@@ -5097,7 +5097,7 @@ Why is it dangerous for a lawyer to walk onto a construction site when plumbers 
 Why should you never date a vegan girl	Why AUX NP never VERB NP	Why <MD>_aux <PRP>_NP_nsubj never <VB>_ROOT <NN>_NP_dobj	PRP_nsubj	NN_dobj	VB	MD	2
 Why did the woman throw the stick of butter out the window	Why AUX NP VERB NP PRT NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj <RP>_prt <NN>_NP_dobj	NN_nsubj	NN_dobj,NN_dobj	VB,RP	VBD	3
 Why don't you ever see hippos hiding in trees	Why AUX n't NP ever VERB NP VERB PREP NP	Why <VBP>_aux n't <PRP>_NP_nsubj ever <VB>_ROOT <NNS>_NP_nsubj <VBG>_ccomp <IN>_prep <NNS>_NP_pobj	PRP_nsubj,NNS_nsubj	NNS_pobj	VB,VBG	VBP	3
-Why are promise rings 1/10th the price of engagement rings	Why AUX NP rings 1/10th NP	Why <VBP>_aux <NN>_NP_nsubj rings 1/10th <NN>_NP_dobj	NN_nsubj	NN_dobj		VBP	2
+Why are promise rings 1/10th the price of engagement rings	*Why AUX NP rings 1/10th NP	Why <VBP>_aux <NN>_NP_nsubj rings 1/10th <NN>_NP_dobj	NN_nsubj	NN_dobj		VBP	2
 Why don't married men live as long as single men	Why AUX n't VERB NP VERB as long as NP	Why <VBP>_aux n't <VBN>_ROOT <NNS>_NP_dobj <VBP>_ccomp as long as <NNS>_NP_dobj		NNS_dobj,NNS_dobj	VBN,VBP	VBP	2
 Why shouldn't you give a Western feminist the first serving of a fruit cocktail	Why AUX n't NP VERB NP the first serving PREP NP	Why <MD>_aux n't <PRP>_NP_nsubj <VB>_ROOT <NN>_NP_dative the first serving <IN>_prep <NN>_NP_pobj	PRP_nsubj	NN_dative,NN_pobj	VB	MD	3
 Why did the plumber cry	Why AUX NP VERB	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT	NN_nsubj		VB	VBD	1
@@ -5407,7 +5407,7 @@ Why did Walter White not pay for his pizza	Why AUX NP not VERB PREP NP	Why <VBD>
 Why did James Comey refuse to indict Hillary Clinton	Why AUX NP VERB to VERB NP	Why <VBD>_aux <NNP>_NP_nsubj <VB>_ROOT to <VB>_xcomp <NNP>_NP_dobj	NNP_nsubj	NNP_dobj	VB,VB	VBD	2
 Why didn't the comedian make a tree joke	Why AUX n't NP VERB NP	Why <VBD>_aux n't <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
 Why weren't the baked beans heating up	*Why VERB n't NP	Why <VBD>_ROOT n't <NNS>_NP_nsubj	NNS_nsubj		VBD		1
-Why do a lot of math nerds wear glasses	Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VBP>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VBP	VBP	2
+Why do a lot of math nerds wear glasses	*Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VBP>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VBP	VBP	2
 Why is it so hard to give up fizzy drinks	Why VERB NP so hard to give PRT NP	Why <VBZ>_ROOT <PRP>_NP_nsubj so hard to give <RP>_prt <NNS>_NP_dobj	PRP_nsubj	NNS_dobj	VBZ,RP		2
 Why did the director yell at Kick at the set of Punchkicker 5	Why AUX NP VERB PREP NP PREP NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <IN>_prep <NN>_NP_pobj <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_pobj,NN_pobj	VB	VBD	3
 Why did they produce a reality show about midgets	Why AUX NP VERB NP	Why <VBD>_aux <PRP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	PRP_nsubj	NN_dobj	VB	VBD	2
@@ -5702,7 +5702,7 @@ Why did the 2 contractors hire a pilot to help survey their land	Why AUX NP VERB
 Why did the Ewok ESL student do so well with conjunctions	Why AUX NP VERB so well PREP NP	Why <VBD>_aux <NN>_NP_nsubj <VBP>_ROOT so well <IN>_prep <NNS>_NP_pobj	NN_nsubj	NNS_pobj	VBP	VBD	2
 Why do Gorillas have big nostrils	Why AUX NP VERB NP	Why <VBP>_aux <NNS>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NNS_nsubj	NNS_dobj	VB	VBP	2
 Why do the Marines call it Parris island	Why AUX NP VERB NP NP	Why <VBP>_aux <NNPS>_NP_nsubj <VB>_ROOT <PRP>_NP_dobj <NN>_NP_oprd	NNPS_nsubj	PRP_dobj,NN_oprd	VB	VBP	3
-Why is money called dough	Why AUX NP VERB NP	Why <VBZ>_aux <NN>_NP_nsubj <VBN>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBN	VBZ	2
+Why is money called dough	*Why AUX NP VERB NP	Why <VBZ>_aux <NN>_NP_nsubj <VBN>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBN	VBZ	2
 Why was Roy Rogers upset when he fell off his horse	Why AUX NP VERB when NP VERB PRT NP	Why <VBD>_aux <NNP>_NP_nsubj <VBD>_ROOT when <PRP>_NP_nsubj <VBD>_advcl <IN>_prt <NN>_NP_dobj	NNP_nsubj,PRP_nsubj	NN_dobj	VBD,VBD,IN	VBD	3
 Why Is A Man's Mind Dirtier Than A Woman's	Why VERB NP Dirtier PREP NP	Why <VBZ>_ROOT <NNP>_NP_nsubj Dirtier <IN>_prep <NNP>_NP_pobj	NNP_nsubj	NNP_pobj	VBZ		2
 Why do the French like Easter	Why AUX NP like NP	Why <VBP>_aux <NNP>_NP_nsubj like <NNP>_NP_pobj	NNP_nsubj	NNP_pobj		VBP	2
@@ -6194,7 +6194,7 @@ Why did the hipster drown in the lake	Why AUX NP VERB PREP NP	Why <VBD>_aux <NN>
 Why don't dirty commies shower	*NP VERB	<NNS>_NP_nsubj <VB>_ROOT	NNS_nsubj		VB		1
 Why didn't Harry Potter want to date Hermione	Why AUX n't NP VERB to VERB NP	Why <VBD>_aux n't <NNP>_NP_nsubj <VBP>_ROOT to <VB>_xcomp <NNP>_NP_dobj	NNP_nsubj	NNP_dobj	VBP,VB	VBD	2
 Why is pinocchio so good in the bedroom	Why VERB NP so good PREP NP	Why <VBZ>_ROOT <NNS>_NP_nsubj so good <IN>_prep <NN>_NP_pobj	NNS_nsubj	NN_pobj	VBZ		2
-Why do the undead read cringe stories	Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB	VBP	2
+Why do the undead read cringe stories	*Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB	VBP	2
 Why do fencers have the most karma on this sub	Why AUX NP VERB NP	Why <VBP>_aux <NNS>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NNS_nsubj	NN_dobj	VB	VBP	2
 Why was the farmer disappointed when he tried to marry his prized melon	Why AUXPASS NP VERB when NP VERB to VERB NP	Why <VBD>_auxpass <NN>_NP_nsubj <VBD>_ROOT when <PRP>_NP_nsubj <VBD>_advcl to <VB>_xcomp <NN>_NP_dobj	NN_nsubj,PRP_nsubj	NN_dobj	VBD,VBD,VB	VBD	3
 Why do teenage girls go to the bathroom in 3s and 5s	Why AUX NP VERB PREP NP in 3s and 5s	Why <VBP>_aux <NNS>_NP_nsubj <VB>_ROOT <IN>_prep <NN>_NP_pobj in 3s and 5s	NNS_nsubj	NN_pobj	VB	VBP	2
@@ -6549,7 +6549,7 @@ Why did Mario lose a life	Why AUX NP VERB NP	Why <VBD>_aux <NNP>_NP_nsubj <VB>_R
 Why was the kitten fired from his telemarketing job	Why AUXPASS NP VERB PREP NP	Why <VBD>_auxpass <NN>_NP_nsubj <VBD>_ROOT <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_pobj	VBD	VBD	2
 Why doesn't Nickelback play football	Why AUX n't NP VERB NP	Why <VBZ>_aux n't <NNP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NNP_nsubj	NN_dobj	VB	VBZ	2
 Why do you never see any bugs in a church	Why AUX NP never VERB NP PREP NP	Why <VBP>_aux <PRP>_NP_nsubj never <VB>_ROOT <NNS>_NP_dobj <IN>_prep <NN>_NP_pobj	PRP_nsubj	NNS_dobj,NN_pobj	VB	VBP	3
-Why do terrorist use Nokia phones	Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB	VBP	2
+Why do terrorist use Nokia phones	*Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB	VBP	2
 Why did the cowboy adopt a Weiner dog	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
 Why did the comedian say he preferred his hamburger on a croissant roll	Why AUX NP VERB NP VERB NP PREP NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <PRP>_NP_nsubj <VBD>_ccomp <NN>_NP_dobj <IN>_prep <NN>_NP_pobj	NN_nsubj,PRP_nsubj	NN_dobj,NN_pobj	VB,VBD	VBD	4
 Why is Hellen Keller bad at driving	Why VERB NP bad at driving	Why <VBZ>_ROOT <NNP>_NP_nsubj bad at driving	NNP_nsubj		VBZ		1
@@ -7115,7 +7115,7 @@ Why are there fences around cemeteries	Why VERB there NP	Why are there <NNS>_NP_
 Why wouldn't the black pencil write on the white paper	Why AUX n't NP write PREP NP	Why <MD>_aux n't <NN>_NP_nsubj write <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_pobj		MD	2
 Why didn't the piece of paper move out of the way when a car came speeding towards it	Why AUX n't NP move out PREP NP	Why <VBD>_aux n't <NN>_NP_nsubj move out <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_pobj		VBD	2
 Why does Luigi bring an extra pair of overalls when he golfs	Why AUX NP VERB NP when NP VERB	Why <VBZ>_aux <NNP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj when <PRP>_NP_nsubj <VBP>_advcl	NNP_nsubj,PRP_nsubj	NN_dobj	VB,VBP	VBZ	3
-Why are manhole covers round	Why AUX NP VERB round	Why <VBP>_aux <NN>_NP_nsubj <VBZ>_ROOT round	NN_nsubj		VBZ	VBP	1
+Why are manhole covers round	*Why AUX NP VERB round	Why <VBP>_aux <NN>_NP_nsubj <VBZ>_ROOT round	NN_nsubj		VBZ	VBP	1
 Why are blind people bad at programming	*Why VERB NP	Why <VBP>_ROOT <NNS>_NP_nsubj	NNS_nsubj		VBP		1
 Why was Skrillex never in an orchestra	Why VERB NP never PREP NP	Why <VBD>_ROOT <NNP>_NP_nsubj never <IN>_prep <NN>_NP_pobj	NNP_nsubj	NN_pobj	VBD		2
 Why shouldn't you put extra lettuce on your BLT	Why AUX n't NP VERB NP PREP NP	Why <MD>_aux n't <PRP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj <IN>_prep <NN>_NP_pobj	PRP_nsubj	NN_dobj,NN_pobj	VB	MD	3
@@ -7331,7 +7331,7 @@ Why did Adele cross the road #	Why AUX NP VERB NP #	Why <VBD>_aux <NNP>_NP_nsubj
 Why are my pubes curly	Why VERB NP curly	Why <VBP>_ROOT <NNS>_NP_nsubj curly	NNS_nsubj		VBP		1
 Why were the coffee beans upset	Why VERB NP upset	Why <VBD>_ROOT <NNS>_NP_nsubj upset	NNS_nsubj		VBD		1
 Why did the Anthropod need braces	Why did NP need VERB	Why did <NNP>_NP_nsubj need <VBZ>_ROOT	NNP_nsubj		VBZ		1
-Why are none talking in the ladies sauna	Why AUX NP VERB PREP NP NP	Why <VBP>_aux <NN>_NP_nsubj <VBG>_ROOT <IN>_prep <NNS>_NP_pobj <NN>_NP_dobj	NN_nsubj	NNS_pobj,NN_dobj	VBG	VBP	3
+Why are none talking in the ladies sauna	*Why AUX NP VERB PREP NP NP	Why <VBP>_aux <NN>_NP_nsubj <VBG>_ROOT <IN>_prep <NNS>_NP_pobj <NN>_NP_dobj	NN_nsubj	NNS_pobj,NN_dobj	VBG	VBP	3
 Why did Einstein refuse to help people fix their cars	Why AUX NP VERB to VERB NP VERB NP	Why <VBD>_aux <NNP>_NP_nsubj <VB>_ROOT to <VB>_xcomp <NNS>_NP_nsubj <VB>_ccomp <NNS>_NP_dobj	NNP_nsubj,NNS_nsubj	NNS_dobj	VB,VB,VB	VBD	3
 Why do programmers like to concatenate time stamps	Why AUX NP VERB to VERB NP	Why <VBP>_aux <NNS>_NP_nsubj <VBP>_ROOT to <VB>_xcomp <NNS>_NP_dobj	NNS_nsubj	NNS_dobj	VBP,VB	VBP	2
 Why is the rear end of a boat so tough	Why VERB NP so tough	Why <VBZ>_ROOT <NN>_NP_nsubj so tough	NN_nsubj		VBZ		1
@@ -7368,7 +7368,7 @@ Why did the pirate's rap song become such a hit	Why AUX NP VERB NP	Why <VBD>_aux
 Why did the chicken love Campbell's Soup						VBD	0
 Why did the blonde tip-toe past the medicine cabinet	*Why VERB NP	Why <VBD>_ROOT <NN>_NP_dobj		NN_dobj	VBD		1
 Why couldn't Marco Rubio register on a web forum	Why AUX n't NP VERB PREP NP	Why <MD>_aux n't <NNP>_NP_nsubj <VBP>_ROOT <IN>_prep <NN>_NP_pobj	NNP_nsubj	NN_pobj	VBP	MD	2
-Why are these Facebook status updates so much more interesting than usual	Why AUX NP VERB so much more interesting than usual	Why <VBP>_aux <NN>_NP_nsubj <VBZ>_ROOT so much more interesting than usual	NN_nsubj		VBZ	VBP	1
+Why are these Facebook status updates so much more interesting than usual	*Why AUX NP VERB so much more interesting than usual	Why <VBP>_aux <NN>_NP_nsubj <VBZ>_ROOT so much more interesting than usual	NN_nsubj		VBZ	VBP	1
 Why do babies cry when they're born	Why AUX NP VERB when NP AUXPASS VERB	Why <VBP>_aux <NNS>_NP_nsubj <VB>_ROOT when <PRP>_NP_nsubjpass <VBP>_auxpass <VBN>_advcl	NNS_nsubj,PRP_nsubjpass		VB,VBN	VBP,VBP	2
 Why is the number of black priests so small	Why VERB NP so small	Why <VBZ>_ROOT <NN>_NP_nsubj so small	NN_nsubj		VBZ		1
 Why did the skunk buy four boxes of tissues	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB	VBD	2
@@ -7823,7 +7823,7 @@ Why was Adele underneath a cow	Why VERB NP PREP NP	Why <VBD>_ROOT <NNP>_NP_nsubj
 Why did the judge throw out Bram Stoker's lawsuit	Why AUX NP VERB PRT NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <RP>_prt <NN>_NP_dobj	NN_nsubj	NN_dobj	VB,RP	VBD	2
 Why did the baby squirrel wear a diaper	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
 Why was the Headless Horseman depressed	Why VERB NP depressed	Why <VBD>_ROOT <NNP>_NP_nsubj depressed	NNP_nsubj		VBD		1
-Why'd the air resistance committed suicide	Why AUX NP VERB NP	Why <MD>_aux <NN>_NP_nsubj <VBD>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBD	MD	2
+Why'd the air resistance committed suicide	*Why AUX NP VERB NP	Why <MD>_aux <NN>_NP_nsubj <VBD>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBD	MD	2
 Why was the horizontal plane judged in Germany	*Why VERB NP	Why <VBD>_ROOT <NN>_NP_nsubj	NN_nsubj		VBD		1
 Why couldn't the expert fisherman get any dates	Why AUX n't NP VERB NP	Why <MD>_aux n't <NN>_NP_nsubj <VBP>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VBP	MD	2
 Why are cats against abortion	*Why VERB NP	Why <VBP>_ROOT <NNS>_NP_nsubj	NNS_nsubj		VBP		1
@@ -7946,7 +7946,7 @@ Why did they give a megaphone to the dog who couldn't climb a tree	Why AUX NP VE
 Why did the spider buy a car	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
 Why did I rob the bank	Why AUX NP VERB NP	Why <VBD>_aux <PRP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	PRP_nsubj	NN_dobj	VB	VBD	2
 Why did the elephant paint his toenails red	Why AUX NP VERB NP red	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj red	NN_nsubj	NNS_dobj	VB	VBD	2
-Why is blackmail called blackmail	Why AUX NP VERB NP	Why <VBZ>_aux <NN>_NP_nsubj <VBN>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBN	VBZ	2
+Why is blackmail called blackmail	*Why AUX NP VERB NP	Why <VBZ>_aux <NN>_NP_nsubj <VBN>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBN	VBZ	2
 Why did the skull not want to go to prom, but still did	Why AUX NP not VERB to VERB PREP NP , but still VERB	Why <VBD>_aux <NN>_NP_nsubj not <VB>_ROOT to <VB>_xcomp <IN>_prep <NN>_NP_pobj , but still <VBD>_ROOT	NN_nsubj	NN_pobj	VB,VB,VBD	VBD	2
 Why did the crematorium operator get a $500 bonus	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
 Why should I submit a joke today	Why AUX NP VERB NP today	Why <MD>_aux <PRP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj today	PRP_nsubj	NN_dobj	VB	MD	2
@@ -7964,7 +7964,7 @@ Why is the Kremlin so much warmer this winter	Why VERB NP so much warmer this wi
 Why didn't the koala get a job	Why AUX n't NP VERB NP	Why <VBD>_aux n't <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
 Why has the ex-NSA contractor not left his house	Why AUX NP not VERB NP	Why <VBZ>_aux <NN>_NP_nsubj not <VBD>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBD	VBZ	2
 Why did the baby have such a poor time in the marathon	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
-Why is the media making such a big deal about the olympic swimmer's period	Why AUX NP VERB NP	Why <VBZ>_aux <NNS>_NP_nsubj <VBG>_ROOT <NN>_NP_dobj	NNS_nsubj	NN_dobj	VBG	VBZ	2
+Why is the media making such a big deal about the olympic swimmer's period	Why AUX NP VERB NP	Why <VBZ>_aux <NN>_NP_nsubj <VBG>_ROOT <NN>_NP_dobj	NNS_nsubj	NN_dobj	VBG	VBZ	2
 Why does the Little Mermaid wear sea shells	Why AUX NP VERB NP	Why <VBZ>_aux <NNP>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NNP_nsubj	NNS_dobj	VB	VBZ	2
 Why does the Little Mermaid wear seashells for a bra	Why AUX NP wear NP PREP NP	Why <VBZ>_aux <NNP>_NP_nsubj wear <NNS>_NP_dobj <IN>_prep <NN>_NP_pobj	NNP_nsubj	NNS_dobj,NN_pobj		VBZ	3
 Why did the agnostic receive a lighter sentence	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
@@ -8154,7 +8154,7 @@ Why is DeadMau5 bad at math	Why VERB NP bad PREP NP	Why <VBZ>_ROOT <NNP>_NP_nsub
 Why did the plane crash	*Why VERB NP	Why <VBD>_ROOT <NN>_NP_dobj		NN_dobj	VBD		1
 Why don't elephants smoke	Why AUX NP VERB	Why <VBP>_aux <NNS>_NP_nsubj <VB>_ROOT	NNS_nsubj		VB	VBP	1
 Why did the Pokemon Company offer me a role in their upcoming TV Series	Why AUX NP VERB NP NP	Why <VBD>_aux <NNP>_NP_nsubj <VBP>_ROOT <PRP>_NP_dative <NN>_NP_dobj	NNP_nsubj	PRP_dative,NN_dobj	VBP	VBD	3
-Why do fifty percent of marriages end in divorce	Why AUX NP VERB PREP NP	Why <VBP>_aux <NN>_NP_nsubj <VBP>_ROOT <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_pobj	VBP	VBP	2
+Why do fifty percent of marriages end in divorce	*Why AUX NP VERB PREP NP	Why <VBP>_aux <NN>_NP_nsubj <VBP>_ROOT <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_pobj	VBP	VBP	2
 Why the Indian programmers are good at C or Java, but not Basic	Why NP VERB good PREP NP , but not Basic	Why <NNS>_NP_nsubj <VBP>_ROOT good <IN>_prep <NNP>_NP_pobj , but not Basic	NNS_nsubj	NNP_pobj	VBP		2
 Why is it called the "color TV"	Why AUXPASS NP VERB NP "	Why <VBZ>_auxpass <PRP>_NP_nsubjpass <VBN>_ROOT <NN>_NP_oprd "	PRP_nsubjpass	NN_oprd	VBN	VBZ	2
 Why can't you eat a wookie	Why AUX n't NP VERB NP	Why <MD>_aux n't <PRP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	PRP_nsubj	NN_dobj	VB	MD	2
@@ -8318,7 +8318,7 @@ Why did the man with no hands go to the doctor	Why AUX NP VERB PREP NP	Why <VBD>
 Why did everybody where white pants at The Masters	Why VERB NP where white pants PREP NP	Why <VBD>_ROOT <NN>_NP_dobj where white pants <IN>_prep <NNPS>_NP_pobj		NN_dobj,NNPS_pobj	VBD		2
 Why do demons and ghouls hang out together	Why AUX NP VERB PRT together	Why <VBP>_aux <NNS>_NP_nsubj <VBP>_ROOT <RP>_prt together	NNS_nsubj		VBP,RP	VBP	1
 Why did the pig join a muscle-building class	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
-Why are protein shakes such loners	Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VBZ>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VBZ	VBP	2
+Why are protein shakes such loners	*Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VBZ>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VBZ	VBP	2
 Why did the blonde wear green lipstick	Why AUX the blonde VERB NP	Why <VBD>_aux the blonde <VB>_ROOT <NN>_NP_dobj		NN_dobj	VB	VBD	1
 Why did Ronald McDonald divorce his wife	Why AUX NP VERB NP	Why <VBD>_aux <NNP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NNP_nsubj	NN_dobj	VB	VBD	2
 Why was the deaf man sighing and shaking his head in disgust when he looked over at his next door neighbour	Why AUX NP VERB and VERB NP PREP NP when NP VERB PRT PREP NP	Why <VBD>_aux <NN>_NP_nsubj <VBG>_ROOT and <VBG>_conj <NN>_NP_dobj <IN>_prep <NN>_NP_pobj when <PRP>_NP_nsubj <VBD>_advcl <RP>_prt <IN>_prep <NN>_NP_pobj	NN_nsubj,PRP_nsubj	NN_dobj,NN_pobj,NN_pobj	VBG,VBG,VBD,RP	VBD	5
@@ -8554,7 +8554,7 @@ Why were the witch and wizard always kissing each other's necks	Why VERB NP NP a
 Why couldn't Jesus eat M&amp;M's	Why AUX n't NP VERB NP	Why <MD>_aux n't <NNP>_NP_nsubj <VB>_ROOT <NNP>_NP_dobj	NNP_nsubj	NNP_dobj	VB	MD	2
 Why do girls wear make up and perfume	Why AUX NP VERB VERB PRT and NP	Why <VBP>_aux <NNS>_NP_nsubj <VB>_ROOT <VB>_xcomp <RP>_prt and <NN>_NP_conj	NNS_nsubj	NN_conj	VB,VB,RP	VBP	2
 Why did the Khmer Rouge smoke weed	*Why VERB NP	Why <VBD>_ROOT <NN>_NP_dobj		NN_dobj	VBD		1
-Why do black folk carry around "boomboxes"	Why AUX NP VERB PRT NP "	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT <RP>_prt <NNS>_NP_dobj "	NN_nsubj	NNS_dobj	VB,RP	VBP	2
+Why do black folk carry around "boomboxes"	*Why AUX NP VERB PRT NP "	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT <RP>_prt <NNS>_NP_dobj "	NN_nsubj	NNS_dobj	VB,RP	VBP	2
 Why was the President broke after the assassination attempt	Why AUX NP VERB PREP NP	Why <VBD>_aux <NNP>_NP_nsubj <VBD>_ROOT <IN>_prep <NN>_NP_pobj	NNP_nsubj	NN_pobj	VBD	VBD	2
 Why are a prostitute and a teacher so similar	Why VERB NP so similar	Why <VBP>_ROOT <NN>_NP_nsubj so similar	NN_nsubj		VBP		1
 Why do toucans only go camping in pairs	Why AUX NP only VERB NP PREP NP	Why <VBP>_aux <NNS>_NP_nsubj only <VB>_ROOT <NN>_NP_dobj <IN>_prep <NNS>_NP_pobj	NNS_nsubj	NN_dobj,NNS_pobj	VB	VBP	3
@@ -8608,7 +8608,7 @@ Why do deaf women wear tight jeans	Why AUX NP VERB NP	Why <VBP>_aux <NNS>_NP_nsu
 Why can't my girlfriend perform at open mic night	Why AUX n't NP VERB at open mic night	Why <MD>_aux n't <NN>_NP_nsubj <VB>_ROOT at open mic night	NN_nsubj		VB	MD	1
 Why did Simba have trouble returning to Pride Rock	Why AUX NP VERB NP	Why <VBD>_aux <NNP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NNP_nsubj	NN_dobj	VB	VBD	2
 Why didn't the Mexican go bow hunting	Why AUX n't NP VERB VERB VERB	Why <VBD>_aux n't <NNP>_NP_nsubj <VB>_ROOT <VB>_xcomp <VBG>_advcl	NNP_nsubj		VB,VB,VBG	VBD	1
-Why couldn't the dimwit read more than one sentence	Why AUX n't NP VERB NP	Why <MD>_aux n't <NN>_NP_nsubj <VBD>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBD	MD	2
+Why couldn't the dimwit read more than one sentence	*Why AUX n't NP VERB NP	Why <MD>_aux n't <NN>_NP_nsubj <VBD>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VBD	MD	2
 Why did Rembrandt lose his house	Why AUX NP VERB NP	Why <VBD>_aux <NNP>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NNP_nsubj	NN_dobj	VB	VBD	2
 Why did the police assault the crowd	Why AUX NP assault NP	Why <VBD>_aux <NN>_NP_nsubj assault <NN>_NP_dobj	NN_nsubj	NN_dobj		VBD	2
 Why did the bullet stay home	Why AUX NP VERB home	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT home	NN_nsubj		VB	VBD	1
@@ -10145,7 +10145,7 @@ Why was the church opposed to fire on torches	Why AUXPASS NP VERB to VERB PREP N
 Why doesn't Pacman use Twitter	Why AUX n't NP VERB NP	Why <VBZ>_aux n't <NNP>_NP_nsubj <VB>_ROOT <NNP>_NP_dobj	NNP_nsubj	NNP_dobj	VB	VBZ	2
 Why did the chicken cross the rhoad...	Why AUX NP VERB NP ...	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj ...	NN_nsubj	NN_dobj	VB	VBD	2
 Why don't spiders go to school	Why AUX n't NP VERB PREP NP	Why <VBP>_aux n't <NNS>_NP_nsubj <VB>_ROOT <IN>_prep <NN>_NP_pobj	NNS_nsubj	NN_pobj	VB	VBP	2
-Why do mathematician never go to the beach	Why AUX NP never VERB PREP NP	Why <VBP>_aux <NN>_NP_nsubj never <VB>_ROOT <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_pobj	VB	VBP	2
+Why do mathematician never go to the beach	*Why AUX NP never VERB PREP NP	Why <VBP>_aux <NN>_NP_nsubj never <VB>_ROOT <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_pobj	VB	VBP	2
 Why don't you ever see rich people wearing glasses	Why AUX n't NP ever VERB NP VERB NP	Why <VBP>_aux n't <PRP>_NP_nsubj ever <VB>_ROOT <NNS>_NP_nsubj <VBG>_ccomp <NNS>_NP_dobj	PRP_nsubj,NNS_nsubj	NNS_dobj	VB,VBG	VBP	3
 Why did the firefly keep stealing things	Why AUX NP VERB VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <VBG>_xcomp <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB,VBG	VBD	2
 Why was Mary's phone bill so high	Why VERB NP so high	Why <VBD>_ROOT <NN>_NP_nsubj so high	NN_nsubj		VBD		1
@@ -10999,7 +10999,7 @@ Why did Jesus have to walk everywhere	Why AUX NP VERB to VERB everywhere	Why <VB
 Why is ISIS going after programs	Why AUX NP VERB PREP NP	Why <VBZ>_aux <NNP>_NP_nsubj <VBG>_ROOT <IN>_prep <NNS>_NP_pobj	NNP_nsubj	NNS_pobj	VBG	VBZ	2
 Why do rpg characters like potions so much						VBP	0
 Why did the vengeful fireman lose his job	Why AUX NP VERB NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj	NN_nsubj	NN_dobj	VB	VBD	2
-Why are Helium, Curium and Barium called the medical elements	Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VBD>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VBD	VBP	2
+Why are Helium, Curium and Barium called the medical elements	*Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VBD>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VBD	VBP	2
 Why did your sister feed money to her cow	Why AUX NP VERB NP PREP NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <NN>_NP_dobj <IN>_prep <NN>_NP_pobj	NN_nsubj	NN_dobj,NN_pobj	VB	VBD	3
 Why is Whitney Houston good at video games	Why VERB Whitney Houston good PREP NP	Why <VBZ>_ROOT Whitney Houston good <IN>_prep <NNS>_NP_pobj		NNS_pobj	VBZ		1
 Why did the guitar player get arrested	Why AUX NP AUXPASS VERB	Why <VBD>_aux <NN>_NP_nsubjpass <VB>_auxpass <VBN>_ROOT	NN_nsubjpass		VBN	VBD,VB	1
@@ -11160,7 +11160,7 @@ Why was the ocean so cranky	Why VERB NP so cranky	Why <VBD>_ROOT <NN>_NP_nsubj s
 Why do girls suck at playing hockey as goalie	Why AUX NP VERB at playing NP PREP NP	Why <VBP>_aux <NNS>_NP_nsubj <VB>_ROOT at playing <NN>_NP_dobj <IN>_prep <NN>_NP_pobj	NNS_nsubj	NN_dobj,NN_pobj	VB	VBP	3
 Why are Americans like women	*Why VERB NP	Why <VBP>_ROOT <NNPS>_NP_nsubj	NNPS_nsubj		VBP		1
 Why did the dog run in circles	Why AUX NP VERB PREP NP	Why <VBD>_aux <NN>_NP_nsubj <VB>_ROOT <IN>_prep <NNS>_NP_pobj	NN_nsubj	NNS_pobj	VB	VBD	2
-Why do woman make terrible truck drivers	Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB	VBP	2
+Why do woman make terrible truck drivers	*Why AUX NP VERB NP	Why <VBP>_aux <NN>_NP_nsubj <VB>_ROOT <NNS>_NP_dobj	NN_nsubj	NNS_dobj	VB	VBP	2
 Why was Macaulay Culkin an easy target for Michael Jackson	Why VERB NP an easy target PREP NP	Why <VBD>_ROOT <NNP>_NP_nsubj an easy target <IN>_prep <NNP>_NP_pobj	NNP_nsubj	NNP_pobj	VBD		2
 Why do dogs run in circles	Why AUX NP VERB PREP NP	Why <VBP>_aux <NNS>_NP_nsubj <VB>_ROOT <IN>_prep <NNS>_NP_pobj	NNS_nsubj	NNS_pobj	VB	VBP	2
 Why do italian women wear long black gloves	Why AUX NP VERB NP	Why <VBP>_aux <NNS>_NP_nsubj <VBP>_ROOT <NNS>_NP_dobj	NNS_nsubj	NNS_dobj	VBP	VBP	2

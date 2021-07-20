@@ -12,8 +12,7 @@ class QuestionGenerator:
 		self.three_slots = pickle.load(open('data/three_slots.pkl', 'rb'))
 		self.aux = pickle.load(open('data/aux_verbs.pkl', 'rb'))
 		self.prep = pickle.load(open('data/prep.pkl', 'rb'))
-		self.gen_obj = True if generate_objects else False
-
+		self.gen_obj = generate_objects
 
 	def parse_caption(self, caption):
 		doc = self.parser.nlp(caption)
@@ -27,10 +26,14 @@ class QuestionGenerator:
 			else:
 				# get NPs before and after verb
 				nps = self.parser.find_nps_in_np(nps[0], verbs[0])
+
+		# apply further modifications to nps
+		nps = self.parser.modify_nps(nps)
+
 		return verbs, nps
 
 
-	def get_aux(self, tag, verb_tag=False, np_num=False):
+	def get_aux(self, tag, verb_tag=False, np_num=False, neg=False):
 		# check compatibility with verb
 		if verb_tag in {'VBG', 'VBN'}:
 			if tag == 'VBZ':
@@ -59,6 +62,9 @@ class QuestionGenerator:
 				return 'had'
 
 		auxs = self.aux[tag]
+
+		# make auxiliaries compatible with negation
+		auxs = auxs & self.aux['NEG'] if neg else auxs - {'wo','ca'}
 		try:
 			if np_num == 'sg':
 				auxs.remove('were')
@@ -67,7 +73,7 @@ class QuestionGenerator:
 			return sample(auxs, 1)[0]
 
 		except:
-			return sample(self.aux[tag], 1)[0]
+			return sample(auxs, 1)[0]
 
 	def get_prep(self, tag, suggestion=False):
 		if suggestion:
@@ -96,9 +102,7 @@ class QuestionGenerator:
 		if len(nps) == 1:
 			np_key = [f'{np.root.tag_}' for np in nps]
 		else:
-			# change dependency of root NP to nsubj
-			# to be able to match a dictionary key
-			np_key = [f'{np.root.tag_}_{np.root.dep_}'.replace('ROOT','nsubj') for np in nps]
+			np_key = [f'{np.root.tag_}_{np.root.dep_}' for np in nps]
 		np_key = tuple(sorted(np_key))
 
 		# get template from template dictionary
@@ -113,8 +117,7 @@ class QuestionGenerator:
 					return self.choose_template(verbs, nps)
 				return '', nps
 		else:
-			# TODO: generate different verb?
-			# try filter out 'RP'?
+			# try filter out 'RP'
 			if 'RP' in verb_key:
 				verbs = [verb for verb in verbs if verb.tag_ != 'RP']
 				return self.choose_template(verbs, nps)
@@ -122,12 +125,12 @@ class QuestionGenerator:
 
 	def fill_template(self, template, verbs, nps):
 		filled_template = []
+		neg = " n't " in template
 		aux_ind = -1
 
 		# default number of np and tag of verb
 		np_num = 'sg' if nps[0].root.tag_ in SINGULAR else 'pl'
 		verb_tag = verbs[0].tag_
-
 
 		for word in template.split():
 			if '<' not in word:
@@ -153,25 +156,31 @@ class QuestionGenerator:
 			elif len(slot_info) == 3:
 				# fill in NP
 				for np in nps:
-					if np.root.tag_ == tag:
+					if len(nps) == 1:
+						np_match = np.root.tag_ == tag
+					else:
+						np_match = np.root.tag_ == tag and np.root.dep_ == dep
+					if np_match:
 						if np.root.dep_ in SUBJECT_DEPS:
 							np_num = 'sg' if tag in SINGULAR else 'pl'
 						if np.root.dep_ == 'pobj' and '_prep' in filled_template[-1]:
 								prep_tag = filled_template[-1].split('_')[0][1:-1]
 								#prep_suggestion = np.root.head
 								#prep = self.get_prep(prep_tag, prep_suggestion)
-								prep = np.root.head
-								filled_template = filled_template[:-1] + [str(prep)]
+								#prep = np.root.head
+								prep = self.parser.check_prep(np.root.head)
+								filled_template = filled_template[:-1] + [prep]
 						filled_template.append(str(np))
-						nps.remove(np)
+						# we cannot remove np directly (with e.g. nps.remove(np))
+						# because it might not be a spacy span object
+						# in this case python would throw an error
+						nps = [item for item in nps if item.text != np.text]
 						break
-					else:
-						return ''
 
 		# get auxiliary verb
 		if aux_ind >= 0:
 			aux_tag = filled_template[aux_ind].split('_')[0][1:-1]
-			aux = self.get_aux(aux_tag, verb_tag, np_num)
+			aux = self.get_aux(aux_tag, verb_tag, np_num, neg)
 			filled_template[aux_ind] = aux
 		return " ".join(filled_template)
 
