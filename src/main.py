@@ -8,12 +8,13 @@
 import os
 from question_generation import *
 import sys
-sys.path.append("/home/sharmila/projects/code_slingers")
+from dotenv import load_dotenv
+load_dotenv()
+
+sys.path.append(os.getenv("ROOT_PATH"))
 from imagecaptioning.tools import eval
 from src import joke_generator as jg
 from bs4 import BeautifulSoup
-from dotenv import load_dotenv
-load_dotenv()
 
 model_path = os.getenv("MODEL_PATH")
 info_path = os.getenv("INFO_PATH")
