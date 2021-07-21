@@ -57,6 +57,7 @@ _Optional_: use the package manager [pip](https://pip.pypa.io/en/stable/) to ins
 #### Activate Virtual Environment
 
     source name_of_env/bin/activate
+    On Windows: source name_of_env\Scripts\activate
 
 
 #### Install Requirements
@@ -73,12 +74,12 @@ _Optional_: If you're on Mac.
 ***Note: if you are on mac, then first install wget and unzip package***  
 
     [instructions]
+    brew install wget
 
 ---
 
 #### Initial Downloads
 
-    brew install wget
     chmod +x initialization_script.sh
     ./initialization_script.sh
 
