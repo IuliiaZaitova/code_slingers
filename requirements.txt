@@ -6,8 +6,6 @@ blis==0.7.4
 bs4==0.0.1
 cached-property==1.5.2
 cachetools==4.2.2
-## !! Could not determine repository location
-captioning==0.0.1
 catalogue==2.0.4
 certifi==2020.12.5
 chardet==4.0.0
