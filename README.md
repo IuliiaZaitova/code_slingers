@@ -17,7 +17,7 @@ In order to get the model to run, follow these installation instructions.
 
 
 <!-- ### Requirements -->
-Pre-reqisite:
+Pre-requisite:
 
     python==3.7.5
 
@@ -57,8 +57,9 @@ _Optional_: use the package manager [pip](https://pip.pypa.io/en/stable/) to ins
 #### Activate Virtual Environment
 
     source name_of_env/bin/activate
-    On Windows: source name_of_env\Scripts\activate
+    On Windows: name_of_env\Scripts\activate
 
+(To leave the virtual environment, simply run: deactivate)
 
 #### Install Requirements
 
