@@ -35,8 +35,9 @@ _Optional_: to install a specific version of Python:
 
 
 #### Windows:
+Download [32-bit version](https://www.python.org/ftp/python/3.7.5/python-3.7.5.exe) or [64-bit version](https://www.python.org/ftp/python/3.7.5/python-3.7.5-amd64.exe) and follow the instructions.
 
-    [instructions]
+
 ---
 #### Clone the repository
 
