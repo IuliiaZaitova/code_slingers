@@ -101,7 +101,7 @@ _Optional_: If you're on Mac.
     ```
 
 
-**_YEAH!!_** Installation is done! Now you can jump to the execution part and run the web app.
+**_YAY!!_** Installation is done! Now you can jump to the execution part and run the web app.
 
 
 ## Execution
