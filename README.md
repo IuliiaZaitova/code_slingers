@@ -31,7 +31,7 @@ _Optional_: to install a specific version of Python:
 
 #### Mac:
 
-    [instructions]
+    brew install python@3.7
 
 
 #### Windows:
@@ -49,23 +49,32 @@ _Optional_: use the package manager [pip](https://pip.pypa.io/en/stable/) to ins
     pip install virtualenv
     
     
+    
 #### Navigate to the folder with the cloned git repository
 
 #### Create Virtual Environment
 
     virtualenv <name of env> --python /usr/bin/python[version] or <path to your python if its not the mentioned one>
+    
+    Conda:
+    conda create --name <name of your env> python=3.7
 
 #### Activate Virtual Environment
 
     source name_of_env/bin/activate
     On Windows: name_of_env\Scripts\activate
+    Conda:
+    conda activate <name of your env>
 
 (To leave the virtual environment, simply run: deactivate)
 
 #### Install Requirements
 
     pip install -r requirements.txt
-
+        
+    Conda:
+    have to first run:
+    conda install pip
 
 
 
@@ -73,7 +82,7 @@ _Optional_: use the package manager [pip](https://pip.pypa.io/en/stable/) to ins
 
 _Optional_: If you're on Mac.  
 
-***Note: if you are on mac, then first install wget and unzip package***  
+***Note: if you are on mac, then first install wget using brew***  
 
     [instructions]
     brew install wget
