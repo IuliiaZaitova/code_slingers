@@ -19,7 +19,9 @@ app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 try:
     os.mkdir(tmp_fol)
 except:
-    pass
+    filelist = [ f for f in os.listdir(tmp_fol) ]
+    for f in filelist:
+        os.remove(os.path.join(tmp_fol, f))
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
