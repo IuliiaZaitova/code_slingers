@@ -13,8 +13,6 @@ click==7.1.2
 cycler==0.10.0
 cymem==2.0.5
 decorator==4.4.2
-en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.0.0/en_core_web_lg-3.0.0-py3-none-any.whl
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.0.0/en_core_web_sm-3.0.0-py3-none-any.whl
 fasttext==0.9.2
 filelock==3.0.12
 Flask==2.0.1
@@ -47,7 +45,7 @@ meshed-memory-transformer @ git+https://github.com/ruotianluo/meshed-memory-tran
 murmurhash==1.0.5
 networkx==2.5.1
 nltk==3.6.2
-numpy==1.19.5
+numpy==1.21.1
 oauthlib==3.1.1
 opt-einsum==3.3.0
 packaging==20.9
