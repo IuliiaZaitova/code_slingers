@@ -13,6 +13,8 @@ This project is an attempt to generate WHY-jokes following the formula ```Why di
 
 ## Installation
 
+Note: Since, the project has three models as the pipeline running serially, it requires some memory space and RAM. Make sure you have around 3 GB physical disk space, 4 GB RAM and enough space to install the requirements. 
+
 In order to get the model to run, follow these installation instructions.
 
 
