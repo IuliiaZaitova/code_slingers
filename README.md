@@ -92,7 +92,7 @@ _Optional_: If you're on Mac.
 ---
 
 #### Initial Downloads
-    This is the step that clones the submodules required for captioning, download pretrained models and set them up.
+    This is the step that clones the submodules required for captioning, download pretrained models and set them up. This might take a while depending on your internet speed. :)
     
     ```
     chmod +x initialization_script.sh
