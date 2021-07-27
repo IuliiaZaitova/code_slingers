@@ -6,9 +6,9 @@ Software Project by team CODE SLINGERS for the Language Generation Task course a
 
 This project is an attempt to generate WHY-jokes following the formula ```Why did X Y? -Z!"``` (e.g. _Why did the chicken cross the road? To get to the other side!_) based on an image. Hence, it encompasses three main tasks:
 
-    1. Image captioning module
-    2. Getting relevant entities for joke generation / Question generation module
-    3. Joke generation module
+    1. Image captioning
+    2. Question generation / Getting relevant entities for joke generation
+    3. Joke generation
 
 
 ## Installation
@@ -19,9 +19,11 @@ In order to get the model to run, follow these installation instructions.
 
 
 <!-- ### Requirements -->
-Pre-requisite:
+Pre-requisites:
 
     python==3.7.5
+
+On Windows you will also need [Git for Windows](https://gitforwindows.org/).
 
 ---
 _Optional_: to install a specific version of Python:
@@ -37,15 +39,14 @@ _Optional_: to install a specific version of Python:
 
 
 #### Windows:
-Download [32-bit version](https://www.python.org/ftp/python/3.7.5/python-3.7.5.exe) or [64-bit version](https://www.python.org/ftp/python/3.7.5/python-3.7.5-amd64.exe) and follow the instructions.
-
-
+Download Python 3.7.5 for Windows [here](https://www.python.org/ftp/python/3.7.5/python-3.7.5-amd64.exe), run it and follow the instructions.
+    
 ---
 #### Clone the repository
 
     git clone [link]
 
-_Optional_: use the package manager [pip](https://pip.pypa.io/en/stable/) to install vitual environment.
+_Optional_: use the package manager [pip](https://pip.pypa.io/en/stable/) to install a vitual environment.
 
     bash
     pip install virtualenv
@@ -68,7 +69,7 @@ _Optional_: use the package manager [pip](https://pip.pypa.io/en/stable/) to ins
     Conda:
     conda activate <name of your env>
 
-(To leave the virtual environment, simply run: deactivate)
+(To leave the virtual environment, simply run: 'deactivate' (with virtualenv) or 'conda deactivate' (with conda))
 
 #### Install Requirements
 
@@ -86,15 +87,14 @@ _Optional_: If you're on Mac.
 
 ***Note: if you are on mac, then first install wget using brew***  
 
-    [instructions]
     brew install wget
 
 ---
 
 ---
-You need to download the spacy model:
+You also need to download the spacy model:
 
-python -m spacy download en_core_web_lg
+    python -m spacy download en_core_web_lg
 
 ---
 
@@ -106,6 +106,14 @@ python -m spacy download en_core_web_lg
     ./initialization_script.sh
     
     ```
+    or on Windows:
+
+    ```
+    chmod +x initialization_script.sh
+    sh initialization_script_windows.sh
+    
+    ```
+
 
 
 **_YAY!!_** Installation is done! Now you can jump to the execution part and run the web app.
@@ -133,6 +141,8 @@ To run the webapp, run the following code, being in the root directory.
 
 ```
 ./src/coco-download.sh
+or
+sh src/coco-download.sh
 
 ```
 - Paper about the dataset
@@ -145,14 +155,6 @@ This section gets all the captions and extract the entity and action from the ca
 
  [Link](https://www.kaggle.com/abhinavmoudgil95/short-jokes)
 
-
-## Execution
-To run the webapp, run the following code, being in the root directory.
-
-```
-python3 src/views.py
-
-```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
