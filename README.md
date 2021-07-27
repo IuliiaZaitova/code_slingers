@@ -90,15 +90,21 @@ _Optional_: If you're on Mac.
 ---
 
 #### Initial Downloads
-
+    This is the step that clones the submodules required for captioning, download pretrained models and set them up.
+    
+    ```
     chmod +x initialization_script.sh
     ./initialization_script.sh
+    
+    ```
 
 
 **_YEAH!!_** Installation is done! Now you can jump to the execution part and run the web app.
 
 
 ## Execution
+Before running the application, make sure to change the ROOT_PATH variable in the .env file to the path of your project.
+
 To run the webapp, run the following code, being in the root directory.
 
     python3 src/views.py
