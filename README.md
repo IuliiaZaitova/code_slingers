@@ -30,7 +30,10 @@ _Optional_: to install a specific version of Python:
 
 #### Ubuntu:
 
-    sudo apt-install python3.7
+    pyenv install 3.7.5
+
+(To install ```pyenv```, follow [this tutorial](https://github.com/pyenv/pyenv-installer#installation--update--uninstallation), and then [this one](https://www.laac.dev/blog/setting-up-modern-python-development-environment-ubuntu-20/))
+<!--     sudo apt-install python3.7 -->
 
 
 #### Mac:
@@ -59,26 +62,32 @@ _Optional_: use the package manager [pip](https://pip.pypa.io/en/stable/) to ins
 
     virtualenv <name of env> --python /usr/bin/python[version] or <path to your python if its not the mentioned one>
     
-    Conda:
+Conda:
+
     conda create --name <name of your env> python=3.7
 
 #### Activate Virtual Environment
 
     source name_of_env/bin/activate
-    On Windows: name_of_env\Scripts\activate
-    Conda:
+On Windows:
+
+    name_of_env\Scripts\activate
+Conda:
+
     conda activate <name of your env>
 
-(To leave the virtual environment, simply run: 'deactivate' (with virtualenv) or 'conda deactivate' (with conda))
+(To leave the virtual environment, simply run: ```deactivate``` (with virtualenv) or ```conda deactivate``` (with Conda))
 
-#### Install Requirements
+---
+
+### Install Requirements
 
     pip install -r requirements.txt
         
-    Conda:
-    have to first run:
-    conda install pip
+Conda:
 
+    conda install pip
+    pip install -r requirements.txt
 
 
 ---
@@ -99,22 +108,18 @@ You also need to download the spacy model:
 ---
 
 #### Initial Downloads
-    This is the step that clones the submodules required for captioning, download pretrained models and set them up. This might take a while depending on your internet speed. :)
+
+This is the step that clones the submodules required for captioning, download pretrained models and set them up. This might take a while depending on your internet speed. :)
     
-    ```
     chmod +x initialization_script.sh
     ./initialization_script.sh
     
-    ```
-    or on Windows:
+ On Windows:
 
-    ```
     chmod +x initialization_script.sh
     sh initialization_script_windows.sh
-    
-    ```
 
-
+---
 
 **_YAY!!_** Installation is done! Now you can jump to the execution part and run the web app.
 
@@ -125,8 +130,6 @@ Before running the application, make sure to change the ROOT_PATH variable in th
 To run the webapp, run the following code, being in the root directory.
 
     python3 src/views.py
-
-
 
 ---
 
@@ -139,12 +142,12 @@ To run the webapp, run the following code, being in the root directory.
 ### COCO DATASET
 - Download
 
-```
+
 ./src/coco-download.sh
-or
+
 sh src/coco-download.sh
 
-```
+
 - Paper about the dataset
 [Link] (https://arxiv.org/abs/1405.0312)
 
