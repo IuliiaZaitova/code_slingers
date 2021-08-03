@@ -115,6 +115,7 @@ This is the step that clones the submodules required for captioning, download pr
     ./initialization_script.sh
     
  On Windows:
+ 
  If you did not chose to import Linux tools when installing Git for Windows, you have to use the Git Bash to run the initialization script.
 
     chmod +x initialization_script.sh
