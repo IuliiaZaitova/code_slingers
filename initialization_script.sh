@@ -1,6 +1,6 @@
 #!/bin/bash  
-rm -r imagecaptioning
-git submodule add https://github.com/sarmilaupadhyaya/ImageCaptioning.pytorch.git imagecaptioning/
+git rm -r --cached imagecaptioning
+git submodule add --force https://github.com/sarmilaupadhyaya/ImageCaptioning.pytorch.git imagecaptioning/
 cd imagecaptioning
 mkdir data/imagenet_weights
 

@@ -14,7 +14,4 @@ def evaluation(test):
     return result[0]
 
 
-#print(evaluation("Why was a bunch of fruits and vegetables on a table watching"))
-
-
 
