@@ -2,6 +2,43 @@
 
 While there is already some Humor Generation work out there using given word context, in this project we explore Humor Generation given images.
 
+
+## Directory structure
+
+    .
+    ├── data
+    │   ├── aux_verbs.pkl
+    │   ├── dobj_dict_classes.p
+    │   ├── one_slot.pkl
+    │   ├── pobj_dict_classes.p
+    │   ├── three_slots.pkl
+    │   ├── two_slots.pkl
+    │   ├── verb_transitivity.tsv
+    │   └── verb_trans.p
+    ├── documents
+    │   └── code_slingers_presentation.pdf
+    ├── images
+    │   └── architecture.png
+    ├── initialization_script.sh
+    ├── initialization_script_windows.sh
+    ├── README.md
+    ├── requirements.txt
+    └── src
+        ├── grammar_parsing.py
+        ├── joke_generator.py
+        ├── main.py
+        ├── parsing.py
+        ├── question_generation.py
+        ├── static
+        │   ├── css
+        │   │   └── main.css
+        │   └── img
+        │       └── saarland.png
+        ├── templates
+        │   └── upload_image.html
+        └── views.py
+
+
 ## Introduction
 
 This project is an attempt to generate WHY-jokes following the formula ```Why did X Y? -Z!"``` (e.g. _Why did the chicken cross the road? To get to the other side!_) based on an image. Hence, it encompasses three main tasks:
