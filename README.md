@@ -1,6 +1,6 @@
-# Foobar
+# Software Project by team CODE SLINGERS for the Language Generation Task course at Saarland University.
 
-Software Project by team CODE SLINGERS for the Language Generation Task course at Saarland University.
+While there is already some Humor Generation work out there using given word context, in this project we explore Humor Generation given images.
 
 ## Introduction
 
