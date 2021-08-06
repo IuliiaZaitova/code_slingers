@@ -1,5 +1,5 @@
 import re
-from templates import *
+from parsing import *
 from random import sample
 from grammar_parsing import *
 
