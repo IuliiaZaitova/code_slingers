@@ -1,6 +1,15 @@
 # Software Project by team CODE SLINGERS for the Language Generation Task course at Saarland University.
 
-While there is already some Humor Generation work out there using given word context, in this project we explore Humor Generation given images.
+While there is already some Humor Generation work out there using given word context, in this project we explore Humor Generation given images. A joint pipeline of image captioning, question generation from the caption and finally a joke in the form of answer to the question is the brief architecture. We were able to implement it successfully and get comparative result to the works done before.
+
+# Outline
+
+1. Directory Structure
+2. Introduction
+3. Installation
+4. Dataset
+5. Contributing
+6. License
 
 
 ## Directory structure
