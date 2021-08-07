@@ -9,10 +9,12 @@ import os
 from question_generation import *
 import sys
 from dotenv import load_dotenv
+import pandas as pd
 load_dotenv()
 
 sys.path.append(os.getenv("ROOT_PATH"))
 from imagecaptioning.tools import eval
+
 from src import joke_generator as jg
 from bs4 import BeautifulSoup
 
@@ -40,10 +42,8 @@ def main(image_path="data/test_image/"):
     """
 
     all_files = []
-    import os
     for file in os.listdir(image_path):
-        if file.endswith(".jpg"):
-            all_files.append(file)
+        all_files.append(file)
 
     image_caption = captioning_inference(image_path)
     # question template
