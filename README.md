@@ -1,5 +1,7 @@
 # Software Project by team CODE SLINGERS for the Language Generation Task course at Saarland University.
 
+
+
 While there is already some Humor Generation work out there using given word context, in this project we explore Humor Generation given images. A joint pipeline of image captioning, question generation from the caption and finally a joke in the form of answer to the question is the brief architecture. We were able to implement it successfully and get comparative result to the works done before.
 
 # Outline
@@ -55,6 +57,10 @@ This project is an attempt to generate WHY-jokes following the formula ```Why di
     1. Image captioning
     2. Question generation / Getting relevant entities for joke generation
     3. Joke generation
+
+The architecture of our project is provided below:
+    
+![architecture](https://github.com/IuliiaZaitova/code_slingers/blob/master/images/architecture.png?raw=true)
 
 
 ## Installation
