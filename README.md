@@ -168,7 +168,7 @@ This is the step that clones the submodules required for captioning, download pr
     
  On Windows:
  
- If you did not choose to import Linux tools when installing Git for Windows, you have to use the Git Bash to run the initialization script.
+ If you did not choose to import Linux tools when installing Git for Windows, you have to use the Git Bash to run the initialization script. Either way, both Git Bash and Windows Command Prompt should be run as administrator.
 
     chmod +x initialization_script.sh
     sh initialization_script_windows.sh
