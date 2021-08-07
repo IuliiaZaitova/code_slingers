@@ -17,7 +17,7 @@ While there is already some Humor Generation work out there using given word con
 ## Directory structure
 
     .
-    ├── data
+    ├── data     #pickle files for templates and object generations
     │   ├── aux_verbs.pkl
     │   ├── dobj_dict_classes.p
     │   ├── one_slot.pkl
@@ -26,28 +26,28 @@ While there is already some Humor Generation work out there using given word con
     │   ├── two_slots.pkl
     │   ├── verb_transitivity.tsv
     │   └── verb_trans.p
-    ├── documents
+    ├── documents    #general documents
     │   └── code_slingers_presentation.pdf
-    ├── images
+    ├── images      #images
     │   └── architecture.png
-    ├── initialization_script.sh
+    ├── initialization_script.sh    #for initialization
     ├── initialization_script_windows.sh
     ├── README.md
     ├── requirements.txt
-    └── src
+    └── src     #main python files
         ├── grammar_parsing.py
         ├── joke_generator.py
         ├── main.py
         ├── parsing.py
         ├── question_generation.py
-        ├── static
+        ├── static  #static file for the app
         │   ├── css
         │   │   └── main.css
         │   └── img
         │       └── saarland.png
-        ├── templates
+        ├── templates    # html 
         │   └── upload_image.html
-        └── views.py
+        └── views.py    #main flask app file
 
 
 ## Introduction
