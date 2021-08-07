@@ -24,10 +24,17 @@ import gpt_2_simple as gpt2
 import tensorflow as tf
 
 
-
+#checkpoint path
 Model_checkpoint = "output/joke_generation/"
 
 def evaluation(test):
+    """
+    joke inference
+    Params:
+    test (string): question generated from caption
+    returns:
+    string: answer to the input question
+    """
     
     tf.reset_default_graph()
     sess = gpt2.start_tf_sess()
