@@ -58,7 +58,7 @@ This project is an attempt to generate WHY-jokes following the formula ```Why di
     2. Question generation / Getting relevant entities for joke generation
     3. Joke generation
 
-The architecture of our project:
+The short architecture of our project:
     
 ![architecture](https://github.com/IuliiaZaitova/code_slingers/blob/master/images/architecture.png?raw=true)
 
