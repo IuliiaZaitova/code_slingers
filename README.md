@@ -60,7 +60,7 @@ This project is an attempt to generate WHY-jokes following the formula ```Why di
 
 The short architecture of our project:
     
-![architecture](https://github.com/IuliiaZaitova/code_slingers/blob/master/images/New_Architecture.png?raw=true)
+![architecture](https://github.com/IuliiaZaitova/code_slingers/blob/master/images/New_Architecture_updated.png?raw=true)
 
 
 ## Installation
