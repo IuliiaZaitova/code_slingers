@@ -175,6 +175,31 @@ This is the step that clones the submodules required for captioning, download pr
 
 ---
 
+************************************************************************************************************************************
+**NOTE**: If you encounter the following error (mostly due to internet issue models are not downloaded properly and you can't unzip.
+
+```
+Archive:  models.zip
+  End-of-central-directory signature not found.  Either this file is not
+  a zipfile, or it constitutes one disk of a multi-part archive.  In the
+  latter case the central directory and zipfile comment will be found on
+  the last disk(s) of this archive.
+unzip:  cannot find zipfile directory in one of models.zip or
+        models.zip.zip, and cannot find models.zip.ZIP, period.
+
+```
+Then Kindly rerun the following code
+
+```
+
+wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1-bnWPP6-c42wVQMztHpcVquUGd1XGc-z' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1-bnWPP6-c42wVQMztHpcVquUGd1XGc-z"  -O models.zip && rm -rf /tmp/cookies.txt
+unzip models.zip
+
+
+```
+
+If not then skip this section
+************************************************************************************************************************************
 **_YAY!!_** Installation is done! Now you can jump to the execution part and run the web app.
 
 
