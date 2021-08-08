@@ -9,7 +9,7 @@ While there is already some Humor Generation work out there using given word con
 1. [Directory Structure](#directory-structure)
 2. [Introduction](#introduction)
 3. [Installation](#installation)
-4. [Datasets](#datasets)
+4. [Dataset](#dataset)
 5. [Contributing](#contributing)
 6. [Licence](#licence)
 
@@ -207,7 +207,7 @@ To run the webapp, run the following code, being in the root directory.
 ---
 
 
-## Datasets
+## Dataset
 
 <!-- - [Image Captioning Dataset](https://paperswithcode.com/datasets) -->
 
