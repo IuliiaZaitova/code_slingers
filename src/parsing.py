@@ -41,7 +41,8 @@ PLURAL = {'NNS', 'NNPS'}
 
 
 class MockToken:
-	"""Token consisting of its string, pos-tag, dependency label
+	"""
+	Token consisting of its string, pos-tag, dependency label
 	and head. If the token is a prepositional object, its head is a
 	preposition, otherwise the head is equal to the string (text)
 	"""
@@ -82,8 +83,8 @@ def check_np_str(noun_phrase_str):
 
 def convert_obj_dict(obj_dict, dep, output_file):
 	"""
-	Converts dictionary containing tuples of strings to one containing 
-	MockNounPhrase and MockToken objects
+	Converts dictionary containing tuples of strings
+	to one containing MockNounPhrase and MockToken objects
 	"""
 	converted_obj_dict = defaultdict(list)
 	for verb in obj_dict:
@@ -109,6 +110,9 @@ def convert_obj_dict(obj_dict, dep, output_file):
 		pickle.dump(converted_obj_dict, out)
 
 class Parsing:
+	"""
+	Parsing functions used for questions and captions
+	"""
 	def __init__(self, parser='spacy'):
 		# load model
 		if parser == 'stanza':
@@ -120,8 +124,9 @@ class Parsing:
 			self.nlp = spacy.load("en_core_web_lg")
 
 	def find_verb_in_np(self, nps):
-		"""Returns the last verb found
-		in NP"""
+		"""
+		Returns the last verb found in NP
+		"""
 		for np in nps:
 			for token in list(np)[::-1]:
 				if token.pos_ == 'VERB':
@@ -129,28 +134,46 @@ class Parsing:
 		return []
 
 	def find_nps_in_np(self, np, verb):
+		"""
+		Splits one complex NP into smaller NPs,
+		tries to determine subject NP and keep
+		this one as is
+		"""
 		if verb.i > np.root.i:
+			# subject NP is everything before the verb
 			subj_np = np[np.root.left_edge.i : verb.i]
 			new_doc = self.nlp(str(np[verb.i : np.root.right_edge.i+1]))
+			
+			# split everything after verb into basic NPs
 			obj_np = self.get_complex_nps(new_doc)
 		else:
+			# subject NP is everything after the verb
 			subj_np = np[verb.i+1 : np.root.right_edge.i+1]
 			new_doc = self.nlp(str(np[np.root.left_edge.i : verb.i]))
+
+			# split everything before the verb into basic NPs
 			obj_np = self.get_complex_nps(new_doc)
 		return [subj_np]+obj_np
 
 	def get_subj_np(self, nps):
+		"""
+		Find subject NP in NP-list
+		"""
 		for np in nps:
 			if np.root.dep_ in SUBJECT_DEPS:
 				return np
 		if nps:
+			# if no NP has a subject dependency label
+			# make first NP in list the subject
 			subj = nps[0]
 			subj.root.dep_ = 'nsubj'
 			return subj
 		return ''
 
 	def get_default_verb(self):
-		#[MockToken('is', 'VBZ', 'ROOT', 'is')]
+		"""
+		Selects and returns a default verb randomly
+		"""
 		default_verbs = [
 			MockToken('ignore','VB','ROOT','ignore'),
 			MockToken('destroy','VB','ROOT','destroy'),
@@ -169,14 +192,21 @@ class Parsing:
 		return sample(default_verbs,1)
 
 	def get_complex_nps(self, doc):
+		"""
+		Returns list with all complex NPs in spaCy doc
+		"""
 		complex_nps = []
 		for np in doc.noun_chunks:
 			complex_np = doc[np.root.left_edge.i : np.root.right_edge.i+1]
 			complex_nps.append(complex_np)
-		# filter out dublicate nps -> only keep longest, dont keep substrings
+		# filter out dublicate nps, only keep longest, dont keep substrings
 		return filter_spans(complex_nps)
 
 	def modify_nps(self, nps):
+		"""
+		Performs various minor modifications to NPs
+		to ensure a grammatical question
+		"""
 		modified_nps = []
 		for np in nps:
 			# change dependency of root NP to nsubj
@@ -188,12 +218,16 @@ class Parsing:
 			if str(np)[-4:] == ' and':
 				np = np[:-1]
 			modified_nps.append(np)
-
 		return modified_nps
 
 	def check_prep(self, prep):
-		"""Checks if prep is part of a complex preposition"""
+		"""
+		Checks if prep is part of a complex
+		preposition (e.g. next to) and returns it
+		"""
 		try:
+			# if head of preposition is an adverb and adverbial modifier, include
+			# it as part of preposition
 			if prep.head.tag_ == 'RB' and prep.head.dep_ == 'advmod' and prep.head.pos_ == 'ADV':
 				prep = prep.head.text + ' ' + prep.text
 		except: 
@@ -201,13 +235,23 @@ class Parsing:
 		return str(prep)
 
 	def filter_verbs(self, verb_tokens):
+		"""
+		Filters out verbs that are not to be
+		replaced in the templates
+		"""
 		return [token for token in verb_tokens if token.head.dep_ in VERB_DEPS]
 
 	def get_verbs(self, doc, aux=True):
+		"""
+		Extract verbs with specified dependency labels from doc
+		if aux=True, extract auxiliary verbs as well
+		"""
 		matcher = Matcher(self.nlp.vocab)
+		# patterns for verbs to be extracted
 		verb_patterns = [[{'POS':'VERB', 'DEP': {'IN': VERB_DEPS}}],\
 						[{'DEP':'prt'}]]
 		if aux:
+			# add pattern for auxiliary verbs
 			verb_patterns.append([{'POS':'AUX'}])
 		matcher.add('VERBS', verb_patterns)
 		matches = matcher(doc)

@@ -1,6 +1,6 @@
 # Software Project by team CODE SLINGERS for the Language Generation Task course at Saarland University.
 
-
+![architecture](https://github.com/IuliiaZaitova/code_slingers/blob/master/images/example.png?raw=true)
 
 While there is already some Humor Generation work out there using given word context, in this project we explore Humor Generation given images. A joint pipeline of image captioning, question generation from the caption and finally a joke in the form of answer to the question is the brief architecture. We were able to implement it successfully and get comparative result to the works done before.
 
@@ -168,7 +168,7 @@ This is the step that clones the submodules required for captioning, download pr
     
  On Windows:
  
- If you did not choose to import Linux tools when installing Git for Windows, you have to use the Git Bash to run the initialization script.
+ If you did not choose to import Linux tools when installing Git for Windows, you have to use the Git Bash to run the initialization script. Either way, both Git Bash and Windows Command Prompt should be run as administrator.
 
     chmod +x initialization_script.sh
     sh initialization_script_windows.sh
