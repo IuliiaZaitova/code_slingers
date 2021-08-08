@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # coding=utf-8
 # Authors: Isidora Jeknic, Iuliia Zaitova, Kirstin Kolmorgen, Sharmila Upadhyaya
-# Emails:  {shup00001}@stud.uni-saarland.de, {s8iuzait}@stud.uni-saarland.de,
+# Emails:  {isje00001}@stud.uni-saarland.de, {s8iuzait}@stud.uni-saarland.de,
 # {s8kikolm}@stud.uni-saarland.de,  {shup00001}@stud.uni-saarland.de
 # Organization: Universität des Saarlandes
 # Copyright 2020 Sharmila Upadhyaya
