@@ -6,12 +6,12 @@ While there is already some Humor Generation work out there using given word con
 
 # Outline
 
-1. Directory Structure
-2. Introduction
-3. Installation
-4. Dataset
-5. Contributing
-6. License
+1. [Directory Structure](#directory-structure)
+2. [Introduction](#introduction)
+3. [Installation](#installation)
+4. [Datasets](#datasets)
+5. [Contributing](#contributing)
+6. [Licence](#licence)
 
 
 ## Directory structure
@@ -97,7 +97,7 @@ _Optional_: to install a specific version of Python:
 Download Python 3.7.5 for Windows [here](https://www.python.org/ftp/python/3.7.5/python-3.7.5-amd64.exe), run it and follow the instructions.
     
 ---
-#### Clone the repository
+### 1. Clone the repository
 
     git clone [link]
 
@@ -108,9 +108,9 @@ _Optional_: use the package manager [pip](https://pip.pypa.io/en/stable/) to ins
     
     
     
-#### Navigate to the folder with the cloned git repository
+#### 2. Navigate to the folder with the cloned git repository
 
-#### Create Virtual Environment
+#### 3. Create Virtual Environment
 
     virtualenv <name of env> --python /usr/bin/python[version] or <path to your python if its not the mentioned one>
     
@@ -118,7 +118,7 @@ Conda:
 
     conda create --name <name of your env> python=3.7
 
-#### Activate Virtual Environment
+#### 4. Activate Virtual Environment
 
     source name_of_env/bin/activate
 On Windows:
@@ -132,7 +132,7 @@ Conda:
 
 ---
 
-### Install Requirements
+### 5. Install Requirements
 
     pip install -r requirements.txt
         
@@ -151,17 +151,15 @@ _Optional_: If you're on Mac.
     brew install wget
 
 ---
-
----
-You also need to download the spacy model:
+#### 6. You also need to download the spacy model:
 
     python -m spacy download en_core_web_lg
 
 ---
 
-#### Initial Downloads
+### 7. Initial Downloads
 
-This is the step that clones the submodules required for captioning, download pretrained models and set them up. This might take a while depending on your internet speed. :)
+This is the step that clones the submodules required for captioning, download pretrained models and set them up. This might take a while, depending on your internet speed. :)
     
     chmod +x initialization_script.sh
     ./initialization_script.sh
@@ -173,38 +171,34 @@ This is the step that clones the submodules required for captioning, download pr
     chmod +x initialization_script.sh
     sh initialization_script_windows.sh
 
----
 
 ************************************************************************************************************************************
-**NOTE**: If you encounter the following error (mostly due to internet issue models are not downloaded properly and you can't unzip.
+**NOTE**: If you encounter the following error (mostly due to internet issue models are not downloaded properly and you can't unzip)
 
-```
-Archive:  models.zip
-  End-of-central-directory signature not found.  Either this file is not
-  a zipfile, or it constitutes one disk of a multi-part archive.  In the
-  latter case the central directory and zipfile comment will be found on
-  the last disk(s) of this archive.
-unzip:  cannot find zipfile directory in one of models.zip or
-        models.zip.zip, and cannot find models.zip.ZIP, period.
 
-```
+    Archive:  models.zip
+      End-of-central-directory signature not found.  Either this file is not
+      a zipfile, or it constitutes one disk of a multi-part archive.  In the
+      latter case the central directory and zipfile comment will be found on
+      the last disk(s) of this archive.
+    unzip:  cannot find zipfile directory in one of models.zip or
+            models.zip.zip, and cannot find models.zip.ZIP, period.
+
+
 Then Kindly rerun the following code
 
-```
 
-wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1-bnWPP6-c42wVQMztHpcVquUGd1XGc-z' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1-bnWPP6-c42wVQMztHpcVquUGd1XGc-z"  -O models.zip && rm -rf /tmp/cookies.txt
-unzip models.zip
+    wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1-bnWPP6-c42wVQMztHpcVquUGd1XGc-z' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1-bnWPP6-c42wVQMztHpcVquUGd1XGc-z"  -O models.zip && rm -rf /tmp/cookies.txt
+    unzip models.zip
 
 
-```
-
-If not then skip this section
+If not, then skip this section!
 ************************************************************************************************************************************
 **_YAY!!_** Installation is done! Now you can jump to the execution part and run the web app.
 
 
 ## Execution
-Before running the application, make sure to change the ROOT_PATH variable in the .env file to the path of your project.
+**!!!** Before running the application, make sure to change the ```ROOT_PATH``` variable in the ```.env``` file to the path of your project.
 
 To run the webapp, run the following code, being in the root directory.
 
@@ -215,33 +209,31 @@ To run the webapp, run the following code, being in the root directory.
 
 ## Datasets
 
-- Image Captioning Dataset
-[Link](https://paperswithcode.com/datasets)
+<!-- - [Image Captioning Dataset](https://paperswithcode.com/datasets) -->
 
 ### COCO DATASET
-- Download
+- Download <br>
+    
+    ```
+    ./src/coco-download.sh
+    sh src/coco-download.sh
+    
+    ```
 
+- [Paper about the dataset](https://arxiv.org/abs/1405.0312)
 
-./src/coco-download.sh
+<!-- - Evaluation of dataset -->
+<!-- This section gets all the captions and extract the entity and action from the captions and create a simple analysis -->
 
-sh src/coco-download.sh
+### Joke Dataset
 
-
-- Paper about the dataset
-[Link] (https://arxiv.org/abs/1405.0312)
-
-- Evaluation of dataset
-This section gets all the captions and extract the entity and action from the captions and create a simple analysis
-
-- Joke Dataset
-
- [Link](https://www.kaggle.com/abhinavmoudgil95/short-jokes)
-
+ 1. [short_jokes](https://www.kaggle.com/abhinavmoudgil95/short-jokes)
+ 2. [plaintext_jokes](https://github.com/taivop/joke-dataset)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
-## License
+## Licence
 [MIT](https://choosealicense.com/licenses/mit/)
